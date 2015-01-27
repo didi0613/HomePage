@@ -1,0 +1,11 @@
+{
+  "name": "Sheng-Page",
+  "author": "ShengDi",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^3.19.1"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
