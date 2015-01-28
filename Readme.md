@@ -1,6 +1,8 @@
-# node.js, express, Knockout & Durandal example
+# Sheng Di Home Page
+# SPA Application
 
 ## Technologies Used:
+## Knockout.js, Node, Durandal
 
 ### Server-Side
 

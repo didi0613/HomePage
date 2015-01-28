@@ -1,0 +1,7 @@
+/*
+EVERYTIME
+1) In a terminal window at the nodl root, run "sass --watch public/sass:public/styles". This will run a SASS watcher that looks for changes in your SASS files. If it finds them, it'll re-compile them into CSS files.
+2) If you write invalid CSS (or SASS), the compiler will throw an error in terminal window, so if you have a bug you just can't figure out, take a look there and see if you have something written incorrectly.
+*/
+
+/*# sourceMappingURL=main.css.map */
