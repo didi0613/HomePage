@@ -3,5 +3,29 @@ EVERYTIME
 1) In a terminal window at the nodl root, run "sass --watch public/sass:public/styles". This will run a SASS watcher that looks for changes in your SASS files. If it finds them, it'll re-compile them into CSS files.
 2) If you write invalid CSS (or SASS), the compiler will throw an error in terminal window, so if you have a bug you just can't figure out, take a look there and see if you have something written incorrectly.
 */
+@keyframes fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@media (max-width: 480px) {
+  body .banner {
+    height: 160px;
+    width: 100%;
+    background-color: #02c9c9; }
+    body .banner .word {
+      position: relative;
+      display: inline-block;
+      margin: 0 5px; }
+      body .banner .word .letter {
+        display: inline-block; }
+        body .banner .word .letter .fade {
+          animation: fade-out 2s infinite;
+          -webkit-animation: fade-out 2s infinite; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,41 @@
+body {
+  @keyframes fade-out{
+    from {opacity :1;}
+    to {opacity :0;}
+  }
+
+  @-webkit-keyframes fade-out{
+    from {opacity :1;}
+    to {opacity :0;}
+  }
+
+  //  iphone size
+  @media (max-width: 480px) {
+    .banner {
+      height: 160px;
+      width: 100%;
+      background-color: rgb(2, 201, 201);
+
+      .word {
+        position: relative;
+        display: inline-block;
+        margin: 0 5px;
+
+        .letter {
+          display: inline-block;
+
+          .fade {
+            animation:fade-out 2s infinite;
+            -webkit-animation:fade-out 2s infinite;
+          }
+        }
+      }
+    }
+  }
+
+  //  tablet size
+  @media (min-width: 481px) and (max-width: 767px) {
+    .banner {
+    }
+  }
+}
