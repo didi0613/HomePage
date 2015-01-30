@@ -17,11 +17,13 @@ EVERYTIME
     background-position: 0 -160px; } }
 @media (max-width: 480px) {
   body .banner {
-    height: 320px;
+    height: 400px;
     width: 100%;
-    background-color: #02c9c9;
-    margin: 0px auto;
-    text-align: center; }
+    background-color: palevioletred;
+    border-radius: 50px;
+    border: 25px solid;
+    border-color: #fff palevioletred;
+    padding: 20px; }
     body .banner .word {
       position: relative;
       display: inline-block;
@@ -47,6 +49,8 @@ EVERYTIME
           /* Safari and Chrome */
           -o-animation: bottom-fade-in 2s;
           -webkit-animation-fill-mode: forwards; }
+      body .banner .word.right {
+        float: right; }
   body #applicationHost {
     background-color: palevioletred;
     height: 160px; } }

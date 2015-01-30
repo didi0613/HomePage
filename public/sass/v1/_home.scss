@@ -20,11 +20,13 @@ body {
   //  iphone size
   @media (max-width: 480px) {
     .banner {
-      height: 320px;
+      height: 400px;
       width: 100%;
-      background-color: rgb(2, 201, 201);
-      margin:0px auto;
-      text-align:center;
+      background-color: palevioletred;
+      border-radius: 50px;
+      border: 25px solid;
+      border-color: #fff palevioletred;
+      padding: 20px;
 
       .word {
         position: relative;
@@ -52,6 +54,10 @@ body {
             -o-animation: bottom-fade-in 2s;
             -webkit-animation-fill-mode: forwards;
           }
+        }
+
+        &.right {
+          float: right;
         }
       }
     }
