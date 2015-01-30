@@ -1,35 +1,64 @@
 body {
-  @keyframes fade-out{
-    from {opacity :1;}
-    to {opacity :0;}
+  @-webkit-keyframes top-fade-in { /* Safari and Chrome */
+    0% {
+      background-position: 0 -160px;
+    }
+    100% {
+      background-position:0 0;
+    }
   }
 
-  @-webkit-keyframes fade-out{
-    from {opacity :1;}
-    to {opacity :0;}
+  @-webkit-keyframes bottom-fade-in { /* Safari and Chrome */
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position:0 -160px;
+    }
   }
 
   //  iphone size
   @media (max-width: 480px) {
     .banner {
-      height: 160px;
+      height: 320px;
       width: 100%;
       background-color: rgb(2, 201, 201);
+      margin:0px auto;
+      text-align:center;
 
       .word {
         position: relative;
         display: inline-block;
         margin: 0 5px;
+        height: 160px;
 
-        .letter {
+        .c {
+          height: 160px;
           display: inline-block;
+          background-repeat: no-repeat;
 
-          .fade {
-            animation:fade-out 2s infinite;
-            -webkit-animation:fade-out 2s infinite;
+          &.top-cover {
+            animation: top-fade-in 2s;
+            -moz-animation: top-fade-in 2s; /* Firefox */
+            -webkit-animation: top-fade-in 2s; /* Safari and Chrome */
+            -o-animation: top-fade-in 2s;
+            -webkit-animation-fill-mode: forwards;
+          }
+
+          &.bottom-cover {
+            animation: bottom-fade-in 2s;
+            -moz-animation: bottom-fade-in 2s; /* Firefox */
+            -webkit-animation: bottom-fade-in 2s; /* Safari and Chrome */
+            -o-animation: bottom-fade-in 2s;
+            -webkit-animation-fill-mode: forwards;
           }
         }
       }
+    }
+
+    #applicationHost {
+      background-color: palevioletred;
+      height: 160px;
     }
   }
 
