@@ -2,11 +2,11 @@
 define(function (require, exports, module) {
 
     // Constructor function for this module
-    function home() {
+    function About() {
         // This is (one) convention used to manage the scope of 'this', common in Knockout examples:
         var self = this;
     }
 
     // This returns the constructor function, will be called automatically by Durandal when composing view:
-    module.exports = home;
+    module.exports = About;
 });

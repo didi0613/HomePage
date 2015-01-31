@@ -17,7 +17,9 @@ define(function (require, exports, module) {
             // This sets up the client-side hash routing - has nothing to do with server side paths:
             router.map([
                 // A route of '' means it will load by default:
-                { route: '', title: 'Home', moduleId: 'home/home', nav: true },
+                { route: '', title: 'Home', moduleId: 'content/home', nav: true},
+                { route: 'about', title: 'About Me', moduleId: 'content/about', nav: true },
+                { route: 'portfolio', title: 'Portfolio', moduleId: 'content/portfolio', nav: true }
             ]);
 
             return router.activate();

@@ -51,7 +51,68 @@ EVERYTIME
           -webkit-animation-fill-mode: forwards; }
       body .banner .word.right {
         float: right; }
-  body #applicationHost {
-    text-align: center; } }
+  body .nav {
+    width: 100%;
+    padding: 8em 0;
+    bottom: 0;
+    position: fixed; }
+    body .nav ul {
+      list-style-type: none;
+      text-align: center;
+      padding: 0;
+      margin: -2em 0; }
+      body .nav ul li {
+        display: inline-block;
+        position: relative;
+        font-weight: 400;
+        margin: 1.5em; }
+        body .nav ul li a {
+          text-decoration: none;
+          color: palevioletred;
+          font-size: 2em;
+          display: block;
+          width: 100px; }
+          body .nav ul li a .arrow-down {
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid palevioletred;
+            margin: -10px 30px 10px; }
+          body .nav ul li a i {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            color: #fff;
+            background-color: palevioletred;
+            padding: 1em; }
+      body .nav ul li:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2); } }
+
+@media (max-width: 480px) {
+  .header ul {
+    list-style: none;
+    text-align: right; }
+    .header ul li {
+      display: inline-block;
+      position: relative;
+      font-size: 30px;
+      background-color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      text-align: center;
+      padding: 4px;
+      border: 4px solid palevioletred; }
+      .header ul li a {
+        text-decoration: none;
+        color: palevioletred; }
+      .header ul li.current, .header ul li:hover {
+        background-color: palevioletred; }
+        .header ul li.current a, .header ul li:hover a {
+          text-decoration: none;
+          color: #fff;
+          display: block; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,19 +1,21 @@
 body {
-  @-webkit-keyframes top-fade-in { /* Safari and Chrome */
+  @-webkit-keyframes top-fade-in {
+    /* Safari and Chrome */
     0% {
       background-position: 0 -160px;
     }
     100% {
-      background-position:0 0;
+      background-position: 0 0;
     }
   }
 
-  @-webkit-keyframes bottom-fade-in { /* Safari and Chrome */
+  @-webkit-keyframes bottom-fade-in {
+    /* Safari and Chrome */
     0% {
       background-position: 0 0;
     }
     100% {
-      background-position:0 -160px;
+      background-position: 0 -160px;
     }
   }
 
@@ -62,8 +64,56 @@ body {
       }
     }
 
-    #applicationHost {
-      text-align: center;
+    .nav {
+      width: 100%;
+      padding: 8em 0;
+      bottom: 0;
+      position: fixed;
+
+      ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        margin: -2em 0;
+
+        li {
+          display: inline-block;
+          position: relative;
+          font-weight: 400;
+          margin: 1.5em;
+
+          a {
+            text-decoration: none;
+            color: palevioletred;
+            font-size: 2em;
+            display: block;
+            width: 100px;
+
+            .arrow-down {
+              width: 0;
+              height: 0;
+              border-left: 20px solid transparent;
+              border-right: 20px solid transparent;
+              border-top: 20px solid palevioletred;
+              margin: -10px 30px 10px;
+            }
+
+            i {
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+              color: #fff;
+              background-color: palevioletred;
+              padding: 1em;
+            }
+          }
+        }
+
+        li:hover {
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+      }
     }
   }
 
