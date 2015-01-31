@@ -1,4 +1,6 @@
 body {
+  $home-base: palevioletred;
+
   @-webkit-keyframes top-fade-in {
     /* Safari and Chrome */
     0% {
@@ -24,10 +26,10 @@ body {
     .banner {
       height: 400px;
       width: 100%;
-      background-color: palevioletred;
+      background-color: $home-base;
       border-radius: 50px;
       border: 25px solid;
-      border-color: #fff palevioletred;
+      border-color: #fff $home-base;
       padding: 20px;
 
       .word {
@@ -84,7 +86,7 @@ body {
 
           a {
             text-decoration: none;
-            color: palevioletred;
+            color: $home-base;
             font-size: 2em;
             display: block;
             width: 100px;
@@ -94,7 +96,7 @@ body {
               height: 0;
               border-left: 20px solid transparent;
               border-right: 20px solid transparent;
-              border-top: 20px solid palevioletred;
+              border-top: 20px solid $home-base;
               margin: -10px 30px 10px;
             }
 
@@ -103,7 +105,7 @@ body {
               height: 80px;
               border-radius: 50%;
               color: #fff;
-              background-color: palevioletred;
+              background-color: $home-base;
               padding: 1em;
             }
           }
