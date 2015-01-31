@@ -1,5 +1,5 @@
 body {
-  $home-base: palevioletred;
+  $home-base: #e9a1b9;
 
   @-webkit-keyframes top-fade-in {
     /* Safari and Chrome */
@@ -106,7 +106,7 @@ body {
               border-radius: 50%;
               color: #fff;
               background-color: $home-base;
-              padding: 1em;
+              padding: 0.9em;
             }
           }
         }
