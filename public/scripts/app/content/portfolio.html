@@ -3,15 +3,15 @@
         <ul>
             <li><a href="#"><i class="fa fa-fw fa-home"></i></a></li>
             <li><a href="#about"><i class="fa fa-fw fa-user"></i></a></li>
-            <li class="current"><a href="#"><i class="fa fa-fw fa-briefcase"></i></a></li>
+            <li class="current"><a href="#portfolio"><i class="fa fa-fw fa-briefcase"></i></a></li>
             <li><a href="#portfolio"><i class="fa fa-fw fa-camera-retro"></i></a></li>
         </ul>
     </div>
 
-    <div class="content">
+    <div class="content" data-bind="visible: general()">
         <ul>
-            <li>
-                <a href="#citrix-info" data-rel="popup" data-position-to="window">
+            <li data-bind="click: detail.bind(self, 'citrix')">
+                <a href="#citrix-info">
                     <img src="../images/citrix.png"/>
                     <h3>Citrix</h3>
                     <h5>GoToTraining join, made training online easy.</h5>
@@ -52,7 +52,31 @@
         </ul>
     </div>
 
-    <div data-role="popup" id="citrix-info" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content">
-        <iframe width="400px" height="400px"></iframe>
+    <!--citrix detail-->
+    <div class="content" data-bind="visible: !general() && type() === 'citrix'">
+        <div id="slideshow-wrap">
+            <input type="radio" id="button-1" name="controls" checked="checked"/>
+            <label for="button-1"></label>
+            <input type="radio" id="button-2" name="controls"/>
+            <label for="button-2"></label>
+            <input type="radio" id="button-3" name="controls"/>
+            <label for="button-3"></label>
+            <input type="radio" id="button-4" name="controls"/>
+            <label for="button-4"></label>
+            <input type="radio" id="button-5" name="controls"/>
+            <label for="button-5"></label>
+            <div id="slideshow-inner">
+                <ul>
+                    <li id="slide1"><img src="../images/citrix-detail/test.png" /></li>
+                    <li id="slide2"><img src="../images/citrix-detail/test-answer.png" /></li>
+                    <li id="slide3"><img src="http://cssdeck.com/uploads/media/items/0/00kih8g.jpg" /></li>
+                    <li id="slide4"><img src="http://cssdeck.com/uploads/media/items/2/2rT2vdx.jpg" /></li>
+                    <li id="slide5"><img src="http://cssdeck.com/uploads/media/items/8/8k3N3EL.jpg" /></li>
+                </ul>
+            </div>
+            <div class="close">
+                <a class="flp-btn i-btn i-close-dark close-view" href="#portfolio"></a>
+            </div>
+        </div>
     </div>
 </div>

@@ -261,6 +261,81 @@ EVERYTIME
         .portfolio .content ul li:hover {
           background-color: #0875BD; }
           .portfolio .content ul li:hover h3, .portfolio .content ul li:hover h5 {
-            color: #fff; } }
+            color: #fff; }
+    .portfolio .content #slideshow-wrap {
+      position: relative;
+      border-radius: 10%;
+      padding: 20px 0; }
+    .portfolio .content #slideshow-inner {
+      overflow: hidden; }
+    .portfolio .content #slideshow-inner > ul {
+      padding: 0;
+      list-style: none;
+      width: 500%;
+      overflow: hidden;
+      position: relative;
+      -webkit-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+      -moz-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+      -o-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+      transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1); }
+    .portfolio .content #slideshow-inner > ul > li {
+      width: 20%;
+      height: 320px;
+      float: left;
+      position: relative;
+      border: none;
+      margin: 0;
+      padding: 0; }
+    .portfolio .content #slideshow-wrap input[type=radio] {
+      position: absolute;
+      visibility: hidden; }
+    .portfolio .content #slideshow-wrap label:not(.arrows):not(.show-description-label) {
+      position: absolute;
+      left: 50%;
+      bottom: -45px;
+      width: 12px;
+      height: 12px;
+      background-color: #c8c8c8;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      cursor: pointer;
+      -webkit-box-shadow: 0px 0px 3px #c8c8c8;
+      -moz-box-shadow: 0px 0px 3px #c8c8c8;
+      box-shadow: 0px 0px 3px #c8c8c8;
+      -webkit-transition: background-color .2s;
+      -moz-transition: background-color .2s;
+      -o-transition: background-color .2s;
+      transition: background-color .2s; }
+    .portfolio .content #slideshow-wrap label:not(.arrows):active {
+      bottom: -46px; }
+    .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ label[for=button-1] {
+      background-color: #0875BD; }
+    .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ label[for=button-2] {
+      background-color: #0875BD; }
+    .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ label[for=button-3] {
+      background-color: #0875BD; }
+    .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ label[for=button-4] {
+      background-color: #0875BD; }
+    .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ label[for=button-5] {
+      background-color: #0875BD; }
+    .portfolio .content #slideshow-wrap label[for=button-1] {
+      margin-left: -36px; }
+    .portfolio .content #slideshow-wrap label[for=button-2] {
+      margin-left: -18px; }
+    .portfolio .content #slideshow-wrap label[for=button-4] {
+      margin-left: 18px; }
+    .portfolio .content #slideshow-wrap label[for=button-5] {
+      margin-left: 36px; }
+    .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ #slideshow-inner > ul {
+      left: 0; }
+    .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ #slideshow-inner > ul {
+      left: -100%; }
+    .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ #slideshow-inner > ul {
+      left: -200%; }
+    .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ #slideshow-inner > ul {
+      left: -300%; }
+    .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ #slideshow-inner > ul {
+      left: -400%; } }
 
 /*# sourceMappingURL=main.css.map */
