@@ -262,13 +262,12 @@ EVERYTIME
           background-color: #0875BD; }
           .portfolio .content ul li:hover h3, .portfolio .content ul li:hover h5 {
             color: #fff; }
-    .portfolio .content #slideshow-wrap {
+    .portfolio .content #slideshow-wrap, .portfolio .content #slideshow-wrap-1, .portfolio .content #slideshow-wrap-2, .portfolio .content #slideshow-wrap-3, .portfolio .content #slideshow-wrap-4 {
       position: relative;
-      border-radius: 10%;
-      padding: 20px 0; }
-    .portfolio .content #slideshow-inner {
+      border: 5px solid #0875BD; }
+    .portfolio .content #slideshow-inner, .portfolio .content #slideshow-inner-1, .portfolio .content #slideshow-inner-2, .portfolio .content #slideshow-inner-3, .portfolio .content #slideshow-inner-4 {
       overflow: hidden; }
-    .portfolio .content #slideshow-inner > ul {
+    .portfolio .content #slideshow-inner > ul, .portfolio .content #slideshow-inner-1 > ul, .portfolio .content #slideshow-inner-2 > ul, .portfolio .content #slideshow-inner-3 > ul, .portfolio .content #slideshow-inner-4 > ul {
       padding: 0;
       list-style: none;
       width: 500%;
@@ -278,7 +277,7 @@ EVERYTIME
       -moz-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
       -o-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
       transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1); }
-    .portfolio .content #slideshow-inner > ul > li {
+    .portfolio .content #slideshow-inner > ul > li, .portfolio .content #slideshow-inner-1 > ul > li, .portfolio .content #slideshow-inner-2 > ul > li, .portfolio .content #slideshow-inner-3 > ul > li, .portfolio .content #slideshow-inner-4 > ul > li {
       width: 20%;
       height: 320px;
       float: left;
@@ -286,10 +285,21 @@ EVERYTIME
       border: none;
       margin: 0;
       padding: 0; }
-    .portfolio .content #slideshow-wrap input[type=radio] {
+      .portfolio .content #slideshow-inner > ul > li img, .portfolio .content #slideshow-inner-1 > ul > li img, .portfolio .content #slideshow-inner-2 > ul > li img, .portfolio .content #slideshow-inner-3 > ul > li img, .portfolio .content #slideshow-inner-4 > ul > li img {
+        width: 100%;
+        height: 100%; }
+    .portfolio .content #slideshow-wrap input[type=radio],
+    .portfolio .content #slideshow-wrap-1 input[type=radio],
+    .portfolio .content #slideshow-wrap-2 input[type=radio],
+    .portfolio .content #slideshow-wrap-3 input[type=radio],
+    .portfolio .content #slideshow-wrap-4 input[type=radio] {
       position: absolute;
       visibility: hidden; }
-    .portfolio .content #slideshow-wrap label:not(.arrows):not(.show-description-label) {
+    .portfolio .content #slideshow-wrap label:not(.arrows):not(.show-description-label),
+    .portfolio .content #slideshow-wrap-1 label:not(.arrows):not(.show-description-label),
+    .portfolio .content #slideshow-wrap-2 label:not(.arrows):not(.show-description-label),
+    .portfolio .content #slideshow-wrap-3 label:not(.arrows):not(.show-description-label),
+    .portfolio .content #slideshow-wrap-4 label:not(.arrows):not(.show-description-label) {
       position: absolute;
       left: 50%;
       bottom: -45px;
@@ -307,35 +317,116 @@ EVERYTIME
       -moz-transition: background-color .2s;
       -o-transition: background-color .2s;
       transition: background-color .2s; }
-    .portfolio .content #slideshow-wrap label:not(.arrows):active {
+    .portfolio .content #slideshow-wrap label:not(.arrows):active,
+    .portfolio .content #slideshow-wrap-1 label:not(.arrows):active,
+    .portfolio .content #slideshow-wrap-2 label:not(.arrows):active,
+    .portfolio .content #slideshow-wrap-3 label:not(.arrows):active,
+    .portfolio .content #slideshow-wrap-4 label:not(.arrows):active {
       bottom: -46px; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ label[for=button-1] {
+    .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ label[for=button-1],
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-1-1:checked ~ label[for=button-1],
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-1-2:checked ~ label[for=button-1],
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-1-3:checked ~ label[for=button-1],
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-1-4:checked ~ label[for=button-1] {
       background-color: #0875BD; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ label[for=button-2] {
+    .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ label[for=button-2],
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-2-1:checked ~ label[for=button-2],
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-2-2:checked ~ label[for=button-2],
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-2-3:checked ~ label[for=button-2],
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-2-4:checked ~ label[for=button-2] {
       background-color: #0875BD; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ label[for=button-3] {
+    .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ label[for=button-3],
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-3-1:checked ~ label[for=button-3],
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-3-2:checked ~ label[for=button-3],
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-3-3:checked ~ label[for=button-3],
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-3-4:checked ~ label[for=button-3] {
       background-color: #0875BD; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ label[for=button-4] {
+    .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ label[for=button-4],
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-4-1:checked ~ label[for=button-4],
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-4-2:checked ~ label[for=button-4],
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-4-3:checked ~ label[for=button-4],
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-4-4:checked ~ label[for=button-4] {
       background-color: #0875BD; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ label[for=button-5] {
+    .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ label[for=button-5],
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-5-1:checked ~ label[for=button-5],
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-5-2:checked ~ label[for=button-5],
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-5-3:checked ~ label[for=button-5],
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-5-4:checked ~ label[for=button-5] {
       background-color: #0875BD; }
-    .portfolio .content #slideshow-wrap label[for=button-1] {
+    .portfolio .content #slideshow-wrap label[for=button-1],
+    .portfolio .content #slideshow-wrap-1 label[for=button-1],
+    .portfolio .content #slideshow-wrap-2 label[for=button-1],
+    .portfolio .content #slideshow-wrap-3 label[for=button-1],
+    .portfolio .content #slideshow-wrap-4 label[for=button-1] {
       margin-left: -36px; }
-    .portfolio .content #slideshow-wrap label[for=button-2] {
+    .portfolio .content #slideshow-wrap label[for=button-2],
+    .portfolio .content #slideshow-wrap-1 label[for=button-2],
+    .portfolio .content #slideshow-wrap-2 label[for=button-2],
+    .portfolio .content #slideshow-wrap-3 label[for=button-2],
+    .portfolio .content #slideshow-wrap-4 label[for=button-2] {
       margin-left: -18px; }
-    .portfolio .content #slideshow-wrap label[for=button-4] {
+    .portfolio .content #slideshow-wrap label[for=button-4],
+    .portfolio .content #slideshow-wrap-1 label[for=button-4],
+    .portfolio .content #slideshow-wrap-2 label[for=button-4],
+    .portfolio .content #slideshow-wrap-3 label[for=button-4],
+    .portfolio .content #slideshow-wrap-4 label[for=button-4] {
       margin-left: 18px; }
-    .portfolio .content #slideshow-wrap label[for=button-5] {
+    .portfolio .content #slideshow-wrap label[for=button-5],
+    .portfolio .content #slideshow-wrap-1 label[for=button-5],
+    .portfolio .content #slideshow-wrap-2 label[for=button-5],
+    .portfolio .content #slideshow-wrap-3 label[for=button-5],
+    .portfolio .content #slideshow-wrap-4 label[for=button-5] {
       margin-left: 36px; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ #slideshow-inner > ul {
+    .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ #slideshow-inner > ul,
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-1-1:checked ~ #slideshow-inner-1 > ul,
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-1-2:checked ~ #slideshow-inner-2 > ul,
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-1-3:checked ~ #slideshow-inner-3 > ul,
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-1-4:checked ~ #slideshow-inner-4 > ul {
       left: 0; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ #slideshow-inner > ul {
+    .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ #slideshow-inner > ul,
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-2-1:checked ~ #slideshow-inner-1 > ul,
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-2-2:checked ~ #slideshow-inner-2 > ul,
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-2-3:checked ~ #slideshow-inner-3 > ul,
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-2-4:checked ~ #slideshow-inner-4 > ul {
       left: -100%; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ #slideshow-inner > ul {
+    .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ #slideshow-inner > ul,
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-3-1:checked ~ #slideshow-inner-1 > ul,
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-3-2:checked ~ #slideshow-inner-2 > ul,
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-3-3:checked ~ #slideshow-inner-3 > ul,
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-3-4:checked ~ #slideshow-inner-4 > ul {
       left: -200%; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ #slideshow-inner > ul {
+    .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ #slideshow-inner > ul,
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-4-1:checked ~ #slideshow-inner-1 > ul,
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-4-2:checked ~ #slideshow-inner-2 > ul,
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-4-3:checked ~ #slideshow-inner-3 > ul,
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-4-4:checked ~ #slideshow-inner-4 > ul {
       left: -300%; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ #slideshow-inner > ul {
-      left: -400%; } }
+    .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ #slideshow-inner > ul,
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-5-1:checked ~ #slideshow-inner-1 > ul,
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-5-2:checked ~ #slideshow-inner-2 > ul,
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-5-3:checked ~ #slideshow-inner-3 > ul,
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-5-4:checked ~ #slideshow-inner-4 > ul {
+      left: -400%; }
+    .portfolio .content .close {
+      overflow: hidden;
+      position: absolute;
+      top: -80px;
+      right: 0; }
+      .portfolio .content .close a {
+        display: block; }
+        .portfolio .content .close a .close-image {
+          background-image: url(../images/close.png);
+          background-repeat: no-repeat;
+          width: 42px;
+          height: 42px; }
+    .portfolio .content .title {
+      color: #0875BD;
+      margin-bottom: 20px; }
+    .portfolio .content .description {
+      color: #0875BD;
+      margin: 70px 0; }
+      .portfolio .content .description p {
+        font-size: 18px;
+        text-indent: 1em; } }
 
 /*# sourceMappingURL=main.css.map */

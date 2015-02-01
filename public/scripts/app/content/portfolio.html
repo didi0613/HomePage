@@ -13,38 +13,43 @@
             <li data-bind="click: detail.bind(self, 'citrix')">
                 <a href="#citrix-info">
                     <img src="../images/citrix.png"/>
+
                     <h3>Citrix</h3>
                     <h5>GoToTraining join, made training online easy.</h5>
                 </a>
             </li>
 
-            <li>
+            <li data-bind="click: detail.bind(self, 'hiptraveler')">
                 <a>
                     <img src="../images/hiptraveler.png"/>
+
                     <h3>Hip Traveler</h3>
                     <h5>Completion of main page build Phase Two.</h5>
                 </a>
             </li>
 
-            <li>
+            <li data-bind="click: detail.bind(self, 'fullscreen')">
                 <a>
                     <img src="../images/fullscreen.png"/>
+
                     <h3>Fullscreen Inc</h3>
                     <h5>Identified Opinion Leaders by implementing data capture.</h5>
                 </a>
             </li>
 
-            <li>
+            <li data-bind="click: detail.bind(self, 'multi-threading')">
                 <a>
                     <img src="../images/multi-threading.png"/>
+
                     <h3>Operating System -- USC</h3>
                     <h5>Emulation of the Token Bucket algorithm using POSIX threads.</h5>
                 </a>
             </li>
 
-            <li>
+            <li data-bind="click: detail.bind(self, 'weather-search')">
                 <a>
                     <img src="../images/weather-search.png"/>
+
                     <h3>Web Tech -- USC</h3>
                     <h5>Yahoo! Weather & Facebook Mashup.</h5>
                 </a>
@@ -54,6 +59,11 @@
 
     <!--citrix detail-->
     <div class="content" data-bind="visible: !general() && type() === 'citrix'">
+        <div class="title">
+            <h3>GoToTraining Join</h3>
+            <h4>Made training online easy.</h4>
+        </div>
+
         <div id="slideshow-wrap">
             <input type="radio" id="button-1" name="controls" checked="checked"/>
             <label for="button-1"></label>
@@ -65,18 +75,216 @@
             <label for="button-4"></label>
             <input type="radio" id="button-5" name="controls"/>
             <label for="button-5"></label>
+
             <div id="slideshow-inner">
                 <ul>
-                    <li id="slide1"><img src="../images/citrix-detail/test.png" /></li>
-                    <li id="slide2"><img src="../images/citrix-detail/test-answer.png" /></li>
-                    <li id="slide3"><img src="http://cssdeck.com/uploads/media/items/0/00kih8g.jpg" /></li>
-                    <li id="slide4"><img src="http://cssdeck.com/uploads/media/items/2/2rT2vdx.jpg" /></li>
-                    <li id="slide5"><img src="http://cssdeck.com/uploads/media/items/8/8k3N3EL.jpg" /></li>
+                    <li id="slide1"><img src="../images/citrix-detail/test.png"/></li>
+                    <li id="slide2"><img src="../images/citrix-detail/test-answer.png"/></li>
+                    <li id="slide3"><img src="http://cssdeck.com/uploads/media/items/0/00kih8g.jpg"/></li>
+                    <li id="slide4"><img src="http://cssdeck.com/uploads/media/items/2/2rT2vdx.jpg"/></li>
+                    <li id="slide5"><img src="http://cssdeck.com/uploads/media/items/8/8k3N3EL.jpg"/></li>
                 </ul>
             </div>
             <div class="close">
-                <a class="flp-btn i-btn i-close-dark close-view" href="#portfolio"></a>
+                <a href="#" data-bind="click:back">
+                    <div class="close-image"></div>
+                </a>
             </div>
+        </div>
+
+        <div class="description">
+            <p>
+                I have delivered on GoToTraining Cloud Roadmap focused on Join Project,
+                accomplished Poll, Test, Material, I18n and Hand Raising specific feature.
+            </p>
+
+            <p>
+                Aiming at Breakouts currently, which will be released in early Febuary.
+            </p>
+        </div>
+    </div>
+
+    <!--hiptraveler detail-->
+    <div class="content" data-bind="visible: !general() && type() === 'hiptraveler'">
+        <div class="title">
+            <h3>Hiptraveler</h3>
+            <h4>Because every traveler has a story.</h4>
+        </div>
+
+        <div id="slideshow-wrap-1">
+            <input type="radio" id="button-1-1" name="controls" checked="checked"/>
+            <label for="button-1"></label>
+            <input type="radio" id="button-2-1" name="controls"/>
+            <label for="button-2"></label>
+            <input type="radio" id="button-3-1" name="controls"/>
+            <label for="button-3"></label>
+            <input type="radio" id="button-4-1" name="controls"/>
+            <label for="button-4"></label>
+            <input type="radio" id="button-5-1" name="controls"/>
+            <label for="button-5"></label>
+
+            <div id="slideshow-inner-1">
+                <ul>
+                    <li id="slide1-1"><img src="../images/hiptraveler-detail/main.png"/></li>
+                    <li id="slide2-1"><img src="../images/hiptraveler-detail/home.png"/></li>
+                    <li id="slide3-1"><img src="../images/hiptraveler-detail/login.png"/></li>
+                    <li id="slide4-1"><img src="../images/hiptraveler-detail/sidebar.png"/></li>
+                    <li id="slide5-1"><img src="../images/hiptraveler-detail/main.png"/></li>
+                </ul>
+            </div>
+            <div class="close">
+                <a href="#" data-bind="click:back">
+                    <div class="close-image"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="description">
+            <p>
+                I have contributed to the completion of Hiptraveler phase two .
+                Provided software development services, as well as applied knowledge of different platform problems.
+            </p>
+        </div>
+    </div>
+
+    <!--fullscreen detail-->
+    <div class="content" data-bind="visible: !general() && type() === 'fullscreen'">
+        <div class="title">
+            <h3>Fullscreen Inc.</h3>
+            <h4>The first media company for the connected generation.</h4>
+        </div>
+
+        <div id="slideshow-wrap-2">
+            <input type="radio" id="button-1-2" name="controls" checked="checked"/>
+            <label for="button-1"></label>
+            <input type="radio" id="button-2-2" name="controls"/>
+            <label for="button-2"></label>
+            <input type="radio" id="button-3-2" name="controls"/>
+            <label for="button-3"></label>
+            <input type="radio" id="button-4-2" name="controls"/>
+            <label for="button-4"></label>
+            <input type="radio" id="button-5-2" name="controls"/>
+            <label for="button-5"></label>
+
+            <div id="slideshow-inner-2">
+                <ul>
+                    <li id="slide1-2"><img src="../images/hiptraveler-detail/main.png"/></li>
+                    <li id="slide2-2"><img src="../images/hiptraveler-detail/home.png"/></li>
+                    <li id="slide3-2"><img src="../images/hiptraveler-detail/login.png"/></li>
+                    <li id="slide4-2"><img src="../images/hiptraveler-detail/sidebar.png"/></li>
+                    <li id="slide5-2"><img src="../images/hiptraveler-detail/main.png"/></li>
+                </ul>
+            </div>
+            <div class="close">
+                <a href="#" data-bind="click:back">
+                    <div class="close-image"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="description">
+            <p>
+                I have developed a data capture program to improve the efficiency of collecting data,
+                Identified the opinion leaders automatically and reach in and out with potential customers to maximum
+                efficiency,
+                Collected and stored data in later usage as well.
+            </p>
+        </div>
+    </div>
+
+    <!--multi-threading detail-->
+    <div class="content" data-bind="visible: !general() && type() === 'multi-threading'">
+        <div class="title">
+            <h3>Multi-threading</h3>
+            <h4>Token Bucket Emulation in C.</h4>
+        </div>
+
+        <div id="slideshow-wrap-3">
+            <input type="radio" id="button-1-3" name="controls" checked="checked"/>
+            <label for="button-1"></label>
+            <input type="radio" id="button-2-3" name="controls"/>
+            <label for="button-2"></label>
+            <input type="radio" id="button-3-3" name="controls"/>
+            <label for="button-3"></label>
+            <input type="radio" id="button-4-3" name="controls"/>
+            <label for="button-4"></label>
+            <input type="radio" id="button-5-3" name="controls"/>
+            <label for="button-5"></label>
+
+            <div id="slideshow-inner-3">
+                <ul>
+                    <li id="slide1-3"><img src="../images/multi-threading.png"/></li>
+                    <li id="slide2-3"><img src="../images/multithreading-detail/command.png"/></li>
+                    <li id="slide3-3"><img src="../images/multithreading-detail/log.png"/></li>
+                    <li id="slide4-3"><img src="../images/hiptraveler-detail/sidebar.png"/></li>
+                    <li id="slide5-3"><img src="../images/hiptraveler-detail/main.png"/></li>
+                </ul>
+            </div>
+            <div class="close">
+                <a href="#" data-bind="click:back">
+                    <div class="close-image"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="description">
+            <p>
+                I have emulated and simulated a traffic shaper who transmits packets controlled
+                by a token bucket filter using multi-threading within a single process.
+            </p>
+
+            <p>
+                Finished the emulation of the packet and token arrivals, the operation of the token
+                bucket filter, the first-come-first-served queues Q1 and Q2, and server S.
+                Also I have produced a trace of the emulation for every important event occurred in the emulation.
+            </p>
+        </div>
+    </div>
+
+    <!--weather search detail-->
+    <div class="content" data-bind="visible: !general() && type() === 'weather-search'">
+        <div class="title">
+            <h3>Yahoo! Weather Search</h3>
+            <h4>Perform weather search and post details to Facebook.</h4>
+        </div>
+
+        <div id="slideshow-wrap-4">
+            <input type="radio" id="button-1-4" name="controls" checked="checked"/>
+            <label for="button-1"></label>
+            <input type="radio" id="button-2-4" name="controls"/>
+            <label for="button-2"></label>
+            <input type="radio" id="button-3-4" name="controls"/>
+            <label for="button-3"></label>
+            <input type="radio" id="button-4-4" name="controls"/>
+            <label for="button-4"></label>
+            <input type="radio" id="button-5-4" name="controls"/>
+            <label for="button-5"></label>
+
+            <div id="slideshow-inner-4">
+                <ul>
+                    <li id="slide1-4"><img src="../images/weather-search.png"/></li>
+                    <li id="slide2-4"><img src="../images/weathersearch-detail/searchbar.png"/></li>
+                    <li id="slide3-4"><img src="../images/weathersearch-detail/invalid.png"/></li>
+                    <li id="slide4-4"><img src="../images/weathersearch-detail/current.png"/></li>
+                    <li id="slide5-4"><img src="../images/weathersearch-detail/forecast.png"/></li>
+                </ul>
+            </div>
+            <div class="close">
+                <a href="#" data-bind="click:back">
+                    <div class="close-image"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="description">
+            <p>
+                My first project related to UI work.
+            </p>
+            <p>Get familiar with the Ajax, and XML technologies.
+                Used the combination of HTML, CSS, DOM, XMLHttpRequest and Java Servlets to provide the UI perform
+                weather search.
+                Got hands-experience on YUI library and AWS.
+            </p>
         </div>
     </div>
 </div>

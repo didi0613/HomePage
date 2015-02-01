@@ -15,6 +15,11 @@ define(function (require, exports, module) {
             self.general(false);
             self.type(val);
         };
+
+        self.back = function(){
+            self.general(true);
+            self.type(null);
+        };
     }
 
     // This returns the constructor function, will be called automatically by Durandal when composing view:
