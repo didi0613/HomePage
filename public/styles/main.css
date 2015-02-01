@@ -227,54 +227,40 @@ EVERYTIME
     .about .content .skills .progress-bar {
       background-color: #02c9c9;
       font-size: 13px; } }
-.portfolio .header ul li {
-  border-color: #0875BD; }
-  .portfolio .header ul li.current {
+@media (max-width: 480px) {
+  .portfolio .header ul li {
+    border-color: #0875BD; }
+    .portfolio .header ul li.current {
+      background-color: #0875BD; }
+  .portfolio .header ul li:hover {
     background-color: #0875BD; }
-.portfolio .header ul li:hover {
-  background-color: #0875BD; }
-.portfolio .header ul a {
-  color: #0875BD; }
-.portfolio .content {
-  padding: 20px; }
-  .portfolio .content .panel {
-    float: left;
-    text-align: left;
-    width: 50%;
-    border: 5px solid transparent; }
-    .portfolio .content .panel .info-panel {
-      background: none repeat scroll 0 0 #0875BD;
-      border-radius: 10px;
-      box-shadow: none;
-      margin-bottom: 1.25em;
-      transition: all 0.3s ease-in-out;
-      color: #fff;
-      padding: 10px;
-      height: 360px; }
-      .portfolio .content .panel .info-panel a {
+  .portfolio .header ul a {
+    color: #0875BD; }
+  .portfolio .content {
+    padding: 10px; }
+    .portfolio .content ul {
+      list-style: none;
+      margin: 0;
+      padding: 0 20px; }
+      .portfolio .content ul li {
+        cursor: pointer;
+        border: 10px solid #0875BD;
+        border-radius: 10%;
+        margin-bottom: 20px;
+        padding: 30px 40px 15px;
         font-size: 14px;
-        line-height: 1.4em; }
-        .portfolio .content .panel .info-panel a .project-img {
-          width: 99%;
-          height: 200px;
-          border-radius: 2px;
-          line-height: 0;
-          padding: 0;
-          margin: 0; }
-          .portfolio .content .panel .info-panel a .project-img img {
-            transition: all 0.3s ease-in-out;
-            -webkit-backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-            position: relative;
-            border-radius: 2px;
-            width: 100%;
-            height: 100%; }
-      .portfolio .content .panel .info-panel p {
-        font-size: 14px;
-        font-weight: 400;
-        text-indent: 1em; }
-      .portfolio .content .panel .info-panel:hover {
-        background-color: #2e2e2e;
-        border-radius: 10px; }
+        width: 400px; }
+        .portfolio .content ul li a {
+          text-decoration: none;
+          display: block; }
+          .portfolio .content ul li a img {
+            width: 300px;
+            height: 250px; }
+          .portfolio .content ul li a h3, .portfolio .content ul li a h5 {
+            color: #0875BD; }
+        .portfolio .content ul li:hover {
+          background-color: #0875BD; }
+          .portfolio .content ul li:hover h3, .portfolio .content ul li:hover h5 {
+            color: #fff; } }
 
 /*# sourceMappingURL=main.css.map */
