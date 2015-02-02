@@ -51,44 +51,135 @@ EVERYTIME
           -webkit-animation-fill-mode: forwards; }
       body .banner .word.right {
         float: right; }
-  body .nav {
+  body nav a {
+    position: absolute;
+    bottom: 15%;
+    display: block;
+    outline: none;
+    text-align: left;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px; }
+    body nav a.prev {
+      left: 0; }
+      body nav a.prev h3 {
+        left: 100%;
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%); }
+    body nav a.next {
+      right: 0; }
+      body nav a.next h3 {
+        right: 100%;
+        text-align: right;
+        -webkit-transform: translateY(-50%) translateX(50%);
+        transform: translateY(-50%) translateX(50%); }
+    body nav a:hover {
+      background-color: #e9a1b9; }
+      body nav a:hover h3 {
+        opacity: 1;
+        color: #e9a1b9;
+        -webkit-transform: translateY(-50%) translateX(0);
+        transform: translateY(-50%) translateX(0); }
+  body nav .icon-wrap {
+    position: relative;
+    display: block;
     width: 100%;
-    padding: 8em 0;
-    bottom: 0;
-    position: fixed; }
-    body .nav ul {
+    height: 100%; }
+  body nav a::before, body nav a::after, body nav .icon-wrap::before, body nav .icon-wrap::after {
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 50%;
+    background: #e9a1b9;
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    outline: 1px solid transparent;
+    /* for FF */ }
+  body nav .icon-wrap::before, body nav .icon-wrap::after {
+    height: 0;
+    background: #fff;
+    -webkit-transition: height 0.3s, -webkit-transform 0.3s;
+    transition: height 0.3s, transform 0.3s; }
+  body nav a::before, body nav .icon-wrap::before {
+    top: 50%;
+    -webkit-transform: translateX(-50%) rotate(-135deg);
+    transform: translateX(-50%) rotate(-135deg);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%; }
+  body nav a.next::before, body nav a.next .icon-wrap::before {
+    -webkit-transform: translateX(-50%) rotate(135deg);
+    transform: translateX(-50%) rotate(135deg);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%; }
+  body nav a::after, body nav .icon-wrap::after {
+    top: 50%;
+    -webkit-transform: translateX(-50%) rotate(-45deg);
+    transform: translateX(-50%) rotate(-45deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+  body nav a.next::after, body nav a.next .icon-wrap::after {
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%; }
+  body nav h3 {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.85em;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s; }
+  body nav a:hover .icon-wrap::before, body nav a:hover .icon-wrap::after {
+    height: 50%; }
+  body nav a:hover::before, body nav a:hover .icon-wrap::before {
+    -webkit-transform: translateX(-50%) rotate(-125deg);
+    transform: translateX(-50%) rotate(-125deg); }
+  body nav a.next:hover::before, body nav a.next:hover .icon-wrap::before {
+    -webkit-transform: translateX(-50%) rotate(125deg);
+    transform: translateX(-50%) rotate(125deg); }
+  body nav a:hover::after, body nav a:hover .icon-wrap::after {
+    -webkit-transform: translateX(-50%) rotate(-55deg);
+    transform: translateX(-50%) rotate(-55deg); }
+  body nav a.next:hover::after, body nav a.next:hover .icon-wrap::after {
+    -webkit-transform: translateX(-50%) rotate(55deg);
+    transform: translateX(-50%) rotate(55deg); }
+  body .social {
+    padding: 20%;
+    width: 100%; }
+    body .social ul {
       list-style-type: none;
-      text-align: center;
+      margin: 0;
       padding: 0;
-      margin: -2em 0; }
-      body .nav ul li {
-        display: inline-block;
-        position: relative;
-        font-weight: 400;
-        margin: 1.5em; }
-        body .nav ul li a {
-          text-decoration: none;
-          color: #e9a1b9;
-          font-size: 2em;
+      width: 100%;
+      position: absolute;
+      bottom: 5%;
+      display: block; }
+      body .social ul li {
+        border: 5px solid #e9a1b9;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin: 2px; }
+        body .social ul li a {
           display: block;
-          width: 100px; }
-          body .nav ul li a .arrow-down {
-            width: 0;
-            height: 0;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-top: 20px solid #e9a1b9;
-            margin: -10px 30px 10px; }
-          body .nav ul li a i {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            color: #fff;
-            background-color: #e9a1b9;
-            padding: 0.9em; }
-      body .nav ul li:hover {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2); } }
+          text-align: center; }
+          body .social ul li a i {
+            color: #e9a1b9;
+            margin-top: 20%;
+            font-size: 30px; }
+        body .social ul li:hover {
+          background-color: #e9a1b9; }
+          body .social ul li:hover i {
+            color: #fff; } }
 
 @media (max-width: 480px) {
   .header {
@@ -324,58 +415,58 @@ EVERYTIME
     .portfolio .content #slideshow-wrap-4 label:not(.arrows):active {
       bottom: -46px; }
     .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ label[for=button-1],
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-1-1:checked ~ label[for=button-1],
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-1-2:checked ~ label[for=button-1],
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-1-3:checked ~ label[for=button-1],
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-1-4:checked ~ label[for=button-1] {
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-1-1:checked ~ label[for=button-1-1],
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-1-2:checked ~ label[for=button-1-2],
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-1-3:checked ~ label[for=button-1-3],
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-1-4:checked ~ label[for=button-1-3] {
       background-color: #0875BD; }
     .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ label[for=button-2],
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-2-1:checked ~ label[for=button-2],
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-2-2:checked ~ label[for=button-2],
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-2-3:checked ~ label[for=button-2],
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-2-4:checked ~ label[for=button-2] {
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-2-1:checked ~ label[for=button-2-1],
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-2-2:checked ~ label[for=button-2-2],
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-2-3:checked ~ label[for=button-2-3],
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-2-4:checked ~ label[for=button-2-4] {
       background-color: #0875BD; }
     .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ label[for=button-3],
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-3-1:checked ~ label[for=button-3],
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-3-2:checked ~ label[for=button-3],
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-3-3:checked ~ label[for=button-3],
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-3-4:checked ~ label[for=button-3] {
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-3-1:checked ~ label[for=button-3-1],
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-3-2:checked ~ label[for=button-3-2],
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-3-3:checked ~ label[for=button-3-3],
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-3-4:checked ~ label[for=button-3-4] {
       background-color: #0875BD; }
     .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ label[for=button-4],
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-4-1:checked ~ label[for=button-4],
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-4-2:checked ~ label[for=button-4],
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-4-3:checked ~ label[for=button-4],
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-4-4:checked ~ label[for=button-4] {
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-4-1:checked ~ label[for=button-4-1],
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-4-2:checked ~ label[for=button-4-2],
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-4-3:checked ~ label[for=button-4-3],
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-4-4:checked ~ label[for=button-4-4] {
       background-color: #0875BD; }
     .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ label[for=button-5],
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-5-1:checked ~ label[for=button-5],
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-5-2:checked ~ label[for=button-5],
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-5-3:checked ~ label[for=button-5],
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-5-4:checked ~ label[for=button-5] {
+    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-5-1:checked ~ label[for=button-5-1],
+    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-5-2:checked ~ label[for=button-5-2],
+    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-5-3:checked ~ label[for=button-5-3],
+    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-5-4:checked ~ label[for=button-5-4] {
       background-color: #0875BD; }
     .portfolio .content #slideshow-wrap label[for=button-1],
-    .portfolio .content #slideshow-wrap-1 label[for=button-1],
-    .portfolio .content #slideshow-wrap-2 label[for=button-1],
-    .portfolio .content #slideshow-wrap-3 label[for=button-1],
-    .portfolio .content #slideshow-wrap-4 label[for=button-1] {
+    .portfolio .content #slideshow-wrap-1 label[for=button-1-1],
+    .portfolio .content #slideshow-wrap-2 label[for=button-1-2],
+    .portfolio .content #slideshow-wrap-3 label[for=button-1-3],
+    .portfolio .content #slideshow-wrap-4 label[for=button-1-4] {
       margin-left: -36px; }
     .portfolio .content #slideshow-wrap label[for=button-2],
-    .portfolio .content #slideshow-wrap-1 label[for=button-2],
-    .portfolio .content #slideshow-wrap-2 label[for=button-2],
-    .portfolio .content #slideshow-wrap-3 label[for=button-2],
-    .portfolio .content #slideshow-wrap-4 label[for=button-2] {
+    .portfolio .content #slideshow-wrap-1 label[for=button-2-1],
+    .portfolio .content #slideshow-wrap-2 label[for=button-2-2],
+    .portfolio .content #slideshow-wrap-3 label[for=button-2-3],
+    .portfolio .content #slideshow-wrap-4 label[for=button-2-4] {
       margin-left: -18px; }
     .portfolio .content #slideshow-wrap label[for=button-4],
-    .portfolio .content #slideshow-wrap-1 label[for=button-4],
-    .portfolio .content #slideshow-wrap-2 label[for=button-4],
-    .portfolio .content #slideshow-wrap-3 label[for=button-4],
-    .portfolio .content #slideshow-wrap-4 label[for=button-4] {
+    .portfolio .content #slideshow-wrap-1 label[for=button-4-1],
+    .portfolio .content #slideshow-wrap-2 label[for=button-4-2],
+    .portfolio .content #slideshow-wrap-3 label[for=button-4-3],
+    .portfolio .content #slideshow-wrap-4 label[for=button-4-4] {
       margin-left: 18px; }
     .portfolio .content #slideshow-wrap label[for=button-5],
-    .portfolio .content #slideshow-wrap-1 label[for=button-5],
-    .portfolio .content #slideshow-wrap-2 label[for=button-5],
-    .portfolio .content #slideshow-wrap-3 label[for=button-5],
-    .portfolio .content #slideshow-wrap-4 label[for=button-5] {
+    .portfolio .content #slideshow-wrap-1 label[for=button-5-1],
+    .portfolio .content #slideshow-wrap-2 label[for=button-5-2],
+    .portfolio .content #slideshow-wrap-3 label[for=button-5-3],
+    .portfolio .content #slideshow-wrap-4 label[for=button-5-4] {
       margin-left: 36px; }
     .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ #slideshow-inner > ul,
     .portfolio .content #slideshow-wrap-1 input[type=radio]#button-1-1:checked ~ #slideshow-inner-1 > ul,
