@@ -132,11 +132,10 @@ EVERYTIME
     margin: 0;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 0.85em;
     opacity: 0;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-    transition: transform 0.3s, opacity 0.3s; }
+    transition: transform 0.3s, opacity 0.3s;
+    padding: 0 10px; }
   body nav a:hover .icon-wrap::before, body nav a:hover .icon-wrap::after {
     height: 50%; }
   body nav a:hover::before, body nav a:hover .icon-wrap::before {

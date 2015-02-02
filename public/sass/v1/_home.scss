@@ -175,11 +175,10 @@ body {
         margin: 0;
         color: #fff;
         text-transform: uppercase;
-        font-weight: 300;
-        font-size: 0.85em;
         opacity: 0;
         -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
         transition: transform 0.3s, opacity 0.3s;
+        padding: 0 10px;
       }
 
       a:hover .icon-wrap::before, a:hover .icon-wrap::after {
