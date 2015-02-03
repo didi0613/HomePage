@@ -15,20 +15,35 @@ EVERYTIME
     background-position: 0 0; }
   100% {
     background-position: 0 -160px; } }
-@media (max-width: 480px) {
+body {
+  width: 100%;
+  height: 100%;
+  /*
+  *   Desktop Size
+  */
+  /*
+  *   Phone Size
+  */ }
   body .banner {
-    height: 400px;
-    width: 100%;
+    height: 70vh;
     background-color: #e9a1b9;
     border-radius: 50px;
     border: 25px solid;
     border-color: #fff #e9a1b9;
-    padding: 20px; }
+    margin: 2% 5%;
+    text-align: center; }
+    body .banner .icon {
+      display: inline-block; }
+      body .banner .icon i {
+        font-size: 50px;
+        color: #fff;
+        margin: 10px; }
     body .banner .word {
       position: relative;
       display: inline-block;
       margin: 0 5px;
-      height: 160px; }
+      height: 160px;
+      top: 40%; }
       body .banner .word .c {
         height: 160px;
         display: inline-block;
@@ -49,8 +64,6 @@ EVERYTIME
           /* Safari and Chrome */
           -o-animation: bottom-fade-in 2s;
           -webkit-animation-fill-mode: forwards; }
-      body .banner .word.right {
-        float: right; }
   body nav a {
     position: absolute;
     bottom: 15%;
@@ -151,15 +164,15 @@ EVERYTIME
     -webkit-transform: translateX(-50%) rotate(55deg);
     transform: translateX(-50%) rotate(55deg); }
   body .social {
-    padding: 20%;
-    width: 100%; }
+    width: 100%;
+    bottom: 0;
+    position: absolute; }
     body .social ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       width: 100%;
       position: absolute;
-      bottom: 5%;
       display: block; }
       body .social ul li {
         border: 5px solid #e9a1b9;
@@ -178,7 +191,10 @@ EVERYTIME
         body .social ul li:hover {
           background-color: #e9a1b9; }
           body .social ul li:hover i {
-            color: #fff; } }
+            color: #fff; }
+  @media (max-width: 768px) {
+    body .banner .word.right {
+      float: right; } }
 
 @media (max-width: 480px) {
   .header {
