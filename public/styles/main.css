@@ -31,6 +31,7 @@ body {
     border: 25px solid;
     border-color: #fff #e9a1b9;
     margin: 2% 5%;
+    width: 90%;
     text-align: center; }
     body .banner .icon {
       display: inline-block; }
@@ -64,6 +65,31 @@ body {
           /* Safari and Chrome */
           -o-animation: bottom-fade-in 2s;
           -webkit-animation-fill-mode: forwards; }
+    body .banner .social {
+      position: absolute;
+      top: 60vh;
+      right: 80px; }
+      body .banner .social ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: block; }
+        body .banner .social ul li {
+          width: 60px;
+          height: 60px;
+          float: left;
+          margin: 2px; }
+          body .banner .social ul li a {
+            display: block;
+            text-align: center; }
+            body .banner .social ul li a i {
+              color: #fff;
+              margin-top: 20%;
+              font-size: 30px; }
+          body .banner .social ul li:hover {
+            background-color: #fff; }
+            body .banner .social ul li:hover i {
+              color: #fff; }
   body nav a {
     position: absolute;
     bottom: 15%;
@@ -163,35 +189,6 @@ body {
   body nav a.next:hover::after, body nav a.next:hover .icon-wrap::after {
     -webkit-transform: translateX(-50%) rotate(55deg);
     transform: translateX(-50%) rotate(55deg); }
-  body .social {
-    width: 100%;
-    bottom: 0;
-    position: absolute; }
-    body .social ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      position: absolute;
-      display: block; }
-      body .social ul li {
-        border: 5px solid #e9a1b9;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        float: left;
-        margin: 2px; }
-        body .social ul li a {
-          display: block;
-          text-align: center; }
-          body .social ul li a i {
-            color: #e9a1b9;
-            margin-top: 20%;
-            font-size: 30px; }
-        body .social ul li:hover {
-          background-color: #e9a1b9; }
-          body .social ul li:hover i {
-            color: #fff; }
   @media (max-width: 768px) {
     body .banner .word.right {
       float: right; } }

@@ -31,6 +31,7 @@ body {
     border: 25px solid;
     border-color: #fff $home-base;
     margin: 2% 5%;
+    width: 90%;
     text-align: center;
 
     .icon {
@@ -69,6 +70,45 @@ body {
           -webkit-animation: bottom-fade-in 2s; /* Safari and Chrome */
           -o-animation: bottom-fade-in 2s;
           -webkit-animation-fill-mode: forwards;
+        }
+      }
+    }
+
+    .social {
+      position: absolute;
+      top: 60vh;
+      right: 80px;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+
+        li {
+          width: 60px;
+          height: 60px;
+          float: left;
+          margin: 2px;
+
+          a {
+            display: block;
+            text-align: center;
+
+            i {
+              color: #fff;
+              margin-top: 20%;
+              font-size: 30px;
+            }
+          }
+
+          &:hover {
+            background-color: #fff;
+
+            i {
+              color: #fff;
+            }
+          }
         }
       }
     }
@@ -211,49 +251,6 @@ body {
     a.next:hover::after, a.next:hover .icon-wrap::after {
       -webkit-transform: translateX(-50%) rotate(55deg);
       transform: translateX(-50%) rotate(55deg);
-    }
-  }
-
-  .social {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      position: absolute;
-      display: block;
-
-      li {
-        border: 5px solid $home-base;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        float: left;
-        margin: 2px;
-
-        a {
-          display: block;
-          text-align: center;
-
-          i {
-            color: $home-base;
-            margin-top: 20%;
-            font-size: 30px;
-          }
-        }
-
-        &:hover {
-          background-color: $home-base;
-
-          i {
-            color: #fff;
-          }
-        }
-      }
     }
   }
 
