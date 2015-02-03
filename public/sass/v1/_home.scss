@@ -101,14 +101,6 @@ body {
               font-size: 30px;
             }
           }
-
-          &:hover {
-            background-color: #fff;
-
-            i {
-              color: #fff;
-            }
-          }
         }
       }
     }
@@ -117,7 +109,7 @@ body {
   nav {
     a {
       position: absolute;
-      bottom: 15%;
+      bottom: 2%;
       display: block;
       outline: none;
       text-align: left;
@@ -127,7 +119,7 @@ body {
       height: 100px;
 
       &.prev {
-        left: 0;
+        left: 5%;
 
         h3 {
           left: 100%;
@@ -137,7 +129,7 @@ body {
       }
 
       &.next {
-        right: 0;
+        right: 5%;
 
         h3 {
           right: 100%;
@@ -169,7 +161,7 @@ body {
     a::before, a::after, .icon-wrap::before, .icon-wrap::after {
       position: absolute;
       left: 50%;
-      width: 3px;
+      width: 10px;
       height: 50%;
       background: $home-base;
       content: '';
@@ -226,7 +218,7 @@ body {
       opacity: 0;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
       transition: transform 0.3s, opacity 0.3s;
-      padding: 0 10px;
+      padding: 0 20px;
     }
 
     a:hover .icon-wrap::before, a:hover .icon-wrap::after {
@@ -246,6 +238,7 @@ body {
     a:hover::after, a:hover .icon-wrap::after {
       -webkit-transform: translateX(-50%) rotate(-55deg);
       transform: translateX(-50%) rotate(-55deg);
+      background: #fff;
     }
 
     a.next:hover::after, a.next:hover .icon-wrap::after {
