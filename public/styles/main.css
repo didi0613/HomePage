@@ -337,206 +337,203 @@ body {
         background-color: #02c9c9;
         font-size: 13px; }
 
-@media (max-width: 480px) {
-  .portfolio .header ul li {
-    border-color: #0875BD; }
-    .portfolio .header ul li.current {
-      background-color: #0875BD; }
-  .portfolio .header ul li:hover {
+.portfolio .header ul li {
+  border-color: #0875BD; }
+  .portfolio .header ul li.current {
     background-color: #0875BD; }
-  .portfolio .header ul a {
-    color: #0875BD; }
-  .portfolio .content {
-    padding: 10px; }
-    .portfolio .content ul {
-      list-style: none;
-      margin: 0;
-      padding: 0 20px; }
-      .portfolio .content ul li {
-        cursor: pointer;
-        border: 10px solid #0875BD;
-        border-radius: 10%;
-        margin-bottom: 20px;
-        padding: 30px 40px 15px;
-        font-size: 14px;
-        width: 400px; }
-        .portfolio .content ul li a {
-          text-decoration: none;
-          display: block; }
-          .portfolio .content ul li a img {
-            width: 300px;
-            height: 250px; }
-          .portfolio .content ul li a h3, .portfolio .content ul li a h5 {
-            color: #0875BD; }
-        .portfolio .content ul li:hover {
-          background-color: #0875BD; }
-          .portfolio .content ul li:hover h3, .portfolio .content ul li:hover h5 {
-            color: #fff; }
-    .portfolio .content #slideshow-wrap, .portfolio .content #slideshow-wrap-1, .portfolio .content #slideshow-wrap-2, .portfolio .content #slideshow-wrap-3, .portfolio .content #slideshow-wrap-4 {
-      position: relative;
-      border: 5px solid #0875BD; }
-    .portfolio .content #slideshow-inner, .portfolio .content #slideshow-inner-1, .portfolio .content #slideshow-inner-2, .portfolio .content #slideshow-inner-3, .portfolio .content #slideshow-inner-4 {
-      overflow: hidden; }
-    .portfolio .content #slideshow-inner > ul, .portfolio .content #slideshow-inner-1 > ul, .portfolio .content #slideshow-inner-2 > ul, .portfolio .content #slideshow-inner-3 > ul, .portfolio .content #slideshow-inner-4 > ul {
-      padding: 0;
-      list-style: none;
-      width: 500%;
-      overflow: hidden;
-      position: relative;
-      -webkit-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
-      -moz-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
-      -o-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
-      transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1); }
-    .portfolio .content #slideshow-inner > ul > li, .portfolio .content #slideshow-inner-1 > ul > li, .portfolio .content #slideshow-inner-2 > ul > li, .portfolio .content #slideshow-inner-3 > ul > li, .portfolio .content #slideshow-inner-4 > ul > li {
-      width: 20%;
-      height: 320px;
-      float: left;
-      position: relative;
-      border: none;
-      margin: 0;
-      padding: 0; }
-      .portfolio .content #slideshow-inner > ul > li img, .portfolio .content #slideshow-inner-1 > ul > li img, .portfolio .content #slideshow-inner-2 > ul > li img, .portfolio .content #slideshow-inner-3 > ul > li img, .portfolio .content #slideshow-inner-4 > ul > li img {
-        width: 100%;
-        height: 100%; }
-    .portfolio .content #slideshow-wrap input[type=radio],
-    .portfolio .content #slideshow-wrap-1 input[type=radio],
-    .portfolio .content #slideshow-wrap-2 input[type=radio],
-    .portfolio .content #slideshow-wrap-3 input[type=radio],
-    .portfolio .content #slideshow-wrap-4 input[type=radio] {
-      position: absolute;
-      visibility: hidden; }
-    .portfolio .content #slideshow-wrap label:not(.arrows):not(.show-description-label),
-    .portfolio .content #slideshow-wrap-1 label:not(.arrows):not(.show-description-label),
-    .portfolio .content #slideshow-wrap-2 label:not(.arrows):not(.show-description-label),
-    .portfolio .content #slideshow-wrap-3 label:not(.arrows):not(.show-description-label),
-    .portfolio .content #slideshow-wrap-4 label:not(.arrows):not(.show-description-label) {
-      position: absolute;
-      left: 50%;
-      bottom: -45px;
-      width: 12px;
-      height: 12px;
-      background-color: #c8c8c8;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
+.portfolio .header ul li:hover {
+  background-color: #0875BD; }
+.portfolio .header ul a {
+  color: #0875BD; }
+.portfolio .content {
+  padding: 10px; }
+  .portfolio .content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px; }
+    .portfolio .content ul li {
       cursor: pointer;
-      -webkit-box-shadow: 0px 0px 3px #c8c8c8;
-      -moz-box-shadow: 0px 0px 3px #c8c8c8;
-      box-shadow: 0px 0px 3px #c8c8c8;
-      -webkit-transition: background-color .2s;
-      -moz-transition: background-color .2s;
-      -o-transition: background-color .2s;
-      transition: background-color .2s; }
-    .portfolio .content #slideshow-wrap label:not(.arrows):active,
-    .portfolio .content #slideshow-wrap-1 label:not(.arrows):active,
-    .portfolio .content #slideshow-wrap-2 label:not(.arrows):active,
-    .portfolio .content #slideshow-wrap-3 label:not(.arrows):active,
-    .portfolio .content #slideshow-wrap-4 label:not(.arrows):active {
-      bottom: -46px; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ label[for=button-1],
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-1-1:checked ~ label[for=button-1-1],
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-1-2:checked ~ label[for=button-1-2],
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-1-3:checked ~ label[for=button-1-3],
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-1-4:checked ~ label[for=button-1-3] {
-      background-color: #0875BD; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ label[for=button-2],
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-2-1:checked ~ label[for=button-2-1],
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-2-2:checked ~ label[for=button-2-2],
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-2-3:checked ~ label[for=button-2-3],
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-2-4:checked ~ label[for=button-2-4] {
-      background-color: #0875BD; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ label[for=button-3],
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-3-1:checked ~ label[for=button-3-1],
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-3-2:checked ~ label[for=button-3-2],
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-3-3:checked ~ label[for=button-3-3],
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-3-4:checked ~ label[for=button-3-4] {
-      background-color: #0875BD; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ label[for=button-4],
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-4-1:checked ~ label[for=button-4-1],
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-4-2:checked ~ label[for=button-4-2],
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-4-3:checked ~ label[for=button-4-3],
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-4-4:checked ~ label[for=button-4-4] {
-      background-color: #0875BD; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ label[for=button-5],
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-5-1:checked ~ label[for=button-5-1],
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-5-2:checked ~ label[for=button-5-2],
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-5-3:checked ~ label[for=button-5-3],
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-5-4:checked ~ label[for=button-5-4] {
-      background-color: #0875BD; }
-    .portfolio .content #slideshow-wrap label[for=button-1],
-    .portfolio .content #slideshow-wrap-1 label[for=button-1-1],
-    .portfolio .content #slideshow-wrap-2 label[for=button-1-2],
-    .portfolio .content #slideshow-wrap-3 label[for=button-1-3],
-    .portfolio .content #slideshow-wrap-4 label[for=button-1-4] {
-      margin-left: -36px; }
-    .portfolio .content #slideshow-wrap label[for=button-2],
-    .portfolio .content #slideshow-wrap-1 label[for=button-2-1],
-    .portfolio .content #slideshow-wrap-2 label[for=button-2-2],
-    .portfolio .content #slideshow-wrap-3 label[for=button-2-3],
-    .portfolio .content #slideshow-wrap-4 label[for=button-2-4] {
-      margin-left: -18px; }
-    .portfolio .content #slideshow-wrap label[for=button-4],
-    .portfolio .content #slideshow-wrap-1 label[for=button-4-1],
-    .portfolio .content #slideshow-wrap-2 label[for=button-4-2],
-    .portfolio .content #slideshow-wrap-3 label[for=button-4-3],
-    .portfolio .content #slideshow-wrap-4 label[for=button-4-4] {
-      margin-left: 18px; }
-    .portfolio .content #slideshow-wrap label[for=button-5],
-    .portfolio .content #slideshow-wrap-1 label[for=button-5-1],
-    .portfolio .content #slideshow-wrap-2 label[for=button-5-2],
-    .portfolio .content #slideshow-wrap-3 label[for=button-5-3],
-    .portfolio .content #slideshow-wrap-4 label[for=button-5-4] {
-      margin-left: 36px; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ #slideshow-inner > ul,
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-1-1:checked ~ #slideshow-inner-1 > ul,
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-1-2:checked ~ #slideshow-inner-2 > ul,
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-1-3:checked ~ #slideshow-inner-3 > ul,
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-1-4:checked ~ #slideshow-inner-4 > ul {
-      left: 0; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ #slideshow-inner > ul,
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-2-1:checked ~ #slideshow-inner-1 > ul,
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-2-2:checked ~ #slideshow-inner-2 > ul,
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-2-3:checked ~ #slideshow-inner-3 > ul,
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-2-4:checked ~ #slideshow-inner-4 > ul {
-      left: -100%; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ #slideshow-inner > ul,
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-3-1:checked ~ #slideshow-inner-1 > ul,
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-3-2:checked ~ #slideshow-inner-2 > ul,
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-3-3:checked ~ #slideshow-inner-3 > ul,
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-3-4:checked ~ #slideshow-inner-4 > ul {
-      left: -200%; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ #slideshow-inner > ul,
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-4-1:checked ~ #slideshow-inner-1 > ul,
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-4-2:checked ~ #slideshow-inner-2 > ul,
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-4-3:checked ~ #slideshow-inner-3 > ul,
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-4-4:checked ~ #slideshow-inner-4 > ul {
-      left: -300%; }
-    .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ #slideshow-inner > ul,
-    .portfolio .content #slideshow-wrap-1 input[type=radio]#button-5-1:checked ~ #slideshow-inner-1 > ul,
-    .portfolio .content #slideshow-wrap-2 input[type=radio]#button-5-2:checked ~ #slideshow-inner-2 > ul,
-    .portfolio .content #slideshow-wrap-3 input[type=radio]#button-5-3:checked ~ #slideshow-inner-3 > ul,
-    .portfolio .content #slideshow-wrap-4 input[type=radio]#button-5-4:checked ~ #slideshow-inner-4 > ul {
-      left: -400%; }
-    .portfolio .content .close {
-      overflow: hidden;
-      position: absolute;
-      top: -80px;
-      right: 0; }
-      .portfolio .content .close a {
+      border: 10px solid #0875BD;
+      border-radius: 10%;
+      margin: 20px;
+      padding: 30px 23px 15px;
+      width: 360px;
+      float: left; }
+      .portfolio .content ul li a {
+        text-decoration: none;
         display: block; }
-        .portfolio .content .close a .close-image {
-          background-image: url(../images/close.png);
-          background-repeat: no-repeat;
-          width: 42px;
-          height: 42px; }
-    .portfolio .content .title {
-      color: #0875BD;
-      margin-bottom: 20px; }
-    .portfolio .content .description {
-      color: #0875BD;
-      margin: 70px 0; }
-      .portfolio .content .description p {
-        font-size: 18px;
-        text-indent: 1em; } }
+        .portfolio .content ul li a img {
+          width: 300px;
+          height: 250px; }
+      .portfolio .content ul li:hover {
+        background-color: #0875BD; }
+        .portfolio .content ul li:hover h2, .portfolio .content ul li:hover h4 {
+          color: #fff; }
+  .portfolio .content #slideshow-wrap, .portfolio .content #slideshow-wrap-1, .portfolio .content #slideshow-wrap-2, .portfolio .content #slideshow-wrap-3, .portfolio .content #slideshow-wrap-4 {
+    position: relative;
+    border: 5px solid #0875BD; }
+  .portfolio .content #slideshow-inner, .portfolio .content #slideshow-inner-1, .portfolio .content #slideshow-inner-2, .portfolio .content #slideshow-inner-3, .portfolio .content #slideshow-inner-4 {
+    overflow: hidden; }
+  .portfolio .content #slideshow-inner > ul, .portfolio .content #slideshow-inner-1 > ul, .portfolio .content #slideshow-inner-2 > ul, .portfolio .content #slideshow-inner-3 > ul, .portfolio .content #slideshow-inner-4 > ul {
+    padding: 0;
+    list-style: none;
+    width: 500%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1); }
+  .portfolio .content #slideshow-inner > ul > li, .portfolio .content #slideshow-inner-1 > ul > li, .portfolio .content #slideshow-inner-2 > ul > li, .portfolio .content #slideshow-inner-3 > ul > li, .portfolio .content #slideshow-inner-4 > ul > li {
+    width: 20%;
+    height: 320px;
+    float: left;
+    position: relative;
+    border: none;
+    margin: 0;
+    padding: 0; }
+    .portfolio .content #slideshow-inner > ul > li img, .portfolio .content #slideshow-inner-1 > ul > li img, .portfolio .content #slideshow-inner-2 > ul > li img, .portfolio .content #slideshow-inner-3 > ul > li img, .portfolio .content #slideshow-inner-4 > ul > li img {
+      width: 100%;
+      height: 100%; }
+  .portfolio .content #slideshow-wrap input[type=radio],
+  .portfolio .content #slideshow-wrap-1 input[type=radio],
+  .portfolio .content #slideshow-wrap-2 input[type=radio],
+  .portfolio .content #slideshow-wrap-3 input[type=radio],
+  .portfolio .content #slideshow-wrap-4 input[type=radio] {
+    position: absolute;
+    visibility: hidden; }
+  .portfolio .content #slideshow-wrap label:not(.arrows):not(.show-description-label),
+  .portfolio .content #slideshow-wrap-1 label:not(.arrows):not(.show-description-label),
+  .portfolio .content #slideshow-wrap-2 label:not(.arrows):not(.show-description-label),
+  .portfolio .content #slideshow-wrap-3 label:not(.arrows):not(.show-description-label),
+  .portfolio .content #slideshow-wrap-4 label:not(.arrows):not(.show-description-label) {
+    position: absolute;
+    left: 50%;
+    bottom: -45px;
+    width: 12px;
+    height: 12px;
+    background-color: #c8c8c8;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 3px #c8c8c8;
+    -moz-box-shadow: 0px 0px 3px #c8c8c8;
+    box-shadow: 0px 0px 3px #c8c8c8;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -o-transition: background-color .2s;
+    transition: background-color .2s; }
+  .portfolio .content #slideshow-wrap label:not(.arrows):active,
+  .portfolio .content #slideshow-wrap-1 label:not(.arrows):active,
+  .portfolio .content #slideshow-wrap-2 label:not(.arrows):active,
+  .portfolio .content #slideshow-wrap-3 label:not(.arrows):active,
+  .portfolio .content #slideshow-wrap-4 label:not(.arrows):active {
+    bottom: -46px; }
+  .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ label[for=button-1],
+  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-1-1:checked ~ label[for=button-1-1],
+  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-1-2:checked ~ label[for=button-1-2],
+  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-1-3:checked ~ label[for=button-1-3],
+  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-1-4:checked ~ label[for=button-1-3] {
+    background-color: #0875BD; }
+  .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ label[for=button-2],
+  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-2-1:checked ~ label[for=button-2-1],
+  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-2-2:checked ~ label[for=button-2-2],
+  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-2-3:checked ~ label[for=button-2-3],
+  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-2-4:checked ~ label[for=button-2-4] {
+    background-color: #0875BD; }
+  .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ label[for=button-3],
+  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-3-1:checked ~ label[for=button-3-1],
+  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-3-2:checked ~ label[for=button-3-2],
+  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-3-3:checked ~ label[for=button-3-3],
+  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-3-4:checked ~ label[for=button-3-4] {
+    background-color: #0875BD; }
+  .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ label[for=button-4],
+  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-4-1:checked ~ label[for=button-4-1],
+  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-4-2:checked ~ label[for=button-4-2],
+  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-4-3:checked ~ label[for=button-4-3],
+  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-4-4:checked ~ label[for=button-4-4] {
+    background-color: #0875BD; }
+  .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ label[for=button-5],
+  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-5-1:checked ~ label[for=button-5-1],
+  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-5-2:checked ~ label[for=button-5-2],
+  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-5-3:checked ~ label[for=button-5-3],
+  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-5-4:checked ~ label[for=button-5-4] {
+    background-color: #0875BD; }
+  .portfolio .content #slideshow-wrap label[for=button-1],
+  .portfolio .content #slideshow-wrap-1 label[for=button-1-1],
+  .portfolio .content #slideshow-wrap-2 label[for=button-1-2],
+  .portfolio .content #slideshow-wrap-3 label[for=button-1-3],
+  .portfolio .content #slideshow-wrap-4 label[for=button-1-4] {
+    margin-left: -36px; }
+  .portfolio .content #slideshow-wrap label[for=button-2],
+  .portfolio .content #slideshow-wrap-1 label[for=button-2-1],
+  .portfolio .content #slideshow-wrap-2 label[for=button-2-2],
+  .portfolio .content #slideshow-wrap-3 label[for=button-2-3],
+  .portfolio .content #slideshow-wrap-4 label[for=button-2-4] {
+    margin-left: -18px; }
+  .portfolio .content #slideshow-wrap label[for=button-4],
+  .portfolio .content #slideshow-wrap-1 label[for=button-4-1],
+  .portfolio .content #slideshow-wrap-2 label[for=button-4-2],
+  .portfolio .content #slideshow-wrap-3 label[for=button-4-3],
+  .portfolio .content #slideshow-wrap-4 label[for=button-4-4] {
+    margin-left: 18px; }
+  .portfolio .content #slideshow-wrap label[for=button-5],
+  .portfolio .content #slideshow-wrap-1 label[for=button-5-1],
+  .portfolio .content #slideshow-wrap-2 label[for=button-5-2],
+  .portfolio .content #slideshow-wrap-3 label[for=button-5-3],
+  .portfolio .content #slideshow-wrap-4 label[for=button-5-4] {
+    margin-left: 36px; }
+  .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ #slideshow-inner > ul,
+  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-1-1:checked ~ #slideshow-inner-1 > ul,
+  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-1-2:checked ~ #slideshow-inner-2 > ul,
+  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-1-3:checked ~ #slideshow-inner-3 > ul,
+  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-1-4:checked ~ #slideshow-inner-4 > ul {
+    left: 0; }
+  .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ #slideshow-inner > ul,
+  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-2-1:checked ~ #slideshow-inner-1 > ul,
+  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-2-2:checked ~ #slideshow-inner-2 > ul,
+  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-2-3:checked ~ #slideshow-inner-3 > ul,
+  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-2-4:checked ~ #slideshow-inner-4 > ul {
+    left: -100%; }
+  .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ #slideshow-inner > ul,
+  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-3-1:checked ~ #slideshow-inner-1 > ul,
+  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-3-2:checked ~ #slideshow-inner-2 > ul,
+  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-3-3:checked ~ #slideshow-inner-3 > ul,
+  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-3-4:checked ~ #slideshow-inner-4 > ul {
+    left: -200%; }
+  .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ #slideshow-inner > ul,
+  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-4-1:checked ~ #slideshow-inner-1 > ul,
+  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-4-2:checked ~ #slideshow-inner-2 > ul,
+  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-4-3:checked ~ #slideshow-inner-3 > ul,
+  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-4-4:checked ~ #slideshow-inner-4 > ul {
+    left: -300%; }
+  .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ #slideshow-inner > ul,
+  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-5-1:checked ~ #slideshow-inner-1 > ul,
+  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-5-2:checked ~ #slideshow-inner-2 > ul,
+  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-5-3:checked ~ #slideshow-inner-3 > ul,
+  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-5-4:checked ~ #slideshow-inner-4 > ul {
+    left: -400%; }
+  .portfolio .content .close {
+    overflow: hidden;
+    position: absolute;
+    top: -80px;
+    right: 0; }
+    .portfolio .content .close a {
+      display: block; }
+      .portfolio .content .close a .close-image {
+        background-image: url(../images/close.png);
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px; }
+  .portfolio .content .title {
+    color: #0875BD;
+    margin-bottom: 20px; }
+  .portfolio .content .description {
+    color: #0875BD;
+    margin: 70px 0; }
+    .portfolio .content .description p {
+      font-size: 18px;
+      text-indent: 1em; }
 
 /*# sourceMappingURL=main.css.map */
