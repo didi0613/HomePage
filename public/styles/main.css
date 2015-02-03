@@ -19,9 +19,6 @@ body {
   width: 100%;
   height: 100%;
   /*
-  *   Desktop Size
-  */
-  /*
   *   Phone Size
   */ }
   body .banner {
@@ -68,7 +65,7 @@ body {
     body .banner .social {
       position: absolute;
       top: 60vh;
-      right: 80px; }
+      right: 7%; }
       body .banner .social ul {
         list-style-type: none;
         margin: 0;
@@ -190,143 +187,156 @@ body {
     body .banner .word.right {
       float: right; } }
 
-@media (max-width: 480px) {
-  .header {
-    margin: 20px; }
-    .header ul {
-      list-style: none;
-      text-align: right; }
-      .header ul li {
-        display: inline-block;
-        position: relative;
-        font-size: 30px;
-        background-color: #fff;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        text-align: center;
-        padding: 4px;
-        border: 4px solid #02c9c9; }
-        .header ul li a {
+.header {
+  margin: 20px; }
+  .header ul {
+    list-style: none;
+    text-align: right; }
+    .header ul li {
+      display: inline-block;
+      position: relative;
+      font-size: 30px;
+      background-color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      text-align: center;
+      padding: 4px;
+      border: 4px solid #02c9c9; }
+      .header ul li a {
+        text-decoration: none;
+        color: #02c9c9; }
+      .header ul li.current, .header ul li:hover {
+        background-color: #02c9c9; }
+        .header ul li.current a, .header ul li:hover a {
           text-decoration: none;
-          color: #02c9c9; }
-        .header ul li.current, .header ul li:hover {
-          background-color: #02c9c9; }
-          .header ul li.current a, .header ul li:hover a {
-            text-decoration: none;
-            color: #fff;
-            display: block; }
+          color: #fff;
+          display: block; }
 
-  .about .content {
-    padding: 0 20px; }
+.about .content {
+  padding: 0 20px;
+  width: 100%; }
+  .about .content .intro {
+    margin-bottom: 5%; }
     .about .content .intro img {
-      margin: 10% 20%; }
+      margin: 8% 25%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      max-width: 500px; }
     .about .content .intro p {
-      text-indent: 1em;
       font-size: 20px;
-      font-weight: 400; }
-    .about .content .education {
-      line-height: 1.5em;
-      width: 100%; }
-      .about .content .education .timeline {
-        position: relative;
-        width: 100%;
-        margin: 0 auto;
-        padding: 1em 0;
-        list-style-type: none; }
-      .about .content .education .timeline:before {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        content: ' ';
-        display: block;
-        width: 6px;
-        height: 100%;
-        margin-left: -3px;
-        background: #505050;
-        background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
-        background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-        background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-        background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-        background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%); }
-      .about .content .education .timeline li {
-        padding: 1em 0; }
-      .about .content .education .timeline li:after {
-        content: "";
-        display: block;
-        height: 0;
-        clear: both;
-        visibility: hidden; }
-      .about .content .education .direction-l {
-        position: relative;
-        width: 50%;
-        float: left;
-        text-align: right; }
-      .about .content .education .direction-r {
-        position: relative;
-        width: 50%;
-        float: right; }
-      .about .content .education .flag-wrapper {
-        position: relative;
-        display: inline-block;
-        padding: 0 3px;
-        text-align: center; }
-      .about .content .education .flag {
-        position: relative;
-        display: inline;
-        background: #f8f8f8;
-        padding: 6px 10px;
-        border-radius: 5px;
-        font-weight: 500;
-        text-align: left; }
-      .about .content .education .direction-l .flag {
-        -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-        -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-        box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15); }
-      .about .content .education .direction-r .flag {
-        -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-        -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15); }
-      .about .content .education .direction-l .flag:before,
-      .about .content .education .direction-r .flag:before {
-        position: absolute;
-        top: 50%;
-        right: -10px;
-        content: ' ';
-        display: block;
-        width: 12px;
-        height: 12px;
-        margin-top: -10px;
-        background: #fff;
-        border-radius: 10px;
-        border: 4px solid #02c9c9; }
-      .about .content .education .direction-r .flag:before {
-        left: -10px; }
-      .about .content .education .time-wrapper {
-        display: inline;
-        line-height: 1em;
-        font-size: 1em;
-        color: #02c9c9;
-        vertical-align: middle; }
-      .about .content .education .direction-l .time-wrapper {
-        float: left; }
-      .about .content .education .direction-r .time-wrapper {
-        float: right; }
-      .about .content .education .time {
-        display: inline-block;
-        padding: 4px 6px;
-        background: #f8f8f8; }
-      .about .content .education .desc {
-        margin: 1em 0.75em 0 0;
-        font-size: 0.9em;
-        font-style: italic;
-        line-height: 1.5em; }
-      .about .content .education .direction-r .desc {
-        margin: 1em 0 0 0.75em; }
-    .about .content .skills .progress-bar {
-      background-color: #02c9c9;
-      font-size: 13px; } }
+      font-weight: 400;
+      padding: 0 2%; }
+  .about .content .education {
+    line-height: 3em;
+    width: 100%; }
+    .about .content .education .timeline {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1em 0;
+      list-style-type: none; }
+    .about .content .education .timeline:before {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      content: ' ';
+      display: block;
+      width: 6px;
+      height: 100%;
+      margin-left: -3px;
+      background: #505050;
+      background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
+      background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+      background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+      background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+      background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%); }
+    .about .content .education .timeline li {
+      padding: 1em 0; }
+    .about .content .education .timeline li:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .about .content .education .direction-l {
+      position: relative;
+      width: 50%;
+      float: left;
+      text-align: right; }
+    .about .content .education .direction-r {
+      position: relative;
+      width: 50%;
+      float: right; }
+    .about .content .education .flag-wrapper {
+      position: relative;
+      display: inline-block;
+      padding: 0 3px;
+      text-align: center; }
+    .about .content .education .flag {
+      position: relative;
+      display: inline;
+      background: #f8f8f8;
+      padding: 6px 10px;
+      border-radius: 5px;
+      font-weight: 500;
+      text-align: left; }
+    .about .content .education .direction-l .flag {
+      -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+      box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15); }
+    .about .content .education .direction-r .flag {
+      -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15); }
+    .about .content .education .direction-l .flag:before,
+    .about .content .education .direction-r .flag:before {
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      content: ' ';
+      display: block;
+      width: 12px;
+      height: 12px;
+      margin-top: -10px;
+      background: #fff;
+      border-radius: 10px;
+      border: 4px solid #02c9c9; }
+    .about .content .education .direction-r .flag:before {
+      left: -10px; }
+    .about .content .education .time-wrapper {
+      display: inline;
+      line-height: 1em;
+      font-size: 1em;
+      color: #02c9c9;
+      vertical-align: middle; }
+    .about .content .education .direction-l .time-wrapper {
+      float: left; }
+    .about .content .education .direction-r .time-wrapper {
+      float: right; }
+    .about .content .education .time {
+      display: inline-block;
+      padding: 4px 6px;
+      background: #f8f8f8; }
+    .about .content .education .desc {
+      margin: 1em 0.75em 0 0;
+      font-size: 0.9em;
+      font-style: italic;
+      line-height: 1.5em; }
+    .about .content .education .direction-r .desc {
+      margin: 1em 0 0 0.75em; }
+  .about .content .skills .progress-set {
+    padding: 1% 10% 5%; }
+    .about .content .skills .progress-set .progress {
+      height: 25px;
+      margin: 20px 0; }
+      .about .content .skills .progress-set .progress .progress-bar {
+        background-color: #02c9c9;
+        font-size: 13px; }
+
 @media (max-width: 480px) {
   .portfolio .header ul li {
     border-color: #0875BD; }

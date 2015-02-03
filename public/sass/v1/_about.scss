@@ -1,203 +1,217 @@
 $about-base: #02c9c9;
 
-//  iphone size
-@media (max-width: 480px) {
-  .header {
-    margin: 20px;
+.header {
+  margin: 20px;
 
-    ul {
-      list-style: none;
-      text-align: right;
+  ul {
+    list-style: none;
+    text-align: right;
 
-      li {
-        display: inline-block;
-        position: relative;
-        font-size: 30px;
-        background-color: #fff;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        text-align: center;
-        padding: 4px;
-        border: 4px solid $about-base;
+    li {
+      display: inline-block;
+      position: relative;
+      font-size: 30px;
+      background-color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      text-align: center;
+      padding: 4px;
+      border: 4px solid $about-base;
+
+      a {
+        text-decoration: none;
+        color: $about-base;
+      }
+
+      &.current, &:hover {
+        background-color: $about-base;
 
         a {
           text-decoration: none;
-          color: $about-base;
-        }
-
-        &.current, &:hover {
-          background-color: $about-base;
-
-          a {
-            text-decoration: none;
-            color: #fff;
-            display: block;
-          }
+          color: #fff;
+          display: block;
         }
       }
     }
   }
+}
 
-  .about {
-    .content {
-      padding: 0 20px;
+.about {
+  .content {
+    padding: 0 20px;
+    width: 100%;
 
-      .intro {
-        img {
-          margin: 10% 20%;
-        }
+    .intro {
+      margin-bottom: 5%;
 
-        p {
-          text-indent: 1em;
-          font-size: 20px;
-          font-weight: 400;
-        }
+      img {
+        margin: 8% 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        max-width: 500px;
       }
 
-      .education {
-        line-height: 1.5em;
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        padding: 0 2%;
+      }
+    }
+
+    .education {
+      line-height: 3em;
+      width: 100%;
+
+      .timeline {
+        position: relative;
         width: 100%;
-
-        .timeline {
-          position: relative;
-          width: 100%;
-          margin: 0 auto;
-          padding: 1em 0;
-          list-style-type: none;
-        }
-
-        .timeline:before {
-          position: absolute;
-          left: 50%;
-          top: 0;
-          content: ' ';
-          display: block;
-          width: 6px;
-          height: 100%;
-          margin-left: -3px;
-          background: rgb(80,80,80);
-          background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
-          background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-          background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-          background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-          background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-        }
-
-        .timeline li {
-          padding: 1em 0;
-        }
-
-        .timeline li:after {
-          content: "";
-          display: block;
-          height: 0;
-          clear: both;
-          visibility: hidden;
-        }
-
-        .direction-l {
-          position: relative;
-          width: 50%;
-          float: left;
-          text-align: right;
-        }
-
-        .direction-r {
-          position: relative;
-          width: 50%;
-          float: right;
-        }
-
-        .flag-wrapper {
-          position: relative;
-          display: inline-block;
-          padding: 0 3px;
-          text-align: center;
-        }
-
-        .flag {
-          position: relative;
-          display: inline;
-          background: rgb(248,248,248);
-          padding: 6px 10px;
-          border-radius: 5px;
-          font-weight: 500;
-          text-align: left;
-        }
-
-        .direction-l .flag {
-          -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-          -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-          box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-        }
-
-        .direction-r .flag {
-          -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-          -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-          box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-        }
-
-        .direction-l .flag:before,
-        .direction-r .flag:before {
-          position: absolute;
-          top: 50%;
-          right: -10px;
-          content: ' ';
-          display: block;
-          width: 12px;
-          height: 12px;
-          margin-top: -10px;
-          background: #fff;
-          border-radius: 10px;
-          border: 4px solid $about-base;
-        }
-
-        .direction-r .flag:before {
-          left: -10px;
-        }
-
-        .time-wrapper {
-          display: inline;
-
-          line-height: 1em;
-          font-size: 1em;
-          color: $about-base;
-          vertical-align: middle;
-        }
-
-        .direction-l .time-wrapper {
-          float: left;
-        }
-
-        .direction-r .time-wrapper {
-          float: right;
-        }
-
-        .time {
-          display: inline-block;
-          padding: 4px 6px;
-          background: rgb(248,248,248);
-        }
-
-        .desc {
-          margin: 1em 0.75em 0 0;
-
-          font-size: 0.9em;
-          font-style: italic;
-          line-height: 1.5em;
-        }
-
-        .direction-r .desc {
-          margin: 1em 0 0 0.75em;
-        }
+        margin: 0 auto;
+        padding: 1em 0;
+        list-style-type: none;
       }
 
-      .skills {
-        .progress-bar {
-          background-color: $about-base;
-          font-size: 13px;
+      .timeline:before {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        content: ' ';
+        display: block;
+        width: 6px;
+        height: 100%;
+        margin-left: -3px;
+        background: rgb(80,80,80);
+        background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+        background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+        background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+        background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+        background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+      }
+
+      .timeline li {
+        padding: 1em 0;
+      }
+
+      .timeline li:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+      }
+
+      .direction-l {
+        position: relative;
+        width: 50%;
+        float: left;
+        text-align: right;
+      }
+
+      .direction-r {
+        position: relative;
+        width: 50%;
+        float: right;
+      }
+
+      .flag-wrapper {
+        position: relative;
+        display: inline-block;
+        padding: 0 3px;
+        text-align: center;
+      }
+
+      .flag {
+        position: relative;
+        display: inline;
+        background: rgb(248,248,248);
+        padding: 6px 10px;
+        border-radius: 5px;
+        font-weight: 500;
+        text-align: left;
+      }
+
+      .direction-l .flag {
+        -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+      }
+
+      .direction-r .flag {
+        -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+      }
+
+      .direction-l .flag:before,
+      .direction-r .flag:before {
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        content: ' ';
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin-top: -10px;
+        background: #fff;
+        border-radius: 10px;
+        border: 4px solid $about-base;
+      }
+
+      .direction-r .flag:before {
+        left: -10px;
+      }
+
+      .time-wrapper {
+        display: inline;
+
+        line-height: 1em;
+        font-size: 1em;
+        color: $about-base;
+        vertical-align: middle;
+      }
+
+      .direction-l .time-wrapper {
+        float: left;
+      }
+
+      .direction-r .time-wrapper {
+        float: right;
+      }
+
+      .time {
+        display: inline-block;
+        padding: 4px 6px;
+        background: rgb(248,248,248);
+      }
+
+      .desc {
+        margin: 1em 0.75em 0 0;
+
+        font-size: 0.9em;
+        font-style: italic;
+        line-height: 1.5em;
+      }
+
+      .direction-r .desc {
+        margin: 1em 0 0 0.75em;
+      }
+    }
+
+    .skills {
+      .progress-set {
+        padding:1% 10% 5%;
+
+        .progress {
+          height: 25px;
+          margin: 20px 0;
+
+          .progress-bar {
+            background-color: $about-base;
+            font-size: 13px;
+          }
         }
       }
     }

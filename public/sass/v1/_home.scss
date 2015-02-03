@@ -77,7 +77,7 @@ body {
     .social {
       position: absolute;
       top: 60vh;
-      right: 80px;
+      right: 7%;
 
       ul {
         list-style-type: none;
@@ -244,16 +244,6 @@ body {
     a.next:hover::after, a.next:hover .icon-wrap::after {
       -webkit-transform: translateX(-50%) rotate(55deg);
       transform: translateX(-50%) rotate(55deg);
-    }
-  }
-
-  /*
-  *   Desktop Size
-  */
-  @media(min-width: 992px) {
-    .banner {
-      .word {
-      }
     }
   }
 
