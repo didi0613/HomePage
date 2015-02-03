@@ -346,7 +346,7 @@ body {
 .portfolio .header ul a {
   color: #0875BD; }
 .portfolio .content {
-  padding: 10px; }
+  padding: 40px; }
   .portfolio .content ul {
     list-style: none;
     margin: 0;
@@ -354,8 +354,7 @@ body {
     .portfolio .content ul li {
       cursor: pointer;
       border: 10px solid #0875BD;
-      border-radius: 10%;
-      margin: 20px;
+      margin: 20px 10px;
       padding: 30px 23px 15px;
       width: 360px;
       float: left; }
@@ -370,10 +369,14 @@ body {
         .portfolio .content ul li:hover h2, .portfolio .content ul li:hover h4 {
           color: #fff; }
   .portfolio .content #slideshow-wrap, .portfolio .content #slideshow-wrap-1, .portfolio .content #slideshow-wrap-2, .portfolio .content #slideshow-wrap-3, .portfolio .content #slideshow-wrap-4 {
-    position: relative;
-    border: 5px solid #0875BD; }
+    position: relative; }
+    .portfolio .content #slideshow-wrap li, .portfolio .content #slideshow-wrap-1 li, .portfolio .content #slideshow-wrap-2 li, .portfolio .content #slideshow-wrap-3 li, .portfolio .content #slideshow-wrap-4 li {
+      border: 5px solid #0875BD; }
+      .portfolio .content #slideshow-wrap li:hover, .portfolio .content #slideshow-wrap-1 li:hover, .portfolio .content #slideshow-wrap-2 li:hover, .portfolio .content #slideshow-wrap-3 li:hover, .portfolio .content #slideshow-wrap-4 li:hover {
+        background-color: #fff; }
   .portfolio .content #slideshow-inner, .portfolio .content #slideshow-inner-1, .portfolio .content #slideshow-inner-2, .portfolio .content #slideshow-inner-3, .portfolio .content #slideshow-inner-4 {
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 0 20%; }
   .portfolio .content #slideshow-inner > ul, .portfolio .content #slideshow-inner-1 > ul, .portfolio .content #slideshow-inner-2 > ul, .portfolio .content #slideshow-inner-3 > ul, .portfolio .content #slideshow-inner-4 > ul {
     padding: 0;
     list-style: none;
@@ -386,10 +389,9 @@ body {
     transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1); }
   .portfolio .content #slideshow-inner > ul > li, .portfolio .content #slideshow-inner-1 > ul > li, .portfolio .content #slideshow-inner-2 > ul > li, .portfolio .content #slideshow-inner-3 > ul > li, .portfolio .content #slideshow-inner-4 > ul > li {
     width: 20%;
-    height: 320px;
+    height: 550px;
     float: left;
     position: relative;
-    border: none;
     margin: 0;
     padding: 0; }
     .portfolio .content #slideshow-inner > ul > li img, .portfolio .content #slideshow-inner-1 > ul > li img, .portfolio .content #slideshow-inner-2 > ul > li img, .portfolio .content #slideshow-inner-3 > ul > li img, .portfolio .content #slideshow-inner-4 > ul > li img {
@@ -517,23 +519,30 @@ body {
   .portfolio .content .close {
     overflow: hidden;
     position: absolute;
-    top: -80px;
-    right: 0; }
+    top: -40px;
+    right: 17%; }
     .portfolio .content .close a {
-      display: block; }
-      .portfolio .content .close a .close-image {
-        background-image: url(../images/close.png);
-        background-repeat: no-repeat;
-        width: 42px;
-        height: 42px; }
+      display: block;
+      border: 5px solid #0875BD;
+      border-radius: 50%; }
+      .portfolio .content .close a i {
+        color: #0875BD;
+        font-size: 40px; }
   .portfolio .content .title {
     color: #0875BD;
     margin-bottom: 20px; }
+    .portfolio .content .title .brief {
+      font-size: 18px;
+      text-indent: 1em;
+      margin-bottom: 30px;
+      line-height: 25px; }
   .portfolio .content .description {
     color: #0875BD;
     margin: 70px 0; }
-    .portfolio .content .description p {
-      font-size: 18px;
-      text-indent: 1em; }
+    .portfolio .content .description .des-highlighted {
+      width: 140px;
+      background-color: #FFFF00; }
+    .portfolio .content .description .des-detail {
+      font-size: 18px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -22,7 +22,7 @@ $portfolio-base: #0875BD;
   }
 
   .content {
-    padding: 10px;
+    padding: 40px;
 
     ul {
       list-style: none;
@@ -32,8 +32,7 @@ $portfolio-base: #0875BD;
       li {
         cursor: pointer;
         border: 10px solid #0875BD;
-        border-radius: 10%;
-        margin: 20px;
+        margin: 20px 10px;
         padding: 30px 23px 15px;;
         width: 360px;
         float: left;
@@ -58,14 +57,22 @@ $portfolio-base: #0875BD;
       }
     }
 
-    //      Portfolio Detail
+    //Portfolio Detail
     #slideshow-wrap, #slideshow-wrap-1, #slideshow-wrap-2,#slideshow-wrap-3, #slideshow-wrap-4 {
       position: relative;
-      border: 5px solid $portfolio-base;
+
+      li {
+        border: 5px solid $portfolio-base;
+
+        &:hover {
+          background-color: #fff;
+        }
+      }
     }
 
     #slideshow-inner, #slideshow-inner-1, #slideshow-inner-2, #slideshow-inner-3, #slideshow-inner-4 {
       overflow: hidden;
+      margin: 0 20%;
     }
 
     #slideshow-inner>ul, #slideshow-inner-1>ul, #slideshow-inner-2>ul, #slideshow-inner-3>ul, #slideshow-inner-4>ul {
@@ -82,10 +89,9 @@ $portfolio-base: #0875BD;
 
     #slideshow-inner>ul>li, #slideshow-inner-1>ul>li, #slideshow-inner-2>ul>li, #slideshow-inner-3>ul>li, #slideshow-inner-4>ul>li {
       width: 20%;
-      height: 320px;
+      height: 550px;
       float: left;
       position: relative;
-      border: none;
       margin: 0;
       padding: 0;
 
@@ -235,17 +241,17 @@ $portfolio-base: #0875BD;
     .close {
       overflow: hidden;
       position: absolute;
-      top: -80px;
-      right: 0;
+      top: -40px;
+      right: 17%;
 
       a {
         display: block;
+        border: 5px solid $portfolio-base;
+        border-radius: 50%;
 
-        .close-image {
-          background-image: url(../images/close.png);
-          background-repeat: no-repeat;
-          width: 42px;
-          height: 42px;
+        i {
+          color: $portfolio-base;
+          font-size: 40px;
         }
       }
     }
@@ -253,15 +259,26 @@ $portfolio-base: #0875BD;
     .title {
       color: $portfolio-base;
       margin-bottom: 20px;
+
+      .brief {
+        font-size: 18px;
+        text-indent: 1em;
+        margin-bottom: 30px;
+        line-height: 25px;
+      }
     }
 
     .description{
       color: $portfolio-base;
       margin: 70px 0;
 
-      p {
+      .des-highlighted {
+        width: 140px;
+        background-color: #FFFF00
+      }
+
+      .des-detail {
         font-size: 18px;
-        text-indent: 1em;
       }
     }
   }
