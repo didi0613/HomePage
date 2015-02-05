@@ -1,5 +1,6 @@
 $home-base: #e9a1b9;
 
+//animation
 @-webkit-keyframes top-fade-in {
   /* Safari and Chrome */
   0% {
@@ -20,17 +21,30 @@ $home-base: #e9a1b9;
   }
 }
 
+@-webkit-keyframes arrow-jump {
+  0%   { opacity: 0;}
+  100% { opacity: 1;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+
 body {
   width: 100%;
   height: 100%;
 
+  ////////////////////////////////
+//  part one
+  ///////////////////////////////
+
   .banner {
-    height: 75vh;
+    height: 80vh;
     background-color: $home-base;
     border-radius: 50px;
     border: 25px solid;
     border-color: #fff $home-base;
-    margin: 2% 5%;
+    margin: 2% 5% -1%;
     width: 90%;
     text-align: center;
 
@@ -47,7 +61,7 @@ body {
     .word {
       position: relative;
       display: inline-block;
-      margin: 60px 5px 0;
+      margin: 100px 5px 0;
       height: 160px;
       top: 40%;
 
@@ -78,13 +92,13 @@ body {
       font-size: 30px;
       font-family: cursive;
       width: 100%;
-      padding: 3% 25%;
+      padding: 4% 25%;
       color: white;
     }
 
     .social {
       position: absolute;
-      top: 65vh;
+      top: 70vh;
       right: 7%;
 
       ul {
@@ -109,162 +123,29 @@ body {
               font-size: 30px;
             }
           }
+
+          &:hover {
+            transform: scale(1.2);
+          }
         }
       }
     }
   }
 
-  nav {
-    a {
-      position: absolute;
-      bottom: 0;
-      display: block;
-      outline: none;
-      text-align: left;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      width: 100px;
+  .nav {
+    text-align: center;
+    height: 15vh;
+
+    .arrow {
       height: 100px;
-
-      &.prev {
-        left: 5%;
-
-        h3 {
-          left: 100%;
-          -webkit-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
-        }
-      }
-
-      &.next {
-        right: 5%;
-
-        h3 {
-          right: 100%;
-          text-align: right;
-          -webkit-transform: translateY(-50%) translateX(50%);
-          transform: translateY(-50%) translateX(50%);
-        }
-      }
-
-      &:hover {
-        background-color: $home-base;
-
-        h3 {
-          opacity: 1;
-          color: $home-base;
-          -webkit-transform: translateY(-50%) translateX(0);
-          transform: translateY(-50%) translateX(0);
-        }
-      }
-    }
-
-    .icon-wrap {
-      position: relative;
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-
-    a::before, a::after, .icon-wrap::before, .icon-wrap::after {
-      position: absolute;
-      left: 50%;
-      width: 10px;
-      height: 50%;
-      background: $home-base;
-      content: '';
-      -webkit-transition: -webkit-transform 0.3s;
-      transition: transform 0.3s;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      outline: 1px solid transparent; /* for FF */
-    }
-
-    .icon-wrap::before, .icon-wrap::after {
-      height: 0;
-      background: #fff;
-      -webkit-transition: height 0.3s, -webkit-transform 0.3s;
-      transition: height 0.3s, transform 0.3s;
-    }
-
-    a::before, .icon-wrap::before {
-      top: 50%;
-      -webkit-transform: translateX(-50%) rotate(-135deg);
-      transform: translateX(-50%) rotate(-135deg);
-      -webkit-transform-origin: 50% 0%;
-      transform-origin: 50% 0%;
-    }
-
-    a.next::before, a.next .icon-wrap::before {
-      -webkit-transform: translateX(-50%) rotate(135deg);
-      transform: translateX(-50%) rotate(135deg);
-      -webkit-transform-origin: 50% 0%;
-      transform-origin: 50% 0%;
-    }
-
-    a::after, .icon-wrap::after {
-      top: 50%;
-      -webkit-transform: translateX(-50%) rotate(-45deg);
-      transform: translateX(-50%) rotate(-45deg);
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-    }
-
-    a.next::after, a.next .icon-wrap::after {
-      -webkit-transform: translateX(-50%) rotate(45deg);
-      transform: translateX(-50%) rotate(45deg);
-      -webkit-transform-origin: 100% 0%;
-      transform-origin: 100% 0%;
-    }
-
-    h3 {
-      position: absolute;
-      top: 50%;
-      margin: 0;
-      color: #fff;
-      text-transform: uppercase;
-      opacity: 0;
-      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-      transition: transform 0.3s, opacity 0.3s;
-      padding: 0 20px;
-    }
-
-    a:hover .icon-wrap::before, a:hover .icon-wrap::after {
-      height: 50%;
-    }
-
-    a:hover::before, a:hover .icon-wrap::before {
-      -webkit-transform: translateX(-50%) rotate(-125deg);
-      transform: translateX(-50%) rotate(-125deg);
-    }
-
-    a.next:hover::before, a.next:hover .icon-wrap::before {
-      -webkit-transform: translateX(-50%) rotate(125deg);
-      transform: translateX(-50%) rotate(125deg);
-    }
-
-    a:hover::after, a:hover .icon-wrap::after {
-      -webkit-transform: translateX(-50%) rotate(-55deg);
-      transform: translateX(-50%) rotate(-55deg);
-      background: #fff;
-    }
-
-    a.next:hover::after, a.next:hover .icon-wrap::after {
-      -webkit-transform: translateX(-50%) rotate(55deg);
-      transform: translateX(-50%) rotate(55deg);
+      width: 80px;
+      -webkit-animation: arrow-jump 1.5s infinite;
+      -moz-animation:    arrow-jump 1.5s infinite;
+      animation:         arrow-jump 1.5s infinite;
     }
   }
 
-  /*
-  *   Phone Size
-  */
-  @media(max-width: 768px) {
-    .banner {
-      .word {
-        &.right {
-          float: right;
-        }
-      }
-    }
-  }
+  //////////////////////////////////
+//  part two
+  /////////////////////////////////
 }

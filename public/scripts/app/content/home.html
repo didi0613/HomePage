@@ -68,15 +68,175 @@
     </div>
 </div>
 
-<nav>
-    <a class="prev" href="#about">
-        <span class="icon-wrap"></span>
-        <h3>About Me</h3>
-    </a>
-    <a class="next" href="#portfolio">
-        <span class="icon-wrap"></span>
-        <h3>Portfolio</h3>
-    </a>
-</nav>
+<!--arrow navigation-->
+<div class="nav">
+    <a href="#about"><img class="arrow" src="../images/arrow.png"></a>
+</div>
+
+<!--about me-->
+<div id="about" class="about">
+    <div class="content">
+        <!--intro of myself-->
+        <div class="intro">
+            <h2 class="subtitle">A brief background</h2>
+            <p>
+                I am a graduate student from USC majored in computer science.
+                My interest in web development stemmed from my enamoured of beauty.
+                Between my major and interests, I admittedly spend most of my time in front of the screen.
+                Writing smart code, creating adorable user interface, drawing cutie pictures and filling up a fresh cup of coffee take most of my life.
+            </p>
+            <p>
+                Now I am working as a front end engineer responsible for GoToTraining Join product.
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="brief-portfolio">
+            <h2 class="subtitle">My latest projects</h2>
+            <div class="list row">
+                <a href="#portfolio" class="col-md-3">
+                    <figure>
+                        <img src="../images/citrix.png">
+                        <figcaption>Citrix GoToTraining</figcaption>
+                    </figure>
+                </a>
+                <a href="#portfolio" class="col-md-3">
+                    <figure>
+                        <img src="../images/hiptraveler.png">
+                        <figcaption>Hiptraveler</figcaption>
+                    </figure>
+                </a>
+                <a href="#portfolio" class="col-md-3 last">
+                    <figure>
+                        <img src="../images/fullscreen.png">
+                        <figcaption>Fullscreen Inc.</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="viewmore">
+                <a href="#portfolio" class="button">View more</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--education-->
+        <div class="education">
+            <h2 class="subtitle">A look into my techs</h2>
+            <ul class="timeline">
+                <!-- Item 1 -->
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">Citrix</span>
+                            <span class="time-wrapper"><span class="time">2014 - Present</span></span>
+                        </div>
+                        <div class="desc">Web developer responsible for GoToTraining Join product</div>
+                    </div>
+                </li>
+
+                <!-- Item 2 -->
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="flag">USC</span>
+                            <span class="time-wrapper"><span class="time">2013 - 2014</span></span>
+                        </div>
+                        <div class="desc">Master degree majored in computer science</div>
+                    </div>
+                </li>
+
+                <!-- Item 3 -->
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">Hip Traveler</span>
+                            <span class="time-wrapper"><span class="time">2014</span></span>
+                        </div>
+                        <div class="desc">5 months web developer internship</div>
+                    </div>
+                </li>
+
+                <!-- Item 4 -->
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="flag">Fullscreen Inc</span>
+                            <span class="time-wrapper"><span class="time">2013</span></span>
+                        </div>
+                        <div class="desc">2 months channel partnership internship</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--skills-->
+        <div class="skills">
+            <div class="progress-set">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                         aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        Knockout.js
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                         aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        Durandal
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                         aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                        jQuery
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                         aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                        HTML5
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                         aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                        CSS3 / SASS
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                         aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                        I18n
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                         aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                        Underscore / Bootstrap / Font awesome / YUI
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                         aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                        Git
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                         aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                        Cucumber.js
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                         aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                        Unit Test
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
