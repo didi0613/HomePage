@@ -1,0 +1,62 @@
+$dots: 7;
+$color: $about-base;
+$color2: $color;
+$size: 15px;
+$speed: 0.4s;
+
+@include keyframes(sway){
+  from { top: 0px; }
+  to   { top: 40px; @include transform(scale(0.75)); z-index:1; opacity: 0; }
+}
+
+@include keyframes(swayb){
+  from { top: 40px; @include transform(scale(0.75)); z-index: 2; }
+  to   { top: 0px; }
+}
+
+@include keyframes(reset){
+  from { top: 0px; }
+  to { top: 0px; }
+}
+
+.loader {
+  width: 200px;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin: 1em;
+  @include transform( translate(-50%, -50%) rotate(180deg));
+
+  .dot {
+    width: $size; height: $size;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 0px; background: $color;
+    @include animation(sway $speed ease infinite);
+
+    @for $i from 1 through $dots {
+      &:nth-child(#{$i}) {
+        left: ($i/$dots)*100%;
+        @include animation-delay($i/4 + s);
+      }
+    }
+  }
+
+  .dotb {
+    width: $size; height: $size;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0px; background: $color2;
+    @include animation(swayb $speed ease infinite 3s, reset 1s ease forwards 5s);
+
+    @for $j from 1 through $dots {
+      &:nth-child(#{$j}) {
+        left: ($j/$dots)*100%;
+        @include animation-delay($j/4 + s);
+      }
+    }
+  }
+}
+
+

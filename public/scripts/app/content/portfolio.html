@@ -1,408 +1,402 @@
-<div class="portfolio">
-    <div class="header">
-        <ul>
-            <li><a href="#about"><i class="fa fa-fw fa-user"></i></a></li>
-            <li><a href="#"><i class="fa fa-fw fa-home"></i></a></li>
-            <li class="current"><a href="#portfolio"><i class="fa fa-fw fa-briefcase"></i></a></li>
-        </ul>
+<section class="portfolio">
+    <!--title-->
+    <div class="grid-title" data-bind="visible: general()">
+        <h2>Portfolio</h2>
     </div>
 
-    <div class="content" data-bind="visible: general()">
-        <ul>
-            <li data-bind="click: detail.bind(self, 'citrix')">
-                <a href="#citrix-info">
-                    <img src="../images/citrix.png"/>
+    <!--project lists-->
+    <div class="grid-wrap" data-bind="visible: general()">
+        <div class="grid">
+            <a data-bind="click: detail.bind(self,'citrix')">
+                <figure>
+                    <img src="../images/citrix.jpg">
+                </figure>
+            </a>
 
-                    <h2>Citrix</h2>
-                    <h4>GoToTraining join, made training online easy.</h4>
-                </a>
-            </li>
+            <a data-bind="click: detail.bind(self,'hiptraveler')">
+                <figure>
+                    <img src="../images/hiptraveler.jpg">
+                </figure>
+            </a>
 
-            <li data-bind="click: detail.bind(self, 'hiptraveler')">
-                <a>
-                    <img src="../images/hiptraveler.png"/>
+            <a data-bind="click: detail.bind(self,'fullscreen')">
+                <figure>
+                    <img src="../images/fullscreen.jpg">
+                </figure>
+            </a>
 
-                    <h2>Hip Traveler</h2>
-                    <h4>Completion of main page build Phase Two.</h4>
-                </a>
-            </li>
+            <a data-bind="click: detail.bind(self,'multi-threading')">
+                <figure>
+                    <img src="../images/multi-threading.png">
+                </figure>
+            </a>
 
-            <li data-bind="click: detail.bind(self, 'fullscreen')">
-                <a>
-                    <img src="../images/fullscreen.png"/>
+            <a data-bind="click: detail.bind(self,'weather-search')">
+                <figure>
+                    <img src="../images/weather.jpg">
+                </figure>
+            </a>
 
-                    <h2>Fullscreen Inc</h2>
-                    <h4>Identified Opinion Leaders by implementing data capture.</h4>
-                </a>
-            </li>
-
-            <li data-bind="click: detail.bind(self, 'multi-threading')">
-                <a>
-                    <img src="../images/multi-threading.png"/>
-
-                    <h2>OS -- USC</h2>
-                    <h4>Emulation of the Token Bucket algorithm using POSIX threads.</h4>
-                </a>
-            </li>
-
-            <li data-bind="click: detail.bind(self, 'weather-search')">
-                <a>
-                    <img src="../images/weather-search.png"/>
-
-                    <h2>Web Tech -- USC</h2>
-                    <h4>Yahoo! Weather & Facebook Mashup.</h4>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <!--citrix detail-->
-    <div class="content" data-bind="visible: !general() && type() === 'citrix'">
-        <div class="title">
-            <h3>GoToTraining Join</h3>
-            <h4>Made training online easy.</h4>
-            <p class="brief">
-                GoToTraining(G2T) is the product for online learning.
-                People can teach face to face, engage students, check the results and automatically registration.
-                Our team is to develop the no download version of G2T, and guarantee both the organizer and attendees can join the session through HTML5.
-            </p>
-        </div>
-
-        <div id="slideshow-wrap">
-            <input type="radio" id="button-1" name="controls" checked="checked"/>
-            <label for="button-1"></label>
-            <input type="radio" id="button-2" name="controls"/>
-            <label for="button-2"></label>
-            <input type="radio" id="button-3" name="controls"/>
-            <label for="button-3"></label>
-            <input type="radio" id="button-4" name="controls"/>
-            <label for="button-4"></label>
-            <input type="radio" id="button-5" name="controls"/>
-            <label for="button-5"></label>
-
-            <div id="slideshow-inner">
-                <ul>
-                    <li id="slide1"><img src="../images/citrix-detail/main.png"/></li>
-                    <li id="slide4"><img src="../images/citrix-detail/test.png"/></li>
-                    <li id="slide5"><img src="../images/citrix-detail/test-answer.png"/></li>
-                    <li id="slide3"><img src="../images/citrix-detail/poll.png"/></li>
-                    <li id="slide2"><img src="../images/citrix-detail/loading.png"/></li>
-                </ul>
-            </div>
-            <div class="close">
-                <a href="#" data-bind="click:back">
-                    <i class="fa fa-times"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="description">
-            <h3 class="des-highlighted">Highlighted:</h3>
-            <div class="des-detail">
-                1)&nbsp;Poll Feature:<br>
-                Organizer can launch polls to attendees for collecting feedback.
-                The training will automatically calculate each option's selected percentage.<br>
-                <br>
-                2)&nbsp;Test Feature:<br>
-                Organizer can launch tests to attendees for online testing.
-                The training will automatically get each attendees score, and give back to the attendees with corrected answers.<br>
-                <br>
-                3)&nbsp;Material Feature:<br>
-                Organizer can share materials with attendees for online courses.
-                The training will automatically assigned the material to all the attendees.<br>
-                <br>
-                4)&nbsp;Hand Raising Feature:<br>
-                Attendees can raising their hands while in the session.
-                A notified icon will be shown to the organizer.<br>
-                <br>
-                5)&nbsp;I18n Feature:<br>
-                We also internationalization and localization the product in English, China, Germany, French etc. countries,
-                which will make the products oriented to broader market.<br>
-                <br>
-                6)&nbsp;Breakoust:<br>
-                The new feature for group working inside of main session.
-                The team is aiming at Breakouts currently, which will be released in early February.
-            </div>
+            <a data-bind="click: detail.bind(self,'others')">
+                <figure>
+                    <img src="../images/OthersCover.gif">
+                </figure>
+            </a>
         </div>
     </div>
 
-    <!--hiptraveler detail-->
-    <div class="content" data-bind="visible: !general() && type() === 'hiptraveler'">
-        <div class="title">
-            <h3>Hiptraveler</h3>
-            <h4>Because every traveler has a story.</h4>
-            <p class="brief">
-                Hiptraveler blend the travel story-telling with detailed itineraries,
-                so we can follow in the footsteps of our favorite travelers.
-                we can easily plan just by browsing through the top
-                travelogues and itineraries to inspire the next trip or create our own one by within trip planner.
-                Also we can book the flights, hotels and excursions directly on hip and we can save & share our
-                memories by truning the itinerary into a Travelogue complete with blog, video and pictures from our trip.
-            </p>
-        </div>
-
-        <div id="slideshow-wrap-1">
-            <input type="radio" id="button-1-1" name="controls" checked="checked"/>
-            <label for="button-1-1"></label>
-            <input type="radio" id="button-2-1" name="controls"/>
-            <label for="button-2-1"></label>
-            <input type="radio" id="button-3-1" name="controls"/>
-            <label for="button-3-1"></label>
-            <input type="radio" id="button-4-1" name="controls"/>
-            <label for="button-4-1"></label>
-
-            <div id="slideshow-inner-1">
-                <ul>
-                    <li id="slide1-1"><img src="../images/hiptraveler-detail/main.png"/></li>
-                    <li id="slide2-1"><img src="../images/hiptraveler-detail/home.png"/></li>
-                    <li id="slide3-1"><img src="../images/hiptraveler-detail/login.png"/></li>
-                    <li id="slide4-1"><img src="../images/hiptraveler-detail/sidebar.png"/></li>
-                </ul>
-            </div>
-            <div class="close">
-                <a href="#" data-bind="click:back">
-                    <i class="fa fa-times"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="description">
-            <h3 class="des-highlighted">Highlighted:</h3>
-            <div class="des-detail">
-                1)&nbsp;Landing page:<br>
-                The standalone web page distinct from the main website, designed for people login
-                by creating or using an existing account or facebook, twitter etc official accounts.<br>
-                <br>
-                2)&nbsp;Sidebar "build an itinerary" tab:<br>
-                TripIt automatically generated by naming the new trip, selecting the specific starting date by date picker, etc
-                for wherever you are going.Based on your destination, Hiptraveler generates road map selections for you.<br>
-                <br>
-            </div>
-        </div>
+    <div class="grid-detail" data-bind="if: !general() && type()=='citrix', visible: !general()">
+        <div data-bind="compose: '../content/gototraining.html'"></div>
     </div>
+</section>
 
-    <!--fullscreen detail-->
-    <div class="content" data-bind="visible: !general() && type() === 'fullscreen'">
-        <div class="title">
-            <h3>Fullscreen Inc.</h3>
-            <h4>The first media company for the connected generation.</h4>
-            <p class="brief">
-                GoToTraining(G2T) is the product for online learning.
-                People can teach face to face, engage students, check the results and automatically registration.
-                Our team is to develop the no download version of G2T, and guarantee both the organizer and attendees can join the session through HTML5.
-            </p>
-        </div>
 
-        <div id="slideshow-wrap-2">
-            <input type="radio" id="button-1-2" name="controls" checked="checked"/>
-            <label for="button-1-2"></label>
-            <input type="radio" id="button-2-2" name="controls"/>
-            <label for="button-2-2"></label>
-            <input type="radio" id="button-3-2" name="controls"/>
-            <label for="button-3-2"></label>
-            <input type="radio" id="button-4-2" name="controls"/>
-            <label for="button-4-2"></label>
-            <input type="radio" id="button-5-2" name="controls"/>
-            <label for="button-5-2"></label>
+<!--&lt;!&ndash;citrix detail&ndash;&gt;-->
+<!--<div class="content" data-bind="visible: !general() && type() === 'citrix'">-->
+<!--<div class="title">-->
+<!--<h3>GoToTraining Join</h3>-->
+<!--<h4>Made training online easy.</h4>-->
+<!--<p class="brief">-->
+<!--GoToTraining(G2T) is the product for online learning.-->
+<!--People can teach face to face, engage students, check the results and automatically registration.-->
+<!--Our team is to develop the no download version of G2T, and guarantee both the organizer and attendees can join the session through HTML5.-->
+<!--</p>-->
+<!--</div>-->
 
-            <div id="slideshow-inner-2">
-                <ul>
-                    <li id="slide1-2"><img src="../images/hiptraveler-detail/main.png"/></li>
-                    <li id="slide2-2"><img src="../images/hiptraveler-detail/home.png"/></li>
-                    <li id="slide3-2"><img src="../images/hiptraveler-detail/login.png"/></li>
-                    <li id="slide4-2"><img src="../images/hiptraveler-detail/sidebar.png"/></li>
-                    <li id="slide5-2"><img src="../images/hiptraveler-detail/main.png"/></li>
-                </ul>
-            </div>
-            <div class="close">
-                <a href="#" data-bind="click:back">
-                    <i class="fa fa-times"></i>
-                </a>
-            </div>
-        </div>
+<!--<div id="slideshow-wrap">-->
+<!--<input type="radio" id="button-1" name="controls" checked="checked"/>-->
+<!--<label for="button-1"></label>-->
+<!--<input type="radio" id="button-2" name="controls"/>-->
+<!--<label for="button-2"></label>-->
+<!--<input type="radio" id="button-3" name="controls"/>-->
+<!--<label for="button-3"></label>-->
+<!--<input type="radio" id="button-4" name="controls"/>-->
+<!--<label for="button-4"></label>-->
+<!--<input type="radio" id="button-5" name="controls"/>-->
+<!--<label for="button-5"></label>-->
 
-        <div class="description">
-            <h3 class="des-highlighted">Highlighted:</h3>
-            <div class="des-detail">
-                1)&nbsp;Poll Feature:<br>
-                Organizer can launch polls to attendees for collecting feedback.
-                The training will automatically calculate each option's selected percentage.<br>
-                <br>
-                2)&nbsp;Test Feature:<br>
-                Organizer can launch tests to attendees for online testing.
-                The training will automatically get each attendees score, and give back to the attendees with corrected answers.<br>
-                <br>
-                3)&nbsp;Material Feature:<br>
-                Organizer can share materials with attendees for online courses.
-                The training will automatically assigned the material to all the attendees.<br>
-                <br>
-                4)&nbsp;Hand Raising Feature:<br>
-                Attendees can raising their hands while in the session.
-                A notified icon will be shown to the organizer.<br>
-                <br>
-                5)&nbsp;I18n Feature:<br>
-                We also internationalization and localization the product in English, China, Germany, French etc. countries,
-                which will make the products oriented to broader market.<br>
-                <br>
-                6)&nbsp;Breakoust:<br>
-                The new feature for group working inside of main session.
-                The team is aiming at Breakouts currently, which will be released in early February.
-            </div>
-            <p>
-                I have developed a data capture program to improve the efficiency of collecting data,
-                Identified the opinion leaders automatically and reach in and out with potential customers to maximum
-                efficiency,
-                Collected and stored data in later usage as well.
-            </p>
-        </div>
-    </div>
+<!--<div id="slideshow-inner">-->
+<!--<ul>-->
+<!--<li id="slide1"><img src="../images/citrix-detail/main.png"/></li>-->
+<!--<li id="slide4"><img src="../images/citrix-detail/test.png"/></li>-->
+<!--<li id="slide5"><img src="../images/citrix-detail/test-answer.png"/></li>-->
+<!--<li id="slide3"><img src="../images/citrix-detail/poll.png"/></li>-->
+<!--<li id="slide2"><img src="../images/citrix-detail/loading.png"/></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--<div class="close">-->
+<!--<a href="#" data-bind="click:back">-->
+<!--<i class="fa fa-times"></i>-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
 
-    <!--multi-threading detail-->
-    <div class="content" data-bind="visible: !general() && type() === 'multi-threading'">
-        <div class="title">
-            <h3>Multi-threading</h3>
-            <h4>Token Bucket Emulation in C.</h4>
-            <p class="brief">
-                GoToTraining(G2T) is the product for online learning.
-                People can teach face to face, engage students, check the results and automatically registration.
-                Our team is to develop the no download version of G2T, and guarantee both the organizer and attendees can join the session through HTML5.
-            </p>
-        </div>
+<!--<div class="description">-->
+<!--<h3 class="des-highlighted">Highlighted:</h3>-->
+<!--<div class="des-detail">-->
+<!--1)&nbsp;Poll Feature:<br>-->
+<!--Organizer can launch polls to attendees for collecting feedback.-->
+<!--The training will automatically calculate each option's selected percentage.<br>-->
+<!--<br>-->
+<!--2)&nbsp;Test Feature:<br>-->
+<!--Organizer can launch tests to attendees for online testing.-->
+<!--The training will automatically get each attendees score, and give back to the attendees with corrected answers.<br>-->
+<!--<br>-->
+<!--3)&nbsp;Material Feature:<br>-->
+<!--Organizer can share materials with attendees for online courses.-->
+<!--The training will automatically assigned the material to all the attendees.<br>-->
+<!--<br>-->
+<!--4)&nbsp;Hand Raising Feature:<br>-->
+<!--Attendees can raising their hands while in the session.-->
+<!--A notified icon will be shown to the organizer.<br>-->
+<!--<br>-->
+<!--5)&nbsp;I18n Feature:<br>-->
+<!--We also internationalization and localization the product in English, China, Germany, French etc. countries,-->
+<!--which will make the products oriented to broader market.<br>-->
+<!--<br>-->
+<!--6)&nbsp;Breakoust:<br>-->
+<!--The new feature for group working inside of main session.-->
+<!--The team is aiming at Breakouts currently, which will be released in early February.-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
-        <div id="slideshow-wrap-3">
-            <input type="radio" id="button-1-3" name="controls" checked="checked"/>
-            <label for="button-1-3"></label>
-            <input type="radio" id="button-2-3" name="controls"/>
-            <label for="button-2-3"></label>
-            <input type="radio" id="button-3-3" name="controls"/>
-            <label for="button-3-3"></label>
+<!--&lt;!&ndash;hiptraveler detail&ndash;&gt;-->
+<!--<div class="content" data-bind="visible: !general() && type() === 'hiptraveler'">-->
+<!--<div class="title">-->
+<!--<h3>Hiptraveler</h3>-->
+<!--<h4>Because every traveler has a story.</h4>-->
+<!--<p class="brief">-->
+<!--Hiptraveler blend the travel story-telling with detailed itineraries,-->
+<!--so we can follow in the footsteps of our favorite travelers.-->
+<!--we can easily plan just by browsing through the top-->
+<!--travelogues and itineraries to inspire the next trip or create our own one by within trip planner.-->
+<!--Also we can book the flights, hotels and excursions directly on hip and we can save & share our-->
+<!--memories by truning the itinerary into a Travelogue complete with blog, video and pictures from our trip.-->
+<!--</p>-->
+<!--</div>-->
 
-            <div id="slideshow-inner-3">
-                <ul>
-                    <li id="slide1-3"><img src="../images/multi-threading.png"/></li>
-                    <li id="slide2-3"><img src="../images/multithreading-detail/command.png"/></li>
-                    <li id="slide3-3"><img src="../images/multithreading-detail/log.png"/></li>
-                </ul>
-            </div>
-            <div class="close">
-                <a href="#" data-bind="click:back">
-                    <i class="fa fa-times"></i>
-                </a>
-            </div>
-        </div>
+<!--<div id="slideshow-wrap-1">-->
+<!--<input type="radio" id="button-1-1" name="controls" checked="checked"/>-->
+<!--<label for="button-1-1"></label>-->
+<!--<input type="radio" id="button-2-1" name="controls"/>-->
+<!--<label for="button-2-1"></label>-->
+<!--<input type="radio" id="button-3-1" name="controls"/>-->
+<!--<label for="button-3-1"></label>-->
+<!--<input type="radio" id="button-4-1" name="controls"/>-->
+<!--<label for="button-4-1"></label>-->
 
-        <div class="description">
-            <h3 class="des-highlighted">Highlighted:</h3>
-            <div class="des-detail">
-                1)&nbsp;Poll Feature:<br>
-                Organizer can launch polls to attendees for collecting feedback.
-                The training will automatically calculate each option's selected percentage.<br>
-                <br>
-                2)&nbsp;Test Feature:<br>
-                Organizer can launch tests to attendees for online testing.
-                The training will automatically get each attendees score, and give back to the attendees with corrected answers.<br>
-                <br>
-                3)&nbsp;Material Feature:<br>
-                Organizer can share materials with attendees for online courses.
-                The training will automatically assigned the material to all the attendees.<br>
-                <br>
-                4)&nbsp;Hand Raising Feature:<br>
-                Attendees can raising their hands while in the session.
-                A notified icon will be shown to the organizer.<br>
-                <br>
-                5)&nbsp;I18n Feature:<br>
-                We also internationalization and localization the product in English, China, Germany, French etc. countries,
-                which will make the products oriented to broader market.<br>
-                <br>
-                6)&nbsp;Breakoust:<br>
-                The new feature for group working inside of main session.
-                The team is aiming at Breakouts currently, which will be released in early February.
-            </div>
-            <p>
-                I have emulated and simulated a traffic shaper who transmits packets controlled
-                by a token bucket filter using multi-threading within a single process.
-            </p>
+<!--<div id="slideshow-inner-1">-->
+<!--<ul>-->
+<!--<li id="slide1-1"><img src="../images/hiptraveler-detail/main.png"/></li>-->
+<!--<li id="slide2-1"><img src="../images/hiptraveler-detail/home.png"/></li>-->
+<!--<li id="slide3-1"><img src="../images/hiptraveler-detail/login.png"/></li>-->
+<!--<li id="slide4-1"><img src="../images/hiptraveler-detail/sidebar.png"/></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--<div class="close">-->
+<!--<a href="#" data-bind="click:back">-->
+<!--<i class="fa fa-times"></i>-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
 
-            <p>
-                Finished the emulation of the packet and token arrivals, the operation of the token
-                bucket filter, the first-come-first-served queues Q1 and Q2, and server S.
-                Also I have produced a trace of the emulation for every important event occurred in the emulation.
-            </p>
-        </div>
-    </div>
+<!--<div class="description">-->
+<!--<h3 class="des-highlighted">Highlighted:</h3>-->
+<!--<div class="des-detail">-->
+<!--1)&nbsp;Landing page:<br>-->
+<!--The standalone web page distinct from the main website, designed for people login-->
+<!--by creating or using an existing account or facebook, twitter etc official accounts.<br>-->
+<!--<br>-->
+<!--2)&nbsp;Sidebar "build an itinerary" tab:<br>-->
+<!--TripIt automatically generated by naming the new trip, selecting the specific starting date by date picker, etc-->
+<!--for wherever you are going.Based on your destination, Hiptraveler generates road map selections for you.<br>-->
+<!--<br>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
-    <!--weather search detail-->
-    <div class="content" data-bind="visible: !general() && type() === 'weather-search'">
-        <div class="title">
-            <h3>Yahoo! Weather Search</h3>
-            <h4>Perform weather search and post details to Facebook.</h4>
-            <p class="brief">
-                GoToTraining(G2T) is the product for online learning.
-                People can teach face to face, engage students, check the results and automatically registration.
-                Our team is to develop the no download version of G2T, and guarantee both the organizer and attendees can join the session through HTML5.
-            </p>
-        </div>
+<!--&lt;!&ndash;fullscreen detail&ndash;&gt;-->
+<!--<div class="content" data-bind="visible: !general() && type() === 'fullscreen'">-->
+<!--<div class="title">-->
+<!--<h3>Fullscreen Inc.</h3>-->
+<!--<h4>The first media company for the connected generation.</h4>-->
+<!--<p class="brief">-->
+<!--GoToTraining(G2T) is the product for online learning.-->
+<!--People can teach face to face, engage students, check the results and automatically registration.-->
+<!--Our team is to develop the no download version of G2T, and guarantee both the organizer and attendees can join the session through HTML5.-->
+<!--</p>-->
+<!--</div>-->
 
-        <div id="slideshow-wrap-4">
-            <input type="radio" id="button-1-4" name="controls" checked="checked"/>
-            <label for="button-1-4"></label>
-            <input type="radio" id="button-2-4" name="controls"/>
-            <label for="button-2-4"></label>
-            <input type="radio" id="button-3-4" name="controls"/>
-            <label for="button-3-4"></label>
-            <input type="radio" id="button-4-4" name="controls"/>
-            <label for="button-4-4"></label>
+<!--<div id="slideshow-wrap-2">-->
+<!--<input type="radio" id="button-1-2" name="controls" checked="checked"/>-->
+<!--<label for="button-1-2"></label>-->
+<!--<input type="radio" id="button-2-2" name="controls"/>-->
+<!--<label for="button-2-2"></label>-->
+<!--<input type="radio" id="button-3-2" name="controls"/>-->
+<!--<label for="button-3-2"></label>-->
+<!--<input type="radio" id="button-4-2" name="controls"/>-->
+<!--<label for="button-4-2"></label>-->
+<!--<input type="radio" id="button-5-2" name="controls"/>-->
+<!--<label for="button-5-2"></label>-->
 
-            <div id="slideshow-inner-4">
-                <ul>
-                    <li id="slide1-4"><img src="../images/weather-search.png"/></li>
-                    <li id="slide2-4"><img src="../images/weathersearch-detail/invalid.png"/></li>
-                    <li id="slide3-4"><img src="../images/weathersearch-detail/current.png"/></li>
-                    <li id="slide4-4"><img src="../images/weathersearch-detail/forecast.png"/></li>
-                </ul>
-            </div>
-            <div class="close">
-                <a href="#" data-bind="click:back">
-                    <i class="fa fa-times"></i>
-                </a>
-            </div>
-        </div>
+<!--<div id="slideshow-inner-2">-->
+<!--<ul>-->
+<!--<li id="slide1-2"><img src="../images/hiptraveler-detail/main.png"/></li>-->
+<!--<li id="slide2-2"><img src="../images/hiptraveler-detail/home.png"/></li>-->
+<!--<li id="slide3-2"><img src="../images/hiptraveler-detail/login.png"/></li>-->
+<!--<li id="slide4-2"><img src="../images/hiptraveler-detail/sidebar.png"/></li>-->
+<!--<li id="slide5-2"><img src="../images/hiptraveler-detail/main.png"/></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--<div class="close">-->
+<!--<a href="#" data-bind="click:back">-->
+<!--<i class="fa fa-times"></i>-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
 
-        <div class="description">
-            <h3 class="des-highlighted">Highlighted:</h3>
-            <div class="des-detail">
-                1)&nbsp;Poll Feature:<br>
-                Organizer can launch polls to attendees for collecting feedback.
-                The training will automatically calculate each option's selected percentage.<br>
-                <br>
-                2)&nbsp;Test Feature:<br>
-                Organizer can launch tests to attendees for online testing.
-                The training will automatically get each attendees score, and give back to the attendees with corrected answers.<br>
-                <br>
-                3)&nbsp;Material Feature:<br>
-                Organizer can share materials with attendees for online courses.
-                The training will automatically assigned the material to all the attendees.<br>
-                <br>
-                4)&nbsp;Hand Raising Feature:<br>
-                Attendees can raising their hands while in the session.
-                A notified icon will be shown to the organizer.<br>
-                <br>
-                5)&nbsp;I18n Feature:<br>
-                We also internationalization and localization the product in English, China, Germany, French etc. countries,
-                which will make the products oriented to broader market.<br>
-                <br>
-                6)&nbsp;Breakoust:<br>
-                The new feature for group working inside of main session.
-                The team is aiming at Breakouts currently, which will be released in early February.
-            </div>
-            <p>
-                My first project related to UI work.
-            </p>
-            <p>Get familiar with the Ajax, and XML technologies.
-                Used the combination of HTML, CSS, DOM, XMLHttpRequest and Java Servlets to provide the UI perform
-                weather search.
-                Got hands-experience on YUI library and AWS.
-            </p>
-        </div>
-    </div>
-</div>
+<!--<div class="description">-->
+<!--<h3 class="des-highlighted">Highlighted:</h3>-->
+<!--<div class="des-detail">-->
+<!--1)&nbsp;Poll Feature:<br>-->
+<!--Organizer can launch polls to attendees for collecting feedback.-->
+<!--The training will automatically calculate each option's selected percentage.<br>-->
+<!--<br>-->
+<!--2)&nbsp;Test Feature:<br>-->
+<!--Organizer can launch tests to attendees for online testing.-->
+<!--The training will automatically get each attendees score, and give back to the attendees with corrected answers.<br>-->
+<!--<br>-->
+<!--3)&nbsp;Material Feature:<br>-->
+<!--Organizer can share materials with attendees for online courses.-->
+<!--The training will automatically assigned the material to all the attendees.<br>-->
+<!--<br>-->
+<!--4)&nbsp;Hand Raising Feature:<br>-->
+<!--Attendees can raising their hands while in the session.-->
+<!--A notified icon will be shown to the organizer.<br>-->
+<!--<br>-->
+<!--5)&nbsp;I18n Feature:<br>-->
+<!--We also internationalization and localization the product in English, China, Germany, French etc. countries,-->
+<!--which will make the products oriented to broader market.<br>-->
+<!--<br>-->
+<!--6)&nbsp;Breakoust:<br>-->
+<!--The new feature for group working inside of main session.-->
+<!--The team is aiming at Breakouts currently, which will be released in early February.-->
+<!--</div>-->
+<!--<p>-->
+<!--I have developed a data capture program to improve the efficiency of collecting data,-->
+<!--Identified the opinion leaders automatically and reach in and out with potential customers to maximum-->
+<!--efficiency,-->
+<!--Collected and stored data in later usage as well.-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;multi-threading detail&ndash;&gt;-->
+<!--<div class="content" data-bind="visible: !general() && type() === 'multi-threading'">-->
+<!--<div class="title">-->
+<!--<h3>Multi-threading</h3>-->
+<!--<h4>Token Bucket Emulation in C.</h4>-->
+<!--<p class="brief">-->
+<!--GoToTraining(G2T) is the product for online learning.-->
+<!--People can teach face to face, engage students, check the results and automatically registration.-->
+<!--Our team is to develop the no download version of G2T, and guarantee both the organizer and attendees can join the session through HTML5.-->
+<!--</p>-->
+<!--</div>-->
+
+<!--<div id="slideshow-wrap-3">-->
+<!--<input type="radio" id="button-1-3" name="controls" checked="checked"/>-->
+<!--<label for="button-1-3"></label>-->
+<!--<input type="radio" id="button-2-3" name="controls"/>-->
+<!--<label for="button-2-3"></label>-->
+<!--<input type="radio" id="button-3-3" name="controls"/>-->
+<!--<label for="button-3-3"></label>-->
+
+<!--<div id="slideshow-inner-3">-->
+<!--<ul>-->
+<!--<li id="slide1-3"><img src="../images/multi-threading.png"/></li>-->
+<!--<li id="slide2-3"><img src="../images/multithreading-detail/command.png"/></li>-->
+<!--<li id="slide3-3"><img src="../images/multithreading-detail/log.png"/></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--<div class="close">-->
+<!--<a href="#" data-bind="click:back">-->
+<!--<i class="fa fa-times"></i>-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="description">-->
+<!--<h3 class="des-highlighted">Highlighted:</h3>-->
+<!--<div class="des-detail">-->
+<!--1)&nbsp;Poll Feature:<br>-->
+<!--Organizer can launch polls to attendees for collecting feedback.-->
+<!--The training will automatically calculate each option's selected percentage.<br>-->
+<!--<br>-->
+<!--2)&nbsp;Test Feature:<br>-->
+<!--Organizer can launch tests to attendees for online testing.-->
+<!--The training will automatically get each attendees score, and give back to the attendees with corrected answers.<br>-->
+<!--<br>-->
+<!--3)&nbsp;Material Feature:<br>-->
+<!--Organizer can share materials with attendees for online courses.-->
+<!--The training will automatically assigned the material to all the attendees.<br>-->
+<!--<br>-->
+<!--4)&nbsp;Hand Raising Feature:<br>-->
+<!--Attendees can raising their hands while in the session.-->
+<!--A notified icon will be shown to the organizer.<br>-->
+<!--<br>-->
+<!--5)&nbsp;I18n Feature:<br>-->
+<!--We also internationalization and localization the product in English, China, Germany, French etc. countries,-->
+<!--which will make the products oriented to broader market.<br>-->
+<!--<br>-->
+<!--6)&nbsp;Breakoust:<br>-->
+<!--The new feature for group working inside of main session.-->
+<!--The team is aiming at Breakouts currently, which will be released in early February.-->
+<!--</div>-->
+<!--<p>-->
+<!--I have emulated and simulated a traffic shaper who transmits packets controlled-->
+<!--by a token bucket filter using multi-threading within a single process.-->
+<!--</p>-->
+
+<!--<p>-->
+<!--Finished the emulation of the packet and token arrivals, the operation of the token-->
+<!--bucket filter, the first-come-first-served queues Q1 and Q2, and server S.-->
+<!--Also I have produced a trace of the emulation for every important event occurred in the emulation.-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;weather search detail&ndash;&gt;-->
+<!--<div class="content" data-bind="visible: !general() && type() === 'weather-search'">-->
+<!--<div class="title">-->
+<!--<h3>Yahoo! Weather Search</h3>-->
+<!--<h4>Perform weather search and post details to Facebook.</h4>-->
+<!--<p class="brief">-->
+<!--GoToTraining(G2T) is the product for online learning.-->
+<!--People can teach face to face, engage students, check the results and automatically registration.-->
+<!--Our team is to develop the no download version of G2T, and guarantee both the organizer and attendees can join the session through HTML5.-->
+<!--</p>-->
+<!--</div>-->
+
+<!--<div id="slideshow-wrap-4">-->
+<!--<input type="radio" id="button-1-4" name="controls" checked="checked"/>-->
+<!--<label for="button-1-4"></label>-->
+<!--<input type="radio" id="button-2-4" name="controls"/>-->
+<!--<label for="button-2-4"></label>-->
+<!--<input type="radio" id="button-3-4" name="controls"/>-->
+<!--<label for="button-3-4"></label>-->
+<!--<input type="radio" id="button-4-4" name="controls"/>-->
+<!--<label for="button-4-4"></label>-->
+
+<!--<div id="slideshow-inner-4">-->
+<!--<ul>-->
+<!--<li id="slide1-4"><img src="../images/weather-search.png"/></li>-->
+<!--<li id="slide2-4"><img src="../images/weathersearch-detail/invalid.png"/></li>-->
+<!--<li id="slide3-4"><img src="../images/weathersearch-detail/current.png"/></li>-->
+<!--<li id="slide4-4"><img src="../images/weathersearch-detail/forecast.png"/></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--<div class="close">-->
+<!--<a href="#" data-bind="click:back">-->
+<!--<i class="fa fa-times"></i>-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="description">-->
+<!--<h3 class="des-highlighted">Highlighted:</h3>-->
+<!--<div class="des-detail">-->
+<!--1)&nbsp;Poll Feature:<br>-->
+<!--Organizer can launch polls to attendees for collecting feedback.-->
+<!--The training will automatically calculate each option's selected percentage.<br>-->
+<!--<br>-->
+<!--2)&nbsp;Test Feature:<br>-->
+<!--Organizer can launch tests to attendees for online testing.-->
+<!--The training will automatically get each attendees score, and give back to the attendees with corrected answers.<br>-->
+<!--<br>-->
+<!--3)&nbsp;Material Feature:<br>-->
+<!--Organizer can share materials with attendees for online courses.-->
+<!--The training will automatically assigned the material to all the attendees.<br>-->
+<!--<br>-->
+<!--4)&nbsp;Hand Raising Feature:<br>-->
+<!--Attendees can raising their hands while in the session.-->
+<!--A notified icon will be shown to the organizer.<br>-->
+<!--<br>-->
+<!--5)&nbsp;I18n Feature:<br>-->
+<!--We also internationalization and localization the product in English, China, Germany, French etc. countries,-->
+<!--which will make the products oriented to broader market.<br>-->
+<!--<br>-->
+<!--6)&nbsp;Breakoust:<br>-->
+<!--The new feature for group working inside of main session.-->
+<!--The team is aiming at Breakouts currently, which will be released in early February.-->
+<!--</div>-->
+<!--<p>-->
+<!--My first project related to UI work.-->
+<!--</p>-->
+<!--<p>Get familiar with the Ajax, and XML technologies.-->
+<!--Used the combination of HTML, CSS, DOM, XMLHttpRequest and Java Servlets to provide the UI perform-->
+<!--weather search.-->
+<!--Got hands-experience on YUI library and AWS.-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->

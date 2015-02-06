@@ -101,7 +101,7 @@ body {
     height: 15vh; }
     body .nav .arrow {
       height: 100px;
-      width: 80px;
+      width: 120px;
       -webkit-animation: arrow-jump 1.5s infinite;
       -moz-animation: arrow-jump 1.5s infinite;
       animation: arrow-jump 1.5s infinite; }
@@ -286,212 +286,227 @@ body {
           background-color: #e9a1b9;
           font-size: 13px; }
 
-.portfolio .header ul li {
-  border-color: #0875BD; }
-  .portfolio .header ul li.current {
-    background-color: #0875BD; }
-.portfolio .header ul li:hover {
-  background-color: #0875BD; }
-.portfolio .header ul a {
-  color: #0875BD; }
-.portfolio .content {
-  padding: 40px; }
-  .portfolio .content ul {
-    list-style: none;
-    margin: 0;
-    padding: 0 20px; }
-    .portfolio .content ul li {
-      cursor: pointer;
-      border: 10px solid #0875BD;
-      margin: 20px 10px;
-      padding: 30px 23px 15px;
-      width: 360px;
-      float: left; }
-      .portfolio .content ul li a {
-        text-decoration: none;
-        display: block; }
-        .portfolio .content ul li a img {
-          width: 300px;
-          height: 250px; }
-      .portfolio .content ul li:hover {
-        background-color: #0875BD; }
-        .portfolio .content ul li:hover h2, .portfolio .content ul li:hover h4 {
-          color: #fff; }
-  .portfolio .content #slideshow-wrap, .portfolio .content #slideshow-wrap-1, .portfolio .content #slideshow-wrap-2, .portfolio .content #slideshow-wrap-3, .portfolio .content #slideshow-wrap-4 {
-    position: relative; }
-    .portfolio .content #slideshow-wrap li, .portfolio .content #slideshow-wrap-1 li, .portfolio .content #slideshow-wrap-2 li, .portfolio .content #slideshow-wrap-3 li, .portfolio .content #slideshow-wrap-4 li {
-      border: 5px solid #0875BD; }
-      .portfolio .content #slideshow-wrap li:hover, .portfolio .content #slideshow-wrap-1 li:hover, .portfolio .content #slideshow-wrap-2 li:hover, .portfolio .content #slideshow-wrap-3 li:hover, .portfolio .content #slideshow-wrap-4 li:hover {
-        background-color: #fff; }
-  .portfolio .content #slideshow-inner, .portfolio .content #slideshow-inner-1, .portfolio .content #slideshow-inner-2, .portfolio .content #slideshow-inner-3, .portfolio .content #slideshow-inner-4 {
-    overflow: hidden;
-    margin: 0 20%; }
-  .portfolio .content #slideshow-inner > ul, .portfolio .content #slideshow-inner-1 > ul, .portfolio .content #slideshow-inner-2 > ul, .portfolio .content #slideshow-inner-3 > ul, .portfolio .content #slideshow-inner-4 > ul {
+@-webkit-keyframes fade-in {
+  /* Safari and Chrome */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.portfolio {
+  padding: 0em 3% 4em;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #0875BD;
+  margin-top: 0;
+  height: 110vh; }
+  .portfolio .grid-title {
+    color: #fff;
+    padding: 3%; }
+  .portfolio .grid-wrap {
+    margin: 1% auto;
+    max-width: 1090px;
+    width: 100%;
     padding: 0;
-    list-style: none;
-    width: 500%;
-    overflow: hidden;
-    position: relative;
-    -webkit-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
-    -moz-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
-    -o-transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
-    transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1); }
-  .portfolio .content #slideshow-inner > ul > li, .portfolio .content #slideshow-inner-1 > ul > li, .portfolio .content #slideshow-inner-2 > ul > li, .portfolio .content #slideshow-inner-3 > ul > li, .portfolio .content #slideshow-inner-4 > ul > li {
-    width: 20%;
-    height: 550px;
-    float: left;
-    position: relative;
-    margin: 0;
-    padding: 0; }
-    .portfolio .content #slideshow-inner > ul > li img, .portfolio .content #slideshow-inner-1 > ul > li img, .portfolio .content #slideshow-inner-2 > ul > li img, .portfolio .content #slideshow-inner-3 > ul > li img, .portfolio .content #slideshow-inner-4 > ul > li img {
-      width: 100%;
-      height: 100%; }
-  .portfolio .content #slideshow-wrap input[type=radio],
-  .portfolio .content #slideshow-wrap-1 input[type=radio],
-  .portfolio .content #slideshow-wrap-2 input[type=radio],
-  .portfolio .content #slideshow-wrap-3 input[type=radio],
-  .portfolio .content #slideshow-wrap-4 input[type=radio] {
-    position: absolute;
-    visibility: hidden; }
-  .portfolio .content #slideshow-wrap label:not(.arrows):not(.show-description-label),
-  .portfolio .content #slideshow-wrap-1 label:not(.arrows):not(.show-description-label),
-  .portfolio .content #slideshow-wrap-2 label:not(.arrows):not(.show-description-label),
-  .portfolio .content #slideshow-wrap-3 label:not(.arrows):not(.show-description-label),
-  .portfolio .content #slideshow-wrap-4 label:not(.arrows):not(.show-description-label) {
-    position: absolute;
-    left: 50%;
-    bottom: -45px;
-    width: 12px;
-    height: 12px;
-    background-color: #c8c8c8;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
+    -webkit-perspective: 1500px;
+    perspective: 1500px; }
+    .portfolio .grid-wrap .grid {
+      position: relative;
+      -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.25, 1);
+      transition: all 0.5s cubic-bezier(0, 0, 0.25, 1);
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d; }
+      .portfolio .grid-wrap .grid a figure {
+        margin: 10px;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+        .portfolio .grid-wrap .grid a figure img {
+          display: block;
+          width: 339px;
+          height: 280px; }
+  .portfolio .grid-detail {
+    animation: fade-in 2s;
+    -moz-animation: fade-in 2s;
+    /* Firefox */
+    -webkit-animation: fade-in 2s;
+    /* Safari and Chrome */
+    -o-animation: fade-in 2s;
+    height: 100%; }
+
+@-webkit-keyframes sway {
+  from {
+    top: 0px; }
+  to {
+    top: 40px;
+    -webkit-transform: scale(0.75);
+    z-index: 1;
+    opacity: 0; } }
+@-moz-keyframes sway {
+  from {
+    top: 0px; }
+  to {
+    top: 40px;
+    -moz-transform: scale(0.75);
+    z-index: 1;
+    opacity: 0; } }
+@keyframes sway {
+  from {
+    top: 0px; }
+  to {
+    top: 40px;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    transform: scale(0.75);
+    z-index: 1;
+    opacity: 0; } }
+@-webkit-keyframes swayb {
+  from {
+    top: 40px;
+    -webkit-transform: scale(0.75);
+    z-index: 2; }
+  to {
+    top: 0px; } }
+@-moz-keyframes swayb {
+  from {
+    top: 40px;
+    -moz-transform: scale(0.75);
+    z-index: 2; }
+  to {
+    top: 0px; } }
+@keyframes swayb {
+  from {
+    top: 40px;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    transform: scale(0.75);
+    z-index: 2; }
+  to {
+    top: 0px; } }
+@-webkit-keyframes reset {
+  from {
+    top: 0px; }
+  to {
+    top: 0px; } }
+@-moz-keyframes reset {
+  from {
+    top: 0px; }
+  to {
+    top: 0px; } }
+@keyframes reset {
+  from {
+    top: 0px; }
+  to {
+    top: 0px; } }
+.loader {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 1em;
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+  -moz-transform: translate(-50%, -50%) rotate(180deg);
+  -ms-transform: translate(-50%, -50%) rotate(180deg);
+  -o-transform: translate(-50%, -50%) rotate(180deg);
+  transform: translate(-50%, -50%) rotate(180deg); }
+  .loader .dot {
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    cursor: pointer;
-    -webkit-box-shadow: 0px 0px 3px #c8c8c8;
-    -moz-box-shadow: 0px 0px 3px #c8c8c8;
-    box-shadow: 0px 0px 3px #c8c8c8;
-    -webkit-transition: background-color .2s;
-    -moz-transition: background-color .2s;
-    -o-transition: background-color .2s;
-    transition: background-color .2s; }
-  .portfolio .content #slideshow-wrap label:not(.arrows):active,
-  .portfolio .content #slideshow-wrap-1 label:not(.arrows):active,
-  .portfolio .content #slideshow-wrap-2 label:not(.arrows):active,
-  .portfolio .content #slideshow-wrap-3 label:not(.arrows):active,
-  .portfolio .content #slideshow-wrap-4 label:not(.arrows):active {
-    bottom: -46px; }
-  .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ label[for=button-1],
-  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-1-1:checked ~ label[for=button-1-1],
-  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-1-2:checked ~ label[for=button-1-2],
-  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-1-3:checked ~ label[for=button-1-3],
-  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-1-4:checked ~ label[for=button-1-3] {
-    background-color: #0875BD; }
-  .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ label[for=button-2],
-  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-2-1:checked ~ label[for=button-2-1],
-  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-2-2:checked ~ label[for=button-2-2],
-  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-2-3:checked ~ label[for=button-2-3],
-  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-2-4:checked ~ label[for=button-2-4] {
-    background-color: #0875BD; }
-  .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ label[for=button-3],
-  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-3-1:checked ~ label[for=button-3-1],
-  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-3-2:checked ~ label[for=button-3-2],
-  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-3-3:checked ~ label[for=button-3-3],
-  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-3-4:checked ~ label[for=button-3-4] {
-    background-color: #0875BD; }
-  .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ label[for=button-4],
-  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-4-1:checked ~ label[for=button-4-1],
-  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-4-2:checked ~ label[for=button-4-2],
-  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-4-3:checked ~ label[for=button-4-3],
-  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-4-4:checked ~ label[for=button-4-4] {
-    background-color: #0875BD; }
-  .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ label[for=button-5],
-  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-5-1:checked ~ label[for=button-5-1],
-  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-5-2:checked ~ label[for=button-5-2],
-  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-5-3:checked ~ label[for=button-5-3],
-  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-5-4:checked ~ label[for=button-5-4] {
-    background-color: #0875BD; }
-  .portfolio .content #slideshow-wrap label[for=button-1],
-  .portfolio .content #slideshow-wrap-1 label[for=button-1-1],
-  .portfolio .content #slideshow-wrap-2 label[for=button-1-2],
-  .portfolio .content #slideshow-wrap-3 label[for=button-1-3],
-  .portfolio .content #slideshow-wrap-4 label[for=button-1-4] {
-    margin-left: -36px; }
-  .portfolio .content #slideshow-wrap label[for=button-2],
-  .portfolio .content #slideshow-wrap-1 label[for=button-2-1],
-  .portfolio .content #slideshow-wrap-2 label[for=button-2-2],
-  .portfolio .content #slideshow-wrap-3 label[for=button-2-3],
-  .portfolio .content #slideshow-wrap-4 label[for=button-2-4] {
-    margin-left: -18px; }
-  .portfolio .content #slideshow-wrap label[for=button-4],
-  .portfolio .content #slideshow-wrap-1 label[for=button-4-1],
-  .portfolio .content #slideshow-wrap-2 label[for=button-4-2],
-  .portfolio .content #slideshow-wrap-3 label[for=button-4-3],
-  .portfolio .content #slideshow-wrap-4 label[for=button-4-4] {
-    margin-left: 18px; }
-  .portfolio .content #slideshow-wrap label[for=button-5],
-  .portfolio .content #slideshow-wrap-1 label[for=button-5-1],
-  .portfolio .content #slideshow-wrap-2 label[for=button-5-2],
-  .portfolio .content #slideshow-wrap-3 label[for=button-5-3],
-  .portfolio .content #slideshow-wrap-4 label[for=button-5-4] {
-    margin-left: 36px; }
-  .portfolio .content #slideshow-wrap input[type=radio]#button-1:checked ~ #slideshow-inner > ul,
-  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-1-1:checked ~ #slideshow-inner-1 > ul,
-  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-1-2:checked ~ #slideshow-inner-2 > ul,
-  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-1-3:checked ~ #slideshow-inner-3 > ul,
-  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-1-4:checked ~ #slideshow-inner-4 > ul {
-    left: 0; }
-  .portfolio .content #slideshow-wrap input[type=radio]#button-2:checked ~ #slideshow-inner > ul,
-  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-2-1:checked ~ #slideshow-inner-1 > ul,
-  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-2-2:checked ~ #slideshow-inner-2 > ul,
-  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-2-3:checked ~ #slideshow-inner-3 > ul,
-  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-2-4:checked ~ #slideshow-inner-4 > ul {
-    left: -100%; }
-  .portfolio .content #slideshow-wrap input[type=radio]#button-3:checked ~ #slideshow-inner > ul,
-  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-3-1:checked ~ #slideshow-inner-1 > ul,
-  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-3-2:checked ~ #slideshow-inner-2 > ul,
-  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-3-3:checked ~ #slideshow-inner-3 > ul,
-  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-3-4:checked ~ #slideshow-inner-4 > ul {
-    left: -200%; }
-  .portfolio .content #slideshow-wrap input[type=radio]#button-4:checked ~ #slideshow-inner > ul,
-  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-4-1:checked ~ #slideshow-inner-1 > ul,
-  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-4-2:checked ~ #slideshow-inner-2 > ul,
-  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-4-3:checked ~ #slideshow-inner-3 > ul,
-  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-4-4:checked ~ #slideshow-inner-4 > ul {
-    left: -300%; }
-  .portfolio .content #slideshow-wrap input[type=radio]#button-5:checked ~ #slideshow-inner > ul,
-  .portfolio .content #slideshow-wrap-1 input[type=radio]#button-5-1:checked ~ #slideshow-inner-1 > ul,
-  .portfolio .content #slideshow-wrap-2 input[type=radio]#button-5-2:checked ~ #slideshow-inner-2 > ul,
-  .portfolio .content #slideshow-wrap-3 input[type=radio]#button-5-3:checked ~ #slideshow-inner-3 > ul,
-  .portfolio .content #slideshow-wrap-4 input[type=radio]#button-5-4:checked ~ #slideshow-inner-4 > ul {
-    left: -400%; }
-  .portfolio .content .close {
-    overflow: hidden;
     position: absolute;
-    top: -40px;
-    right: 17%; }
-    .portfolio .content .close a {
-      display: block;
-      border: 5px solid #0875BD;
-      border-radius: 50%; }
-      .portfolio .content .close a i {
-        color: #0875BD;
-        font-size: 40px; }
-  .portfolio .content .title {
-    color: #0875BD;
-    margin-bottom: 20px; }
-    .portfolio .content .title .brief {
-      font-size: 18px;
-      text-indent: 1em;
-      margin-bottom: 30px;
-      line-height: 25px; }
-  .portfolio .content .description {
-    color: #0875BD;
-    margin: 70px 0; }
-    .portfolio .content .description .des-highlighted {
-      width: 140px;
-      background-color: #FFFF00; }
-    .portfolio .content .description .des-detail {
-      font-size: 18px; }
+    z-index: 2;
+    top: 0px;
+    background: #e9a1b9;
+    -webkit-animation: sway 0.4s ease infinite;
+    -moz-animation: sway 0.4s ease infinite;
+    animation: sway 0.4s ease infinite; }
+    .loader .dot:nth-child(1) {
+      left: 14.28571%;
+      -webkit-animation-delay: 0.25s;
+      -moz-animation-delay: 0.25s;
+      animation-delay: 0.25s; }
+    .loader .dot:nth-child(2) {
+      left: 28.57143%;
+      -webkit-animation-delay: 0.5s;
+      -moz-animation-delay: 0.5s;
+      animation-delay: 0.5s; }
+    .loader .dot:nth-child(3) {
+      left: 42.85714%;
+      -webkit-animation-delay: 0.75s;
+      -moz-animation-delay: 0.75s;
+      animation-delay: 0.75s; }
+    .loader .dot:nth-child(4) {
+      left: 57.14286%;
+      -webkit-animation-delay: 1s;
+      -moz-animation-delay: 1s;
+      animation-delay: 1s; }
+    .loader .dot:nth-child(5) {
+      left: 71.42857%;
+      -webkit-animation-delay: 1.25s;
+      -moz-animation-delay: 1.25s;
+      animation-delay: 1.25s; }
+    .loader .dot:nth-child(6) {
+      left: 85.71429%;
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+      animation-delay: 1.5s; }
+    .loader .dot:nth-child(7) {
+      left: 100%;
+      -webkit-animation-delay: 1.75s;
+      -moz-animation-delay: 1.75s;
+      animation-delay: 1.75s; }
+  .loader .dotb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    background: #e9a1b9;
+    -webkit-animation: swayb 0.4s ease infinite 3s, reset 1s ease forwards 5s;
+    -moz-animation: swayb 0.4s ease infinite 3s, reset 1s ease forwards 5s;
+    animation: swayb 0.4s ease infinite 3s, reset 1s ease forwards 5s; }
+    .loader .dotb:nth-child(1) {
+      left: 14.28571%;
+      -webkit-animation-delay: 0.25s;
+      -moz-animation-delay: 0.25s;
+      animation-delay: 0.25s; }
+    .loader .dotb:nth-child(2) {
+      left: 28.57143%;
+      -webkit-animation-delay: 0.5s;
+      -moz-animation-delay: 0.5s;
+      animation-delay: 0.5s; }
+    .loader .dotb:nth-child(3) {
+      left: 42.85714%;
+      -webkit-animation-delay: 0.75s;
+      -moz-animation-delay: 0.75s;
+      animation-delay: 0.75s; }
+    .loader .dotb:nth-child(4) {
+      left: 57.14286%;
+      -webkit-animation-delay: 1s;
+      -moz-animation-delay: 1s;
+      animation-delay: 1s; }
+    .loader .dotb:nth-child(5) {
+      left: 71.42857%;
+      -webkit-animation-delay: 1.25s;
+      -moz-animation-delay: 1.25s;
+      animation-delay: 1.25s; }
+    .loader .dotb:nth-child(6) {
+      left: 85.71429%;
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+      animation-delay: 1.5s; }
+    .loader .dotb:nth-child(7) {
+      left: 100%;
+      -webkit-animation-delay: 1.75s;
+      -moz-animation-delay: 1.75s;
+      animation-delay: 1.75s; }
 
 /*# sourceMappingURL=main.css.map */
