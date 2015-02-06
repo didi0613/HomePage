@@ -1,11 +1,11 @@
-<section class="portfolio">
+<section class="portfolio" data-bind="visible: general()">
     <!--title-->
-    <div class="grid-title" data-bind="visible: general()">
+    <div class="grid-title">
         <h2>Portfolio</h2>
     </div>
 
     <!--project lists-->
-    <div class="grid-wrap" data-bind="visible: general()">
+    <div class="grid-wrap">
         <div class="grid">
             <a data-bind="click: detail.bind(self,'citrix')">
                 <figure>
@@ -44,11 +44,11 @@
             </a>
         </div>
     </div>
-
-    <div class="grid-detail" data-bind="if: !general() && type()=='citrix', visible: !general()">
-        <div data-bind="compose: '../content/gototraining.html'"></div>
-    </div>
 </section>
+
+<div class="grid-detail" data-bind="if: !general() && type()=='citrix', visible: !general()">
+    <div data-bind="compose: '../content/gototraining.html'"></div>
+</div>
 
 
 <!--&lt;!&ndash;citrix detail&ndash;&gt;-->
