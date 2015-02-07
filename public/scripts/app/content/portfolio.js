@@ -8,16 +8,23 @@ define(function (require, exports, module) {
         // This is (one) convention used to manage the scope of 'this', common in Knockout examples:
         var self = this;
 
-        self.general = ko.observable(true);
+        //variables
+        self.isGeneral = ko.observable(true);
+        self.isDetail = ko.observable(false);
         self.type = ko.observable();
 
-        self.detail = function(val){
-            self.general(false);
+        //click to see thed detailed info of each project
+        self.detail = function (val) {
+            self.isGeneral(false);
             self.type(val);
+
+            setTimeout(function(){
+                self.isDetail(true);
+            }, 1000);
         };
 
-        self.back = function(){
-            self.general(true);
+        self.back = function () {
+            self.isGeneral(true);
             self.type(null);
         };
     }

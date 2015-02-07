@@ -1,4 +1,4 @@
-<section class="portfolio" data-bind="visible: general()">
+<section class="portfolio" data-bind="visible: isGeneral()">
     <!--title-->
     <div class="grid-title">
         <h2>Portfolio</h2>
@@ -46,8 +46,32 @@
     </div>
 </section>
 
-<div class="grid-detail" data-bind="if: !general() && type()=='citrix', visible: !general()">
-    <div data-bind="compose: '../content/gototraining.html'"></div>
+<div data-bind="visible: !isGeneral() && !isDetail()">
+    <div data-bind="compose: '../loading.html'"></div>
+</div>
+
+<div class="grid-detail" data-bind="if: isDetail() && type()=='citrix', visible: !general()">
+    <div data-bind="compose: '../content/details/gototraining.html'"></div>
+</div>
+
+<div class="grid-detail" data-bind="if: isDetail() && type()=='hiptraveler', visible: !general()">
+    <div data-bind="compose: '../content/details/hiptraveler.html'"></div>
+</div>
+
+<div class="grid-detail" data-bind="if: isDetail() && type()=='fullscreen', visible: !general()">
+    <div data-bind="compose: '../content/details/fullscreen.html'"></div>
+</div>
+
+<div class="grid-detail" data-bind="if: isDetail() && type()=='multi-threading', visible: !general()">
+    <div data-bind="compose: '../content/details/multi-threading.html'"></div>
+</div>
+
+<div class="grid-detail" data-bind="if: isDetail() && type()=='weather-search', visible: !general()">
+    <div data-bind="compose: '../content/details/weather-search.html'"></div>
+</div>
+
+<div class="grid-detail" data-bind="if: isDetail() && type()=='others', visible: !general()">
+    <div data-bind="compose: '../content/details/others.html'"></div>
 </div>
 
 
