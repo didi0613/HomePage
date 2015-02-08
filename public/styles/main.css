@@ -608,4 +608,52 @@ body {
     padding: 20px 300px 100px;
     text-align: center; }
 
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.hiptraveler {
+  height: 100vh;
+  width: 100%;
+  color: #fff; }
+  .hiptraveler .ht-banner {
+    background-color: #333;
+    padding-left: 12%; }
+    .hiptraveler .ht-banner img {
+      width: 240px;
+      height: 170px; }
+      .hiptraveler .ht-banner img.fade {
+        -webkit-animation: fade-in 1s;
+        -webkit-animation-fill-mode: forwards; }
+  .hiptraveler .ht-content {
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    padding: 80px; }
+    .hiptraveler .ht-content .ht-content-title img {
+      width: 300px;
+      height: 100px; }
+    .hiptraveler .ht-content .ht-content-intro {
+      text-align: center;
+      padding: 80px 20px; }
+      .hiptraveler .ht-content .ht-content-intro i {
+        color: #6FCDF5;
+        font-size: 80px; }
+      .hiptraveler .ht-content .ht-content-intro h2 {
+        text-indent: 1em;
+        font-size: 20px;
+        padding: 40px 20px;
+        height: 200px; }
+    .hiptraveler .ht-content .ht-content-work img {
+      width: 60%;
+      padding: 5%;
+      height: 58vh; }
+      .hiptraveler .ht-content .ht-content-work img.sidebar {
+        width: 40%;
+        height: 68vh; }
+    .hiptraveler .ht-content .ht-content-work p {
+      font-size: 20px;
+      margin: 20px 100px; }
+
 /*# sourceMappingURL=main.css.map */

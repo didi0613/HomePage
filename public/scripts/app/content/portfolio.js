@@ -24,8 +24,12 @@ define(function (require, exports, module) {
         };
 
         self.back = function () {
-            self.isGeneral(true);
-            self.type(null);
+            self.isDetail(false);
+            self.type("");
+
+            setTimeout(function(){
+                self.isGeneral(true);
+            }, 1000);
         };
     }
 
