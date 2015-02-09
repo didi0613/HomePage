@@ -1,0 +1,35 @@
+.thread {
+  text-align: center;
+
+  .t-title {
+    h2 {
+      margin: 40px;
+    }
+  }
+
+  .t-content {
+    margin: 100px;
+    text-align: left;
+
+    p {
+      font-size: 20px;
+      text-indent: 1em;
+      margin: 40px 20px;
+    }
+
+    .row {
+      text-align: center;
+      margin: 80px 150px;
+
+      img {
+        width: 200px;
+        height: 120px;
+      }
+    }
+
+    .trace-img {
+      margin: 3% 20% 5%;
+      width: 60%;
+    }
+  }
+}

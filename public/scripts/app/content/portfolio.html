@@ -62,4 +62,12 @@
     <div class="grid-detail" data-bind="if: type() == 'fullscreen'">
         <div data-bind="compose: '../content/details/fullscreen.html'"></div>
     </div>
+
+    <div class="grid-detail" data-bind="if: type() == 'multi-threading'">
+        <div data-bind="compose: '../content/details/multi-threading.html'"></div>
+    </div>
+
+    <div class="grid-detail" data-bind="if: type() == 'weather-search'">
+        <div data-bind="compose: '../content/details/weather-search.html'"></div>
+    </div>
 </div>

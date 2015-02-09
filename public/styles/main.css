@@ -724,4 +724,25 @@ body {
       text-indent: 1em;
       font-size: 20px; }
 
+.thread {
+  text-align: center; }
+  .thread .t-title h2 {
+    margin: 40px; }
+  .thread .t-content {
+    margin: 100px;
+    text-align: left; }
+    .thread .t-content p {
+      font-size: 20px;
+      text-indent: 1em;
+      margin: 40px 20px; }
+    .thread .t-content .row {
+      text-align: center;
+      margin: 80px 150px; }
+      .thread .t-content .row img {
+        width: 200px;
+        height: 120px; }
+    .thread .t-content .trace-img {
+      margin: 3% 20% 5%;
+      width: 60%; }
+
 /*# sourceMappingURL=main.css.map */
