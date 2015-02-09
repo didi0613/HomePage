@@ -1,0 +1,51 @@
+@-webkit-keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  5% {
+    left: 0%;
+  }
+  50% {
+    left: -100%;
+  }
+  55% {
+    left: -100%;
+  }
+  95% {
+    left: -200%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.fullscreen {
+
+  .f-banner {
+    text-align: center;
+    margin: 0;
+
+    div#slider {
+      overflow: hidden;
+      margin-bottom: 45px;
+    }
+    div#slider figure img {
+      width: 20%;
+      float: left;
+      height: 100vh;
+    }
+    div#slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      -webkit-animation: 15s slidy infinite;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
