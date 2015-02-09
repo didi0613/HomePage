@@ -689,5 +689,39 @@ body {
     -webkit-animation: 15s slidy infinite; }
   .fullscreen .f-banner p {
     font-size: 20px; }
+.fullscreen .f-content {
+  margin: 100px; }
+  .fullscreen .f-content p {
+    font-size: 20px;
+    text-indent: 1em;
+    margin: 30px 0;
+    height: 100px;
+    padding: 20px; }
+  .fullscreen .f-content .row {
+    margin-top: 150px;
+    text-align: center; }
+    .fullscreen .f-content .row img {
+      width: 300px;
+      height: 250px; }
+    .fullscreen .f-content .row p {
+      text-align: left; }
+  .fullscreen .f-content .highlighted {
+    text-align: center;
+    margin-top: 100px; }
+    .fullscreen .f-content .highlighted h3 {
+      text-align: left; }
+    .fullscreen .f-content .highlighted img.ui {
+      width: 40%;
+      height: 150px;
+      display: block;
+      margin-left: 30%; }
+    .fullscreen .f-content .highlighted img.code {
+      eight: 396px;
+      width: 450px;
+      margin: 40px; }
+    .fullscreen .f-content .highlighted p {
+      text-align: left;
+      text-indent: 1em;
+      font-size: 20px; }
 
 /*# sourceMappingURL=main.css.map */
