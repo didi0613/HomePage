@@ -802,7 +802,7 @@ body {
     left: 0%; } }
 .fullscreen .close {
   position: absolute;
-  top: 101vh;
+  top: 20px;
   right: 20px;
   font-size: 45px;
   color: #333;
@@ -820,7 +820,7 @@ body {
     box-shadow: 0 0 10px #ccc; }
 .fullscreen .f-banner {
   text-align: center;
-  margin: 0; }
+  margin: 80px 100px; }
   .fullscreen .f-banner div#slider {
     overflow: hidden;
     margin-bottom: 45px; }

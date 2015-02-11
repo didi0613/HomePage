@@ -22,7 +22,7 @@
 .fullscreen {
   .close {
     position: absolute;
-    top: 101vh;
+    top: 20px;
     right: 20px;
     font-size: 45px;
     color: #333;
@@ -45,7 +45,7 @@
 
   .f-banner {
     text-align: center;
-    margin: 0;
+    margin: 80px 100px;
 
     div#slider {
       overflow: hidden;
