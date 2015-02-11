@@ -15,6 +15,8 @@
   .ht-banner {
     background-color: #333;
     padding-left: 12%;
+    max-height: 510px;
+    overflow: hidden;
 
     img {
       width: 240px;
@@ -31,18 +33,28 @@
     text-align: center;
     background-color: #fff;
     color: #333;
-    padding:80px;
+    padding: 50px 80px;
 
     .ht-content-title {
       img {
         width: 300px;
         height: 100px;
       }
+
+      p {
+        padding: 100px 160px 20px;
+        text-indent: 1em;
+        color: #333;
+        font-style: italic;
+        letter-spacing: 2px;
+        line-height: 45px;
+        font-size: 27px;
+      }
     }
 
     .ht-content-intro {
       text-align: center;
-      padding: 80px 20px;
+      padding: 150px 20px 100px;
 
       i {
         color: #6FCDF5;
@@ -51,29 +63,52 @@
 
       h2 {
         text-indent: 1em;
-        font-size: 20px;
+        font-size: 22px;
         padding: 40px 20px;
-        height: 200px;
+        color: #333;
+        letter-spacing: 2px;
+        line-height: 35px;
       }
     }
 
     .ht-content-work {
 
+      h2 {
+        font-size: 42px;
+        letter-spacing: 6px;
+        line-height: 48px;
+        color:#333;
+      }
+
       img {
         width: 60%;
         padding: 5%;
-        height: 58vh;
+        margin: 2%;
+        height: 70vh;
 
         &.sidebar {
-          width: 40%;
-          height: 68vh;
+          width: 38%;
+          height: 70vh;;
         }
       }
 
       p {
-        font-size: 20px;
-        margin: 20px 100px;
+        -webkit-font-smoothing: antialiased;
+        color: #333;
+        letter-spacing: normal;
+        font-size: 24px;
+        line-height: 1.8em;
+        text-align: left;
+        margin: 10px 240px;
+        font-weight: 500;
       }
     }
+  }
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 120px;
+    border: 0;
+    border-top: 1px solid #eee;
   }
 }

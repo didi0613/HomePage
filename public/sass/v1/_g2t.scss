@@ -182,6 +182,7 @@
     margin-top: 100px;
 
     h2 {
+//      主标题
       font-size: 42px;
       height: auto;
       letter-spacing: 6px;
@@ -192,6 +193,7 @@
       padding: 200px 0 10px 80px;
     }
 
+//    副标题
     h3 {
       padding: 25px 0 80px 80px;
       color: rgb(98, 103, 107);
@@ -207,6 +209,7 @@
       margin: 40px 0;
     }
 
+//    内容标题
     p {
       -webkit-font-smoothing: antialiased;
       color: #333;
@@ -217,6 +220,7 @@
       margin: 10px 80px;
       font-weight: 500;
 
+//      内容
       &.des {
         font-size: 20px;
         line-height: 35px;
