@@ -513,6 +513,24 @@ body {
   margin: 0;
   padding: 0;
   color: #fff; }
+  .gototraining .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 45px;
+    color: #333;
+    border: #eee;
+    border-radius: 50%;
+    background-color: #eee;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    text-align: center; }
+    .gototraining .close:hover {
+      opacity: 1;
+      -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc; }
   .gototraining section.nebula {
     z-index: -10;
     width: 100%;
@@ -570,13 +588,15 @@ body {
     margin: 80px; }
     .gototraining .title img {
       height: 90px;
-      width: 280px; }
+      width: 300px; }
     .gototraining .title h3 {
       margin: 40px 0 10px 60px; }
     .gototraining .title p {
       font-size: 20px;
       line-height: 1.5em;
       margin-left: 80px; }
+    .gototraining .title i {
+      margin-right: 10px; }
     .gototraining .title .demo1 {
       height: 400px;
       width: 500px;
@@ -587,26 +607,57 @@ body {
     color: #000;
     margin-top: 100px; }
     .gototraining .instantjoin h2 {
+      font-size: 42px;
+      height: auto;
+      letter-spacing: 6px;
+      line-height: 48px;
+      text-align: left;
+      width: auto;
+      font-weight: 800;
       padding: 200px 0 10px 80px; }
     .gototraining .instantjoin h3 {
-      padding: 0 0 40px 80px; }
+      padding: 25px 0 80px 80px;
+      color: #62676b;
+      font-size: 20px;
+      font-style: italic;
+      letter-spacing: 2px;
+      line-height: 22px; }
     .gototraining .instantjoin img {
       width: 350px;
       height: 220px;
-      margin: 40px 150px; }
+      margin: 40px 0; }
     .gototraining .instantjoin p {
+      -webkit-font-smoothing: antialiased;
+      color: #333;
+      letter-spacing: normal;
       font-size: 24px;
       line-height: 1.8em;
-      text-align: right;
-      margin: 10px 150px; }
+      text-align: left;
+      margin: 10px 80px;
+      font-weight: 500; }
       .gototraining .instantjoin p.des {
         font-size: 20px;
-        text-align: right; }
+        line-height: 35px;
+        letter-spacing: 0;
+        color: #62676b;
+        -webkit-font-smoothing: antialiased;
+        text-align: left;
+        margin-bottom: 80px; }
   .gototraining .breakout {
     background-color: #fff;
     color: #000;
-    padding: 20px 300px 100px;
+    padding: 40px 300px 100px;
     text-align: center; }
+    .gototraining .breakout h3 {
+      margin: 20px -300px;
+      line-height: 35px;
+      font-weight: 400; }
+  .gototraining hr {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border: 0;
+    border-top: 1px solid #fff;
+    width: 90%; }
 
 @-webkit-keyframes fade-in {
   from {

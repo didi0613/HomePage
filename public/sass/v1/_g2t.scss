@@ -3,6 +3,28 @@
   padding: 0;
   color: #fff;
 
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 45px;
+    color: #333;
+    border: #eee;
+    border-radius: 50%;
+    background-color: #eee;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+    &:hover {
+      opacity: 1;
+      -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+    }
+  }
+
   section.nebula {
     z-index: -10;
     width: 100%;
@@ -129,7 +151,7 @@
 
     img {
       height: 90px;
-      width: 280px;
+      width: 300px;
     }
 
     h3 {
@@ -140,6 +162,10 @@
       font-size: 20px;
       line-height: 1.5em;
       margin-left: 80px;
+    }
+
+    i {
+      margin-right: 10px;
     }
 
     .demo1 {
@@ -156,28 +182,49 @@
     margin-top: 100px;
 
     h2 {
+      font-size: 42px;
+      height: auto;
+      letter-spacing: 6px;
+      line-height: 48px;
+      text-align: left;
+      width: auto;
+      font-weight: 800;
       padding: 200px 0 10px 80px;
     }
 
     h3 {
-      padding: 0 0 40px 80px;
+      padding: 25px 0 80px 80px;
+      color: rgb(98, 103, 107);
+      font-size: 20px;
+      font-style: italic;
+      letter-spacing: 2px;
+      line-height: 22px;
     }
 
     img {
       width: 350px;
       height: 220px;
-      margin: 40px 150px;
+      margin: 40px 0;
     }
 
     p {
+      -webkit-font-smoothing: antialiased;
+      color: #333;
+      letter-spacing: normal;
       font-size: 24px;
       line-height: 1.8em;
-      text-align: right;
-      margin: 10px 150px;
+      text-align: left;
+      margin: 10px 80px;
+      font-weight: 500;
 
       &.des {
         font-size: 20px;
-        text-align: right;
+        line-height: 35px;
+        letter-spacing: 0;
+        color: #62676b;
+        -webkit-font-smoothing: antialiased;
+        text-align: left;
+        margin-bottom: 80px;
       }
     }
   }
@@ -185,7 +232,21 @@
   .breakout {
     background-color: #fff;
     color: #000;
-    padding: 20px 300px 100px;
+    padding: 40px 300px 100px;
     text-align: center;
+
+    h3 {
+      margin: 20px -300px;
+      line-height: 35px;
+      font-weight: 400;
+    }
+  }
+
+  hr {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border: 0;
+    border-top: 1px solid #fff;
+    width: 90%;
   }
 }
