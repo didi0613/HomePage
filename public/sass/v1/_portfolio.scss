@@ -16,11 +16,31 @@ $portfolio-base: #0875BD;
   font-size: 1.5em;
   background-color: $portfolio-base;
   margin-top: 0;
-  height: 110vh;
 
   .grid-title {
     color: #fff;
     padding: 3%;
+
+    h2 {
+      font-family: "brandon-grotesque", Brandon Grotesque, Helvetica Neue, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size: 3.04em;
+      letter-spacing: -0.025em;
+      text-align: center;
+      font-weight: 500;
+      color: #fff;
+      line-height: 1.4em;
+      padding: 45px;
+      margin: 0;
+    }
+
+    p{
+      width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2.70em;
+      text-indent: 1em;
+    }
   }
 
   .grid-wrap {
@@ -40,7 +60,7 @@ $portfolio-base: #0875BD;
 
       a {
         figure {
-          margin: 10px;
+          margin: 50px 10px;
           display: inline-block;
           cursor: pointer;
           -webkit-touch-callout: none;
@@ -52,7 +72,16 @@ $portfolio-base: #0875BD;
           img {
             display: block;
             width: 339px;
-            height: 280px;
+            height: 339px;
+            border: 10px solid #fff;
+            border-radius: 50%;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+
+            &:hover {
+              -webkit-filter: none;
+              filter: none;
+            }
           }
         }
       }
