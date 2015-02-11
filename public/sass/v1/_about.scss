@@ -30,17 +30,21 @@ $about-base: #e9a1b9;
 
         a {
           text-decoration: none;
-          margin-right: 8.5%;
+          margin-right: 4%;
 
           &.last {
             margin-right: 0;
           }
 
           figure {
+            display: inline-block;
+
             img {
-              width: 140%;
-              max-width: 530px;
-              height: 300px;
+              display: block;
+              width: 339px;
+              height: 339px;
+              border: 10px solid #fff;
+              border-radius: 50%;
             }
 
             figcaption {
@@ -50,24 +54,6 @@ $about-base: #e9a1b9;
               color: #000;
               position: absolute;
               opacity: 0;
-            }
-
-            &:hover {
-              img {
-                opacity: 0.8;
-              }
-
-              figcaption {
-                bottom: 0;
-                color: #fff;
-                background-color: $about-base;
-                width: 130%;
-                max-width: 530px;
-                height: 300px;
-                text-align: center;
-                opacity: 1;
-                padding-top: 45%;
-              }
             }
           }
         }

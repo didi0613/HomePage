@@ -126,32 +126,24 @@ body {
       margin: 5%; }
       .about .content .brief-portfolio .list a {
         text-decoration: none;
-        margin-right: 8.5%; }
+        margin-right: 4%; }
         .about .content .brief-portfolio .list a.last {
           margin-right: 0; }
-        .about .content .brief-portfolio .list a figure img {
-          width: 140%;
-          max-width: 530px;
-          height: 300px; }
-        .about .content .brief-portfolio .list a figure figcaption {
-          font-size: 30px;
-          text-align: center;
-          font-weight: 500;
-          color: #000;
-          position: absolute;
-          opacity: 0; }
-        .about .content .brief-portfolio .list a figure:hover img {
-          opacity: 0.8; }
-        .about .content .brief-portfolio .list a figure:hover figcaption {
-          bottom: 0;
-          color: #fff;
-          background-color: #e9a1b9;
-          width: 130%;
-          max-width: 530px;
-          height: 300px;
-          text-align: center;
-          opacity: 1;
-          padding-top: 45%; }
+        .about .content .brief-portfolio .list a figure {
+          display: inline-block; }
+          .about .content .brief-portfolio .list a figure img {
+            display: block;
+            width: 339px;
+            height: 339px;
+            border: 10px solid #fff;
+            border-radius: 50%; }
+          .about .content .brief-portfolio .list a figure figcaption {
+            font-size: 30px;
+            text-align: center;
+            font-weight: 500;
+            color: #000;
+            position: absolute;
+            opacity: 0; }
     .about .content .brief-portfolio .viewmore {
       width: 200px;
       margin: 5% auto; }
@@ -298,6 +290,24 @@ body {
   font-size: 1.5em;
   background-color: #0875BD;
   margin-top: 0; }
+  .portfolio .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 45px;
+    color: #0875BD;
+    border: #eee;
+    border-radius: 50%;
+    background-color: #eee;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    text-align: center; }
+    .portfolio .close:hover {
+      opacity: 1;
+      -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc; }
   .portfolio .grid-title {
     color: #fff;
     padding: 3%; }
@@ -691,6 +701,24 @@ body {
   height: 100vh;
   width: 100%;
   color: #fff; }
+  .hiptraveler .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 45px;
+    color: #333;
+    border: #eee;
+    border-radius: 50%;
+    background-color: #eee;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    text-align: center; }
+    .hiptraveler .close:hover {
+      opacity: 1;
+      -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc; }
   .hiptraveler .ht-banner {
     background-color: #333;
     padding-left: 12%;
@@ -772,6 +800,24 @@ body {
     left: -200%; }
   100% {
     left: 0%; } }
+.fullscreen .close {
+  position: absolute;
+  top: 101vh;
+  right: 20px;
+  font-size: 45px;
+  color: #333;
+  border: #eee;
+  border-radius: 50%;
+  background-color: #eee;
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+  text-align: center; }
+  .fullscreen .close:hover {
+    opacity: 1;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc; }
 .fullscreen .f-banner {
   text-align: center;
   margin: 0; }
@@ -845,6 +891,24 @@ body {
 
 .thread {
   text-align: center; }
+  .thread .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 45px;
+    color: #333;
+    border: #eee;
+    border-radius: 50%;
+    background-color: #eee;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    text-align: center; }
+    .thread .close:hover {
+      opacity: 1;
+      -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc; }
   .thread .t-title h2 {
     margin: 80px;
     font-size: 42px;
@@ -881,6 +945,24 @@ body {
       margin: 3% 20% 5%;
       width: 60%; }
 
+.weather-search .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 45px;
+  color: #333;
+  border: #eee;
+  border-radius: 50%;
+  background-color: #eee;
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+  text-align: center; }
+  .weather-search .close:hover {
+    opacity: 1;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc; }
 .weather-search .w-title .section-title {
   margin-top: 20px;
   text-align: center;
