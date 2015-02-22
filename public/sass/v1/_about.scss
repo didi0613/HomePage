@@ -3,8 +3,9 @@ $about-base: #e9a1b9;
 .about {
   .subtitle {
     text-align: center;
-    margin: 3%;
-    padding-top: 5%;
+    margin: 5%;
+    padding-top: 8%;
+    font-size: 40px;
   }
 
   .content {
@@ -19,6 +20,35 @@ $about-base: #e9a1b9;
         font-size: 20px;
         font-weight: 400;
         padding: 0 10%;
+      }
+    }
+
+    .viewmore {
+      width: 200px;
+      margin: 5% auto;
+
+      a {
+        text-decoration: none;
+        display: block;
+
+        &.button {
+          border: 2px solid $about-base;
+          background-color: transparent;
+          -webkit-transition: .1s background-color linear;
+          -moz-transition: .1s background-color linear;
+          -o-transition: .1s background-color linear;
+          transition: .1s background-color linear;
+          font-size: 27px;
+          text-align: center;
+          color: $about-base;
+          font-weight: 500;
+        }
+
+        &:hover {
+          background-color: $about-base;
+          color: #fff;
+          border: 2px solid #fff;
+        }
       }
     }
 
@@ -41,8 +71,8 @@ $about-base: #e9a1b9;
 
             img {
               display: block;
-              width: 339px;
-              height: 339px;
+              width: 325px;
+              height: 325px;
               border: 10px solid #fff;
               border-radius: 50%;
             }
@@ -58,193 +88,40 @@ $about-base: #e9a1b9;
           }
         }
       }
-
-      .viewmore {
-        width: 200px;
-        margin: 5% auto;
-
-        a {
-          text-decoration: none;
-          display: block;
-
-          &.button {
-            border: 2px solid $about-base;
-            background-color: transparent;
-            -webkit-transition: .1s background-color linear;
-            -moz-transition: .1s background-color linear;
-            -o-transition: .1s background-color linear;
-            transition: .1s background-color linear;
-            font-size: 27px;
-            text-align: center;
-            color: $about-base;
-            font-weight: 500;
-          }
-
-          &:hover {
-            background-color: $about-base;
-            color: #fff;
-            border: 2px solid #fff;
-          }
-        }
-      }
     }
 
-    .education {
-      line-height: 3em;
-      width: 100%;
-      margin-bottom: 5%;
-
-      .timeline {
-        position: relative;
-        width: 100%;
-        margin: 0 auto;
-        padding: 1em 0;
-        list-style-type: none;
-      }
-
-      .timeline:before {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        content: ' ';
-        display: block;
-        width: 6px;
-        height: 100%;
-        margin-left: -3px;
-        background: rgb(80,80,80);
-        background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
-        background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-        background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-        background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-        background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-      }
-
-      .timeline li {
-        padding: 2em 0
-      }
-
-      .timeline li:after {
-        content: "";
-        display: block;
-        height: 0;
-        clear: both;
-        visibility: hidden;
-      }
-
-      .direction-l {
-        position: relative;
-        width: 50%;
-        float: left;
-        text-align: right;
-      }
-
-      .direction-r {
-        position: relative;
-        width: 50%;
-        float: right;
-      }
-
-      .flag-wrapper {
-        position: relative;
-        display: inline-block;
-        padding: 0 3px;
-        text-align: center;
-      }
-
-      .flag {
-        position: relative;
-        display: inline;
-        background: rgb(248,248,248);
-        padding: 6px 10px;
-        border-radius: 5px;
-        font-weight: 500;
-        text-align: left;
-        font-size: 1.2em;
-      }
-
-      .direction-l .flag {
-        -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-        -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-        box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-      }
-
-      .direction-r .flag {
-        -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-        -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-        box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-      }
-
-      .direction-l .flag:before,
-      .direction-r .flag:before {
-        position: absolute;
-        top: 50%;
-        right: -10px;
-        content: ' ';
-        display: block;
-        width: 12px;
-        height: 12px;
-        margin-top: -10px;
-        background: #fff;
-        border-radius: 10px;
-        border: 4px solid $about-base;
-      }
-
-      .direction-r .flag:before {
-        left: -10px;
-      }
-
-      .time-wrapper {
-        display: inline;
-        line-height: 1em;
-        font-size: 1.2em;
-        color: $about-base;
-        vertical-align: middle;
-        margin-top: 10px;
-      }
-
-      .direction-l .time-wrapper {
-        float: left;
-      }
-
-      .direction-r .time-wrapper {
-        float: right;
-      }
-
-      .time {
-        display: inline-block;
-        padding: 4px 6px;
-        background: rgb(248,248,248);
-      }
-
-      .desc {
-        margin: 1em 0.75em 0 0;
-        font-size: 1.2em;
-        font-style: italic;
-        line-height: 1.5em;
-      }
-
-      .direction-r .desc {
-        margin: 1em 0 0 0.75em;
-      }
+    #instafeed a {
+      padding:5px 5px 1px 5px;
+      margin:10px;
+      border:1px solid #e1e1e1;
+      display:inline-block;
+      border-radius: 4px;
+      position:relative;
     }
 
-    .skills {
-      margin-bottom: 5%;
+    #instafeed .likes {
+      background:rgba(222,89,135,0.8);
+      font-family:sans-serif;
+      font-size:1em;
+      position:absolute;
+      color:#ffffff;
+      right:5px;
+      top:5px;
+      left:5px;
+      opacity:0;
+      text-align:center;
+      line-height:150px;
+      text-shadow:0 1px rgba(0,0,0,0.5);
+      -webkit-font-smoothing:antialiased;
+      -webkit-transition: opacity 100ms ease;
+      -moz-transition: opacity 100ms ease;
+      -o-transition: opacity 100ms ease;
+      -ms-transition: opacity 100ms ease;
+      transition: opacity 100ms ease;
+    }
 
-      .progress-set {
-        padding: 0 12%;
-
-        .progress {
-          height: 25px;
-          margin: 20px 0;
-
-          .progress-bar {
-            background-color: $about-base;
-            font-size: 13px;
-          }
-        }
-      }
+    #instafeed a:hover .likes {
+      opacity:1;
     }
   }
 }

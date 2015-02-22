@@ -9,10 +9,9 @@ requirejs.config({
         'knockout': '../lib/knockout/knockout-3.1.0',
         'plugins': '../lib/durandal/js/plugins',
         'text': '../lib/require/text',
-        'transitions': '../lib/durandal/js/transitions'
-        // FYI require.js automatically appends '.js' to these paths above.   Why? I don't know...
+        'transitions': '../lib/durandal/js/transitions',
+        'instafeed':'../lib/instafeed.min'
     },
-    // Some non-requirejs libraries need their dependencies configured for them:
     shim: {
         'jquery.bootstrap': { deps: ['jquery'] }
     }
