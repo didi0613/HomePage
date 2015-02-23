@@ -22,8 +22,11 @@ $home-base: #e9a1b9;
 }
 
 @-webkit-keyframes arrow-jump {
-  0%   { opacity: 0;}
-  100% { opacity: 1;
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
     -webkit-transform: translateY(10px);
     -moz-transform: translateY(10px);
     transform: translateY(10px);
@@ -34,12 +37,12 @@ body {
   width: 100%;
   height: 100%;
 
-  p{
+  p {
     font-size: 22px;
   }
 
   ////////////////////////////////
-//  part one
+  //  part one
   ///////////////////////////////
 
   .banner {
@@ -144,19 +147,24 @@ body {
       height: 100px;
       width: 120px;
       -webkit-animation: arrow-jump 1.5s infinite;
-      -moz-animation:    arrow-jump 1.5s infinite;
-      animation:         arrow-jump 1.5s infinite;
+      -moz-animation: arrow-jump 1.5s infinite;
+      animation: arrow-jump 1.5s infinite;
     }
   }
 
-  #instafeed a {
-    padding:5px;
-    margin: 10px;
-    border:1px solid $home-base;
-    background-color: $home-base;
-    display:inline-block;
-    border-radius: 4px;
-    position:relative;
+  #instafeed {
+    text-align: center;
+    margin: 50px;
+
+    a {
+      padding: 5px;
+      margin: 10px;
+      border: 1px solid $home-base;
+      background-color: $home-base;
+      display: inline-block;
+      border-radius: 4px;
+      position: relative;
+    }
   }
 
   #map-canvas {
