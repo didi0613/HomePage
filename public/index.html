@@ -2,6 +2,26 @@
 <html lang="en">
 <head>
     <title>Sheng Di Home Page</title>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map-canvas');
+            var myLatLng = new google.maps.LatLng(34.436283, -119.8634346);
+            var mapOptions = {
+                center: myLatLng,
+                zoom: 8,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: "I am here!"
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
     <link rel='stylesheet' href="styles/main.css"/>
     <script type="text/javascript" src="scripts/lib/instafeed.min.js"></script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -34,8 +54,24 @@
             </div>
         </div>
     </div>
+
+    <div id="instafeed"></div>
+    <div id="map-canvas"></div>
 </div>
 </body>
 <!-- requirejs lets you define an application with single script tag, instead of a script tag for each Javascript file-->
 <script src="/scripts/lib/require/require.js" data-main="/scripts/app/main"></script>
+<!--f51798263d50429e99f8a3e92f6932b4-->
+<!--471220422-->
+<!--471220422.f517982.3d5b579ed5464add809c2cb8fcb759ae-->
+<script type="text/javascript">
+    var feed = new Instafeed({
+        userId: 471220422,
+        accessToken: '471220422.f517982.3d5b579ed5464add809c2cb8fcb759ae',
+        clientId: 'f51798263d50429e99f8a3e92f6932b4',
+        limit: 12,
+        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
+    });
+    feed.run();
+</script>
 </html>
