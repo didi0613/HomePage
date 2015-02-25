@@ -4,6 +4,7 @@ define(function (require, exports, module) {
     var InstaSheng = require('instafeed');
     var $ = require('jquery');
     var MapsSheng = require('maps');
+    var MapsHelperSheng = require('maps.helper');
 
     // Constructor function for this module
     function Home() {
@@ -15,14 +16,17 @@ define(function (require, exports, module) {
             var myLatLng = new google.maps.LatLng(34.436283, -119.8634346);
             var mapOptions = {
                 center: myLatLng,
-                zoom: 8,
+                zoom: 5,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             var map = new google.maps.Map(mapCanvas, mapOptions);
             var marker = new google.maps.Marker({
                 position: myLatLng,
                 map: map,
-                title: "I am here!"
+                title: "Working Place",
+                infoWindow: {
+                    content: '<p>Working Here!</p>'
+                }
             });
         };
 
@@ -49,6 +53,7 @@ define(function (require, exports, module) {
             });
 
             feed.run();
+
             google.maps.event.addDomListener(window, 'load', initialize);
         };
 

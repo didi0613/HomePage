@@ -11,7 +11,8 @@ requirejs.config({
         'text': '../lib/require/text',
         'transitions': '../lib/durandal/js/transitions',
         'instafeed': '../lib/instafeed.min',
-        'maps': 'http://maps.googleapis.com/maps/api/js?v=3&sensor=true'
+        'maps': '../lib/gmaps',
+        'maps.helper': 'http://maps.google.com/maps/api/js?sensor=true'
     },
     shim: {
         'jquery.bootstrap': {deps: ['jquery']}
