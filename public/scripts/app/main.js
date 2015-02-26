@@ -10,12 +10,13 @@ requirejs.config({
         'plugins': '../lib/durandal/js/plugins',
         'text': '../lib/require/text',
         'transitions': '../lib/durandal/js/transitions',
-        'instafeed': '../lib/instafeed.min',
-        'maps': '../lib/gmaps',
-        'maps.helper': 'http://maps.google.com/maps/api/js?sensor=true'
+        'instafeed': '../lib/instafeed.min'
+        //'maps': '../lib/gmaps'
+        //'maps.helper': 'http://maps.google.com/maps/api/js?sensor=true'
     },
     shim: {
         'jquery.bootstrap': {deps: ['jquery']}
+        //'maps.helper': {exports: ['google']}
     }
 });
 
