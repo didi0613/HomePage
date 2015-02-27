@@ -10,20 +10,16 @@ requirejs.config({
         'plugins': '../lib/durandal/js/plugins',
         'text': '../lib/require/text',
         'transitions': '../lib/durandal/js/transitions',
-        'instafeed': '../lib/instafeed.min'
-        //'maps': '../lib/gmaps'
-        //'maps.helper': 'http://maps.google.com/maps/api/js?sensor=true'
+        'instafeed': '../lib/instafeed.min',
     },
     shim: {
         'jquery.bootstrap': {deps: ['jquery']}
-        //'maps.helper': {exports: ['google']}
     }
 });
 
 // The application entry point:
 define(function (require) {
 
-    // Durandal configuration:
     var app = require('durandal/app');
     var system = require('durandal/system');
     var viewLocator = require('durandal/viewLocator');
