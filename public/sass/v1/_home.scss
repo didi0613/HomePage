@@ -39,8 +39,18 @@ body {
 
   p {
     font-size: 22px;
+    text-indent: 1em;
+    color: #666666;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 38px;
+    font-weight: 300;
   }
 
+  /*
+  *
+  * Banner on the top of the homepage
+  *
+  */
   .banner {
     height: 80vh;
     background-color: $home-base;
@@ -135,6 +145,12 @@ body {
     }
   }
 
+  /*
+  *
+  * Arrow Navigation right under the banner
+  *
+  */
+
   .nav {
     text-align: center;
     height: 15vh;
@@ -148,6 +164,196 @@ body {
     }
   }
 
+  /*
+  *
+  * Time line
+  *
+  */
+  .separator {
+    display: block;
+    width: 100%;
+    height: 2px;
+    float: left;
+    background: -webkit-linear-gradient(left, rgba(228, 228, 228, 0) 0, #E4E4E4 20%, #E4E4E4 80%, rgba(228, 228, 228, 0) 99%);
+    background: -moz-linear-gradient(left, rgba(228, 228, 228, 0) 0, #E4E4E4 20%, #E4E4E4 80%, rgba(228, 228, 228, 0) 99%);
+    background: -o-linear-gradient(left, rgba(228, 228, 228, 0) 0, #E4E4E4 20%, #E4E4E4 80%, rgba(228, 228, 228, 0) 99%);
+    background: -ms-linear-gradient(left, rgba(228, 228, 228, 0) 0, #E4E4E4 20%, #E4E4E4 80%, rgba(228, 228, 228, 0) 99%);
+    background: linear-gradient(left, rgba(228, 228, 228, 0) 0, #E4E4E4 20%, #E4E4E4 80%, rgba(228, 228, 228, 0) 99%);
+    text-align: center;
+    margin: 70px 0;
+
+    .inside {
+      font-size: 45px;
+      color: #999;
+      margin-top: -38px;
+      font-weight: bold;
+    }
+  }
+
+  .timeline {
+    position: relative;
+    width: 100%;
+    margin: 15% 0 auto;
+    padding: 1em 0;
+    list-style-type: none;
+  }
+
+  .timeline:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: ' ';
+    display: block;
+    width: 6px;
+    height: 100%;
+    margin-left: -3px;
+    background: rgb(80, 80, 80);
+    background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(30, 87, 153, 1)), color-stop(100%, rgba(125, 185, 232, 1)));
+    background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+  }
+
+  .timeline li {
+    padding: 2em 0
+  }
+
+  .timeline li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  .direction-l {
+    position: relative;
+    width: 50%;
+    float: left;
+    text-align: right;
+  }
+
+  .direction-r {
+    position: relative;
+    width: 50%;
+    float: right;
+    text-align: left;
+  }
+
+  .flag-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 0 3px;
+    text-align: center;
+  }
+
+  .flag {
+    position: relative;
+    display: inline;
+    background: #f8f8f8;
+    padding: 20px 50px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .direction-l .flag {
+    -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  }
+
+  .direction-r .flag {
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  }
+
+  .direction-l .flag:before,
+  .direction-r .flag:before {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    content: ' ';
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-top: -10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 4px solid $home-base;
+  }
+
+  .direction-r .flag:before {
+    left: -10px;
+  }
+
+  .time-wrapper {
+    display: inline;
+    line-height: 1.5em;
+    font-size: 22px;
+    color: #e9a1b9;
+    vertical-align: middle;
+    margin-top: 44px;
+  }
+
+  .direction-l .time-wrapper {
+    float: left;
+  }
+
+  .direction-r .time-wrapper {
+    float: right;
+  }
+
+  .time {
+    display: inline-block;
+    padding: 4px 6px;
+    background: rgb(248, 248, 248);
+  }
+
+  .desc {
+    margin: 1em 0.75em 0 0;
+    font-size: 20px;
+    color: #666;
+    font-style: italic;
+    line-height: 2em;
+  }
+
+  .direction-r .desc {
+    margin: 2em 0 0 1.75em;
+  }
+
+  /*
+ *
+ * Skill set
+ *
+ */
+  .skills {
+    margin-bottom: 5%;
+
+    .progress-set {
+      padding: 0 12%;
+
+      .progress {
+        height: 25px;
+        margin: 20px 0;
+
+        .progress-bar {
+          background-color: $home-base;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  /*
+  *
+  * A look into my life
+  *
+  */
   #instafeed {
     text-align: center;
 
@@ -184,10 +390,5 @@ body {
     a:hover .likes {
       opacity: 1;
     }
-  }
-
-  #map-canvas {
-    width: 100%;
-    height: 300px;
   }
 }

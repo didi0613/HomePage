@@ -5,7 +5,11 @@ $about-base: #e9a1b9;
     text-align: center;
     margin: 5%;
     padding-top: 8%;
-    font-size: 40px;
+    font-size: 48px;
+    line-height: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 
   .content {
@@ -17,9 +21,12 @@ $about-base: #e9a1b9;
 
       p {
         text-indent: 1em;
-        font-size: 20px;
-        font-weight: 400;
+        color: rgb(102, 102, 102);
+        font-family: 'Open Sans', sans-serif;
+        line-height: 38px;
+        font-weight: 300;
         padding: 0 10%;
+        font-size: 24px;
       }
     }
 
