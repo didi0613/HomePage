@@ -1,6 +1,6 @@
 // This define call is requirejs boilerplate used to define the module and isolate the scope:
 define(function (require, exports, module) {
-    var ins = require('instafeed');
+    var Instafeed = require('instafeed');
     var $ = require('jquery');
 
     // Constructor function for this module

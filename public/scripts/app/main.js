@@ -10,9 +10,10 @@ requirejs.config({
         'plugins': '../lib/durandal/js/plugins',
         'text': '../lib/require/text',
         'transitions': '../lib/durandal/js/transitions',
-        'instafeed': '../lib/instafeed.min',
+        'instafeed': '../lib/instafeed.min'
     },
     shim: {
+        'instafeed': {exports: 'Instafeed'},
         'jquery.bootstrap': {deps: ['jquery']}
     }
 });
