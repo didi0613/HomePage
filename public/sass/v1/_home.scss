@@ -57,7 +57,7 @@ body {
     border-radius: 50px;
     border: 25px solid;
     border-color: #fff $home-base;
-    margin: 2% 5% -1%;
+    margin: 2% 5%;
     width: 90%;
     text-align: center;
 
@@ -180,7 +180,7 @@ body {
     background: -ms-linear-gradient(left, rgba(228, 228, 228, 0) 0, #E4E4E4 20%, #E4E4E4 80%, rgba(228, 228, 228, 0) 99%);
     background: linear-gradient(left, rgba(228, 228, 228, 0) 0, #E4E4E4 20%, #E4E4E4 80%, rgba(228, 228, 228, 0) 99%);
     text-align: center;
-    margin: 70px 0;
+    margin: 120px 0;
 
     .inside {
       font-size: 45px;
@@ -193,7 +193,7 @@ body {
   .timeline {
     position: relative;
     width: 100%;
-    margin: 15% 0 auto;
+    margin: 5% 0 auto;
     padding: 1em 0;
     list-style-type: none;
   }
