@@ -10,7 +10,8 @@ requirejs.config({
         'plugins': '../lib/durandal/js/plugins',
         'text': '../lib/require/text',
         'transitions': '../lib/durandal/js/transitions',
-        'instafeed': '../lib/instafeed.min'
+        'instafeed': '../lib/instafeed.min',
+        'animation.on.scroll': 'http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2'
     },
     shim: {
         'instafeed': {exports: 'Instafeed'},

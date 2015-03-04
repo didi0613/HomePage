@@ -57,6 +57,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 38px;
     font-weight: 300; }
+  body .revealOnScroll {
+    opacity: 0; }
   body .banner {
     height: 80vh;
     background-color: #e9a1b9;

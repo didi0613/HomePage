@@ -2,12 +2,20 @@
 define(function (require, exports, module) {
     var Instafeed = require('instafeed');
     var $ = require('jquery');
+    var onScroll = require('animation.on.scroll');
 
     // Constructor function for this module
     function Home() {
         // This is (one) convention used to manage the scope of 'this', common in Knockout examples:
         var self = this;
+        var $window = $(window),
+            win_height_padded = $window.height() * 1.1,
+            isTouch = Modernizr.touch;
 
+        /*
+         * Instagram Feed
+         *
+         */
         var feed = new Instafeed({
             get: "user",
             userId: 471220422,
@@ -29,8 +37,49 @@ define(function (require, exports, module) {
             template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>'
         });
 
+        /*
+         * Reveal On Scroll
+         *
+         */
+
+        if (isTouch) {
+            $('.revealOnScroll').addClass('animated');
+        }
+
+        $window.on('scroll', revealOnScroll);
+
+        function revealOnScroll() {
+            var scrolled = $window.scrollTop(),
+                win_height_padded = $window.height() * 1.1;
+
+            // Showed...
+            $(".revealOnScroll:not(.animated)").each(function () {
+                var $this = $(this),
+                    offsetTop = $this.offset().top;
+
+                if (scrolled + win_height_padded > offsetTop) {
+                    if ($this.data('timeout')) {
+                        window.setTimeout(function () {
+                            $this.addClass('animated ' + $this.data('animation'));
+                        }, parseInt($this.data('timeout'), 10));
+                    } else {
+                        $this.addClass('animated ' + $this.data('animation'));
+                    }
+                }
+            });
+            // Hidden...
+            $(".revealOnScroll.animated").each(function (index) {
+                var $this = $(this),
+                    offsetTop = $this.offset().top;
+                if (scrolled + win_height_padded < offsetTop) {
+                    $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+                }
+            });
+        }
+
         self.activate = function () {
             feed.run();
+            revealOnScroll();
         };
     }
 
