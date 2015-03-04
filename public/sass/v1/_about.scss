@@ -61,6 +61,7 @@ $about-base: #e9a1b9;
 
     .brief-portfolio{
       margin-bottom: 5%;
+      text-align: center;
 
       .list {
         margin: 5%;
@@ -78,8 +79,8 @@ $about-base: #e9a1b9;
 
             img {
               display: block;
-              width: 325px;
-              height: 325px;
+              width: 300px;
+              height: 300px;
               border: 10px solid #fff;
               border-radius: 50%;
             }
