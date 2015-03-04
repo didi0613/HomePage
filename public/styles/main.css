@@ -54,7 +54,6 @@ body {
   body p {
     font-size: 22px;
     text-indent: 1em;
-    color: #666666;
     font-family: 'Open Sans', sans-serif;
     line-height: 38px;
     font-weight: 300; }
@@ -408,11 +407,13 @@ body {
       padding: 45px;
       margin: 0; }
     .portfolio .grid-title p {
-      width: 710px;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 2.70em;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 2.70em;
-      text-indent: 1em; }
+      text-indent: 1em;
+      width: 710px; }
   .portfolio .grid-wrap {
     margin: 1% auto;
     max-width: 1090px;
