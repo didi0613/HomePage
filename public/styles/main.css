@@ -388,6 +388,19 @@ body {
     body .gmaps iframe {
       border: 2px dashed #eee; }
 
+@-webkit-keyframes slidy {
+  0% {
+    left: 0%; }
+  5% {
+    left: 0%; }
+  50% {
+    left: -100%; }
+  55% {
+    left: -100%; }
+  95% {
+    left: -200%; }
+  100% {
+    left: 0%; } }
 .about .subtitle {
   text-align: center;
   margin: 5%;
@@ -412,50 +425,92 @@ body {
       font-size: 24px; }
   .about .content .viewmore {
     width: 200px;
-    margin: 5% auto; }
+    margin: 0 auto; }
     .about .content .viewmore a {
       text-decoration: none;
       display: block; }
       .about .content .viewmore a.button {
-        border: 2px solid #e9a1b9;
-        background-color: transparent;
-        -webkit-transition: .1s background-color linear;
-        -moz-transition: .1s background-color linear;
-        -o-transition: .1s background-color linear;
-        transition: .1s background-color linear;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
         font-size: 27px;
+        font-weight: normal;
+        line-height: 1.428571429;
         text-align: center;
-        color: #e9a1b9;
-        font-weight: 500; }
-      .about .content .viewmore a:hover {
-        background-color: #e9a1b9;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #222;
+        text-transform: uppercase;
+        text-decoration: none;
         color: #fff;
-        border: 2px solid #fff; }
+        border-radius: 5px; }
   .about .content .brief-portfolio {
     margin-bottom: 5%;
-    text-align: center; }
-    .about .content .brief-portfolio .list {
-      margin: 5%; }
-      .about .content .brief-portfolio .list a {
-        text-decoration: none;
-        margin-right: 4%; }
-        .about .content .brief-portfolio .list a.last {
-          margin-right: 0; }
-        .about .content .brief-portfolio .list a figure {
-          display: inline-block; }
-          .about .content .brief-portfolio .list a figure img {
-            display: block;
-            width: 300px;
-            height: 300px;
-            border: 10px solid #fff;
-            border-radius: 50%; }
-          .about .content .brief-portfolio .list a figure figcaption {
-            font-size: 30px;
-            text-align: center;
-            font-weight: 500;
-            color: #000;
-            position: absolute;
-            opacity: 0; }
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 17px dotted #fff;
+    border-top: 17px dotted #fff; }
+    .about .content .brief-portfolio .card1 {
+      border: 2px solid #EBEBEB;
+      min-height: 600px;
+      margin: 0 0 100px 6.5%;
+      background-color: #F7F7F7;
+      text-align: left;
+      border-radius: 5px;
+      font-family: Montserrat, sans-serif, Arial; }
+      .about .content .brief-portfolio .card1 figure img {
+        width: 100%;
+        height: 170px;
+        margin: 30px 0; }
+      .about .content .brief-portfolio .card1 .title {
+        color: #222222;
+        font-size: 29px;
+        font-weight: 500;
+        letter-spacing: 1px; }
+      .about .content .brief-portfolio .card1 .blog-meta {
+        font-size: 15px;
+        line-height: 13px;
+        margin: 20px -13px;
+        color: #6d6d6d; }
+      .about .content .brief-portfolio .card1 .blog-content {
+        padding-bottom: 10px;
+        line-height: 25px;
+        text-indent: 0;
+        font-size: 18px;
+        color: #6d6d6d; }
+      .about .content .brief-portfolio .card1 div#slider {
+        overflow: hidden; }
+      .about .content .brief-portfolio .card1 div#slider figure img {
+        width: 20%;
+        float: left; }
+      .about .content .brief-portfolio .card1 div#slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        -webkit-animation: 15s slidy infinite; }
+    .about .content .brief-portfolio .card2 {
+      background-color: #000;
+      height: 330px;
+      margin: 0 0 100px 6.5%;
+      border-radius: 5px;
+      font-family: Montserrat, sans-serif, Arial; }
+      .about .content .brief-portfolio .card2 p {
+        font-weight: 500;
+        color: #FFFFFF;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 0px;
+        margin: 40px 20px;
+        text-align: left;
+        text-indent: 0; }
+        .about .content .brief-portfolio .card2 p span {
+          font-size: 20px;
+          font-weight: 300;
+          text-align: right; }
 
 @-webkit-keyframes fade-in {
   /* Safari and Chrome */

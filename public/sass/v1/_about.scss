@@ -1,5 +1,26 @@
 $about-base: #e9a1b9;
 
+@-webkit-keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  5% {
+    left: 0%;
+  }
+  50% {
+    left: -100%;
+  }
+  55% {
+    left: -100%;
+  }
+  95% {
+    left: -200%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
 .about {
   .subtitle {
     text-align: center;
@@ -32,29 +53,28 @@ $about-base: #e9a1b9;
 
     .viewmore {
       width: 200px;
-      margin: 5% auto;
+      margin: 0 auto;
 
       a {
         text-decoration: none;
         display: block;
 
         &.button {
-          border: 2px solid $about-base;
-          background-color: transparent;
-          -webkit-transition: .1s background-color linear;
-          -moz-transition: .1s background-color linear;
-          -o-transition: .1s background-color linear;
-          transition: .1s background-color linear;
+          display: inline-block;
+          padding: 6px 12px;
+          margin-bottom: 0;
           font-size: 27px;
+          font-weight: normal;
+          line-height: 1.428571429;
           text-align: center;
-          color: $about-base;
-          font-weight: 500;
-        }
-
-        &:hover {
-          background-color: $about-base;
+          white-space: nowrap;
+          vertical-align: middle;
+          cursor: pointer;
+          background-color: #222;
+          text-transform: uppercase;
+          text-decoration: none;
           color: #fff;
-          border: 2px solid #fff;
+          border-radius: 5px;
         }
       }
     }
@@ -62,37 +82,86 @@ $about-base: #e9a1b9;
     .brief-portfolio{
       margin-bottom: 5%;
       text-align: center;
+      background-color: #fff;
+      border-bottom: 17px dotted #fff;
+      border-top: 17px dotted #fff;
 
-      .list {
-        margin: 5%;
+      .card1 {
+        border: 2px solid #EBEBEB;
+        min-height: 600px;
+        margin: 0 0 100px 6.5%;
+        background-color: #F7F7F7;
+        text-align: left;
+        border-radius: 5px;
+        font-family: Montserrat, sans-serif, Arial;
 
-        a {
-          text-decoration: none;
-          margin-right: 4%;
+        figure img{
+          width: 100%;
+          height: 170px;
+          margin: 30px 0;
+        }
 
-          &.last {
-            margin-right: 0;
-          }
+        .title {
+          color: #222222;
+          font-size: 29px;
+          font-weight: 500;
+          letter-spacing: 1px;
+        }
 
-          figure {
-            display: inline-block;
+        .blog-meta {
+          font-size: 15px;
+          line-height: 13px;
+          margin: 20px -13px;
+          color: #6d6d6d;
+        }
 
-            img {
-              display: block;
-              width: 300px;
-              height: 300px;
-              border: 10px solid #fff;
-              border-radius: 50%;
-            }
+        .blog-content {
+          padding-bottom: 10px;
+          line-height: 25px;
+          text-indent: 0;
+          font-size: 18px;
+          color: #6d6d6d;
+        }
 
-            figcaption {
-              font-size: 30px;
-              text-align: center;
-              font-weight: 500;
-              color: #000;
-              position: absolute;
-              opacity: 0;
-            }
+        div#slider {
+          overflow: hidden;
+        }
+        div#slider figure img {
+          width: 20%;
+          float: left;
+        }
+        div#slider figure {
+          position: relative;
+          width: 500%;
+          margin: 0;
+          left: 0;
+          text-align: left;
+          font-size: 0;
+          -webkit-animation: 15s slidy infinite;
+        }
+      }
+
+      .card2 {
+        background-color: #000;
+        height: 330px;
+        margin: 0 0 100px 6.5%;
+        border-radius: 5px;
+        font-family: Montserrat, sans-serif, Arial;
+
+        p {
+          font-weight: 500;
+          color: #FFFFFF;
+          font-size: 28px;
+          line-height: 36px;
+          letter-spacing: 0px;
+          margin: 40px 20px;
+          text-align: left;
+          text-indent: 0;
+
+          span {
+            font-size: 20px;
+            font-weight: 300;
+            text-align: right;
           }
         }
       }
