@@ -274,5 +274,26 @@
         <div class="separator">
             <div class="inside">✭</div>
         </div>
+
+        <div class="gmaps row">
+            <h2 class="subtitle">Drop me a line</h2>
+            <div class="col-md-6">
+                <form method="post" action="php/contact.php" name="cform" id="cform">
+                    <input name="name" id="name" type="text"
+                           placeholder="Your name...">
+                    <input name="email" id="email" type="email"
+                           placeholder="Your email...">
+                    <textarea name="comments" id="comments" cols=""
+                              placeholder="Your message...">
+                    </textarea>
+
+                    <input type="submit" id="submit" name="send" class="submitBnt" value="Send message">
+                </form>
+            </div>
+            <div class="col-md-6">
+                <iframe src="http://www.dr2ooo.com/tools/maps/maps.php?zoom=13&width=500&height=266&ll=34.4299471,-119.8853029&cp=true&kml=&ctrl=true&"
+                        width="500" height="266"></iframe>
+            </div>
+        </div>
     </div>
 </div>

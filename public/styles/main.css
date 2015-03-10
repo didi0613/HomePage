@@ -50,6 +50,9 @@ body {
   *
   * A look into my life
   *
+  */
+  /*
+  Google Maps
   */ }
   body p {
     font-size: 22px;
@@ -295,6 +298,8 @@ body {
       transition: opacity 100ms ease; }
     body #instafeed a:hover .likes {
       opacity: 1; }
+  body .gmaps {
+    margin-bottom: 80px; }
 
 .about .subtitle {
   text-align: center;
