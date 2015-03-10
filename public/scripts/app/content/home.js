@@ -3,6 +3,7 @@ define(function (require, exports, module) {
     var Instafeed = require('instafeed');
     var $ = require('jquery');
     var onScroll = require('animation.on.scroll');
+    var easyPieChart = require('jquery-easypiechart');
 
     // Constructor function for this module
     function Home() {
@@ -11,6 +12,8 @@ define(function (require, exports, module) {
         var $window = $(window),
             win_height_padded = $window.height() * 1.1,
             isTouch = Modernizr.touch;
+
+        var index=0;
 
         /*
          * Instagram Feed
@@ -80,6 +83,24 @@ define(function (require, exports, module) {
         self.activate = function () {
             feed.run();
             revealOnScroll();
+            $(document).scroll(function(){
+                var top = $('.technical').height()-$(window).scrollTop();
+                console.log(top);
+                if(top<-2700){
+                    if(index==0){
+                        $('.chart').easyPieChart({
+                            barColor: '#e9a1b9',
+                            size: 152,
+                            lineWidth: 10,
+                            onStep: function(from, to, percent) {
+                                $(this.el).find('.percent').text(Math.round(percent));
+                            }
+                        });
+
+                    }
+                    index++;
+                }
+            });
         };
     }
 

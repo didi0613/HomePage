@@ -12,7 +12,8 @@ requirejs.config({
         'transitions': '../lib/durandal/js/transitions',
         'instafeed': '../lib/instafeed.min',
         'animation.on.scroll': 'http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2',
-        'gmaps': '../lib/gmaps'
+        'gmaps': '../lib/gmaps',
+        'jquery-easypiechart': '../lib/jquery.easypiechart'
     },
     shim: {
         'instafeed': {exports: 'Instafeed'},
