@@ -85,7 +85,8 @@ define(function (require, exports, module) {
             revealOnScroll();
             $(document).scroll(function(){
                 var top = $('.technical').height()-$(window).scrollTop();
-                if(top<-3000){
+                if(top<-3600){
+                    console.log(top);
                     if(index==0){
                         $('.chart').easyPieChart({
                             barColor: '#e9a1b9',
