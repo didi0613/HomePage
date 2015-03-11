@@ -19,25 +19,25 @@
         <div class="grid">
             <a data-bind="click: detail.bind(self,'citrix')">
                 <figure>
-                        <img src="../images/G2TCover.gif">
+                        <img src="../images/citrix-detail/citrix.png">
                 </figure>
             </a>
 
             <a data-bind="click: detail.bind(self,'hiptraveler')">
                 <figure>
-                    <img src="../images/HiptravelerCover.jpg">
+                    <img src="../images/ht.png">
                 </figure>
             </a>
 
             <a data-bind="click: detail.bind(self,'fullscreen')">
                 <figure>
-                    <img src="../images/FullscreenCover.gif">
+                    <img src="../images/fs.gif">
                 </figure>
             </a>
 
             <a data-bind="click: detail.bind(self,'multi-threading')">
                 <figure>
-                    <img src="../images/ThreadCover.png">
+                    <img src="../images/usc1.jpg">
                 </figure>
             </a>
 
@@ -49,7 +49,7 @@
 
             <a data-bind="click: detail.bind(self,'others')">
                 <figure>
-                    <img src="../images/OthersCover.gif">
+                    <img src="../images/OthersCover.png">
                 </figure>
             </a>
         </div>
@@ -79,5 +79,9 @@
 
     <div class="grid-detail" data-bind="if: type() == 'weather-search'">
         <div data-bind="compose: '../content/details/weather-search.html'"></div>
+    </div>
+
+    <div class="grid-detail" data-bind="if: type() == 'others'">
+        <div data-bind="compose: '../content/details/others.html'"></div>
     </div>
 </div>

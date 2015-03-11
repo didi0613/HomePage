@@ -2,6 +2,8 @@
 define(function (require, exports, module) {
 
     var ko = require('knockout');
+    var flexslider = require('jquery-flexslider');
+    var $ = require('jquery');
 
     // Constructor function for this module
     function Portfolio() {
@@ -18,7 +20,7 @@ define(function (require, exports, module) {
             self.isGeneral(false);
             self.type(val);
 
-            setTimeout(function(){
+            setTimeout(function () {
                 self.isDetail(true);
             }, 1000);
         };
@@ -27,9 +29,24 @@ define(function (require, exports, module) {
             self.isDetail(false);
             self.type("");
 
-            setTimeout(function(){
+            setTimeout(function () {
                 self.isGeneral(true);
             }, 1000);
+        };
+
+        self.type.subscribe(function(){
+            if(self.type() === "others")
+            {
+                $('.flexslider').flexslider({
+                    animation: "slide"
+                });
+            }
+        });
+
+        self.activate = function(){
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
         };
     }
 

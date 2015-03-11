@@ -13,10 +13,12 @@ requirejs.config({
         'instafeed': '../lib/instafeed.min',
         'animation.on.scroll': 'http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2',
         'gmaps': '../lib/gmaps',
-        'jquery-easypiechart': '../lib/jquery.easypiechart'
+        'jquery-easypiechart': '../lib/jquery.easypiechart',
+        'jquery-flexslider': '../lib/jquery.flexslider'
     },
     shim: {
         'instafeed': {exports: 'Instafeed'},
+        'jquery-flexslider': {exports: 'flexslider'},
         'jquery.bootstrap': {deps: ['jquery']}
     }
 });

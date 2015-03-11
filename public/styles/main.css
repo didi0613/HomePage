@@ -56,7 +56,6 @@ body {
   */ }
   body p {
     font-size: 22px;
-    text-indent: 1em;
     font-family: 'Open Sans', sans-serif;
     line-height: 38px;
     font-weight: 300; }
@@ -162,7 +161,8 @@ body {
     background-color: #eee;
     margin: 0 -20px;
     border-bottom: 17px dotted #fff;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    border-top: 17px dotted #fff; }
     body .timeSection .timeline {
       position: relative;
       width: 100%;
@@ -409,7 +409,6 @@ body {
 .about .subtitle {
   text-align: center;
   margin: 5%;
-  padding-top: 8%;
   font-size: 48px;
   line-height: 38px;
   font-weight: bold;
@@ -895,7 +894,7 @@ body {
       font-size: 20px;
       font-style: italic;
       letter-spacing: 2px;
-      line-height: 22px; }
+      line-height: 40px; }
     .gototraining .instantjoin img {
       width: 350px;
       height: 220px;
@@ -1295,5 +1294,41 @@ body {
     -webkit-font-smoothing: antialiased; }
   .weather-search .w-content img {
     margin: 20px; }
+
+@-webkit-keyframes slidy {
+  0% {
+    left: 0%; }
+  5% {
+    left: 0%; }
+  25% {
+    left: -100%; }
+  25% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  55% {
+    left: -200%; }
+  70% {
+    left: -300%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -400%; }
+  100% {
+    left: 0%; } }
+.others div#slider1 {
+  overflow: hidden; }
+.others div#slider1 figure img {
+  width: 20%;
+  float: left;
+  height: 100vh; }
+.others div#slider1 figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  -webkit-animation: 15s slidy infinite; }
 
 /*# sourceMappingURL=main.css.map */
