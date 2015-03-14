@@ -1,3 +1,29 @@
+@media screen and (max-width: 1100px) {
+  .gototraining {
+    .title .demo1 {
+      float: none !important;
+      margin-left: 20% !important;
+      margin-top: 60px !important;
+    }
+
+    .close {
+      font-size: 17px !important;
+    }
+
+    .instantjoin {
+      i {
+        margin-right: 20px;
+      }
+
+      img {
+        width: 100% !important;
+        height: 400px;
+        padding-left: 20%;
+      }
+    }
+  }
+}
+
 .gototraining {
   margin: 0;
   padding: 0;

@@ -808,6 +808,19 @@ body {
       -moz-animation-delay: 1.75s;
       animation-delay: 1.75s; }
 
+@media screen and (max-width: 1100px) {
+  .gototraining .title .demo1 {
+    float: none !important;
+    margin-left: 20% !important;
+    margin-top: 60px !important; }
+  .gototraining .close {
+    font-size: 17px !important; }
+  .gototraining .instantjoin i {
+    margin-right: 20px; }
+  .gototraining .instantjoin img {
+    width: 100% !important;
+    height: 400px;
+    padding-left: 20%; } }
 .gototraining {
   margin: 0;
   padding: 0;
