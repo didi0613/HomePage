@@ -976,6 +976,14 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+@media screen and (max-width: 1300px) {
+  .hiptraveler .ht-content .ht-content-title p {
+    padding: 100px 60px 20px !important; }
+  .hiptraveler .ht-content .ht-content-work img {
+    width: 100% !important;
+    height: 1000px !important; }
+  .hiptraveler .ht-content .ht-content-work p {
+    margin: 10px 50px !important; } }
 .hiptraveler {
   height: 100vh;
   width: 100%;
