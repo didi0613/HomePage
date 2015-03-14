@@ -19,6 +19,39 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .fullscreen {
+    .f-banner {
+      div#slider {
+        height: 900px !important;
+
+        figure {
+          img {
+            height: 900px !important;
+          }
+        }
+      }
+    }
+
+    .f-content {
+      .row {
+        img {
+          width: 90% !important;
+          height: 500px !important;
+        }
+      }
+
+      .highlighted {
+        img.ui {
+          margin: 5% 5% 10% !important;
+          width: 90% !important;
+          height: 200px !important;
+        }
+      }
+    }
+  }
+}
+
 .fullscreen {
   .close {
     position: absolute;
