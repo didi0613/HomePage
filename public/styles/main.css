@@ -61,6 +61,32 @@ body {
     font-weight: 300; }
   body .revealOnScroll {
     opacity: 0; }
+  @media screen and (max-width: 1000px) {
+    body .banner {
+      height: 1170px !important;
+      padding-top: 20%; }
+      body .banner .intro {
+        padding: 20% 15% !important; }
+    body .intro .row .col-md-3 {
+      width: 650px;
+      padding-left: 60px;
+      margin-bottom: 80px;
+      margin-top: 40px; }
+    body .brief-portfolio .row {
+      margin-left: 20%; }
+      body .brief-portfolio .row .col-md-3 {
+        width: 500px;
+        margin: 40px !important; }
+        body .brief-portfolio .row .col-md-3 p {
+          text-indent: 1em; }
+        body .brief-portfolio .row .col-md-3.card2 {
+          text-align: center;
+          padding: 40px 10px;
+          height: 400px !important; }
+        body .brief-portfolio .row .col-md-3.card1 {
+          height: 550px !important; }
+    body .gmaps iframe {
+      margin: 5% 20%; } }
   body .banner {
     height: 80vh;
     background-color: #e9a1b9;

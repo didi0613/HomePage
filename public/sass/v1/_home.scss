@@ -53,6 +53,59 @@ body {
   * Banner on the top of the homepage
   *
   */
+  @media screen and (max-width: 1000px) {
+    .banner {
+      height: 1170px !important;
+      padding-top: 20%;
+
+      .intro {
+        padding: 20% 15% !important;
+      }
+    }
+
+    .intro {
+      .row {
+        .col-md-3 {
+          width: 650px;
+          padding-left: 60px;
+          margin-bottom: 80px;
+          margin-top: 40px;
+        }
+      }
+    }
+
+    .brief-portfolio {
+      .row {
+        margin-left: 20%;
+
+        .col-md-3 {
+          width: 500px;
+          margin: 40px !important;
+
+          p{
+            text-indent: 1em;
+          }
+
+          &.card2 {
+            text-align: center;
+            padding: 40px 10px;
+            height: 400px !important;
+          }
+
+          &.card1 {
+            height: 550px !important;
+          }
+        }
+      }
+    }
+
+    .gmaps {
+      iframe {
+        margin: 5% 20%;
+      }
+    }
+  }
+
   .banner {
     height: 80vh;
     background-color: $home-base;
