@@ -1,0 +1,276 @@
+$home-base: #0875BD;
+
+//animation
+@-webkit-keyframes top-fade-in {
+  /* Safari and Chrome */
+  0% {
+    background-position: 0 -160px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@-webkit-keyframes bottom-fade-in {
+  /* Safari and Chrome */
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -160px;
+  }
+}
+
+@-webkit-keyframes arrow-jump {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+
+.aboutme {
+  width: 100%;
+
+  .basic-info {
+    width: 100%;
+    background: url(../images/aboutme/background.png);
+    margin: 0;
+
+    img {
+      width: 70%;
+      margin-top: 12vh;
+    }
+
+    .col-md-8 {
+      height: 58vh;
+    }
+
+    .title {
+      font-size: 36px;
+      margin: 15vh 0 10px 15%;
+      font-family: 'neosans regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      color: #000;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      margin: 0 0 10px 15%;
+      width: 74%;
+      color: #666666;
+      font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      line-height: 1.3em;
+    }
+
+    .content {
+      margin: 0 0 0 15%;
+      width: 73%;
+      font-size: 18px;
+      font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #333;
+      font-weight: 200;
+      line-height: 1.6em;
+    }
+
+    nav {
+      padding: 3vh 8%;
+      background-color: transparent;
+      color: #333;
+
+      a {
+        color: #333;
+      }
+    }
+  }
+
+  hr {
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    border: 0;
+    height: 1px;
+  }
+
+  #instafeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 5vh 0px 10vh;
+
+    a {
+      float: left;
+      margin: 1vh 2%;
+
+      img {
+        width: 120px;
+        height: 120px;
+        border: 8px solid white;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0;
+      }
+    }
+  }
+
+  .skillSection {
+    background-color: #fff;
+
+    .piechart {
+      text-align: center;
+      padding: 10vh 0;
+      background-color: #fff;
+
+      img {
+        width: 34%;
+      }
+
+      span {
+        font-size: 21px;
+        color: #333;
+        font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 1.3em;
+      }
+
+      span.designer {
+        float: left;
+        margin: 19vh 0 0 0;
+        width: 33%;
+        text-align: left;
+        padding-left: 13%;
+        line-height: 1.6em;
+      }
+
+      span.developer {
+        float: right;
+        margin: 14vh 0 0 0;
+        text-align: left;
+        width: 33%;
+        padding-left: 6%;
+        line-height: 1.6em;
+      }
+    }
+
+    /*
+   *
+   * Skill set
+   *
+   */
+    .skillset {
+      text-align: center;
+      margin-bottom: 10vh;
+      padding: 10vh 0;
+    }
+
+    .addspace {
+      height: 60px;
+    }
+    .technical {
+      color: #474d5d;
+    }
+    .technical .container {
+      padding-top: 85px;
+      padding-bottom: 69px;
+    }
+    .technical .heading p {
+      padding-bottom: 41px;
+    }
+    .technical p {
+      color: #474d5d;
+    }
+    .technical h2 {
+      color: #ff675f;
+    }
+    .technical .skillsArea {
+      padding: 0px;
+    }
+    .technical .skills {
+      margin: 0 auto;
+      margin-bottom: 60px;
+      text-align: center;
+      padding: 0px;
+      float: none;
+    }
+    .technical .skills p {
+      color: #84868d;
+      font-size: 13px;
+      line-height: 18px;
+      text-align: center;
+    }
+    .technical .skills img {
+      margin: 0 auto;
+      margin-bottom: 33px;
+      width: 100%;
+      max-width: 152px;
+    }
+    .technical .skills h4 {
+      text-transform: uppercase;
+      color: #333;
+      font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      line-height: 1.3em;
+      font-size: 21px;
+    }
+    .skilBg {
+      background: url(../images/skills.png) no-repeat 0 0;
+    }
+    .chart {
+      position: relative;
+      display: inline-block;
+      width: 152px;
+      height: 152px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .chart canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .percent {
+      display: inline-block;
+      font-size: 21px;
+      color: #474d5d;
+      line-height: 152px;
+      z-index: 2;
+    }
+    .percent:after {
+      content: '%';
+      margin-left: 0.1em;
+      font-size: .8em;
+    }
+    .angular {
+      margin-top: 100px;
+    }
+    .angular .chart {
+      margin-top: 0;
+    }
+
+    .skills {
+      .progress-set {
+        padding: 0 12%;
+
+        .progress {
+          height: 25px;
+          margin: 20px 0;
+
+          .progress-bar {
+            background-color: $home-base;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .timeline {
+    .tl-slide-titleslide {
+      background-color: #eee;
+    }
+  }
+}

@@ -1,55 +1,58 @@
 <section class="portfolio" data-bind="visible: isGeneral()">
-    <a href="#">
-        <i class="fa fa-times close"></i>
-    </a>
-
-    <!--title-->
-    <div class="grid-title">
-        <h2>Work</h2>
-        <p>
-            My work cannot be measured in lines,
-            it involves lots of endeavours and hardworking on it.
-            I picked few recent projects here to represent my ability somehow.
-            Hope you like it. :-)
-        </p>
-    </div>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#aboutme" data-bind="css: {selected: currentPage() === 'aboutme'}">About</a> |
+        <a href="#portfolio" data-bind="css: {selected: currentPage() === 'developer'}">Developer</a> |
+        <a href="#designer" data-bind="css: {selected: currentPage() === 'designer'}">Designer</a>
+    </nav>
 
     <!--project lists-->
     <div class="grid-wrap">
         <div class="grid">
-            <a data-bind="click: detail.bind(self,'citrix')">
+            <a href="#portfolio-g2m">
                 <figure>
-                        <img src="../images/citrix-detail/citrix.png">
+                    <img src="../images/gotomeeting.jpg">
+                    <div>GoToMeeting Instant Join</div>
+                    <div class="subtitle">Front-end Developer</div>
+                </figure>
+            </a>
+            <a href="#portfolio-g2t">
+                <figure>
+                    <img src="../images/g2t.jpg">
+                    <div>GoToTraining Instant Join & Breakout</div>
+                    <div class="subtitle">Front-end Developer</div>
                 </figure>
             </a>
 
-            <a data-bind="click: detail.bind(self,'hiptraveler')">
+            <a href="#portfolio-hiptraveler">
                 <figure>
-                    <img src="../images/ht.png">
+                    <img src="../images/hiptraveler.jpg">
+                    <div>Hiptraveler</div>
+                    <div class="subtitle">Web Developer Intern</div>
                 </figure>
             </a>
 
-            <a data-bind="click: detail.bind(self,'fullscreen')">
+            <a href="#portfolio-fullscreen">
                 <figure>
-                    <img src="../images/fs.gif">
+                    <img src="../images/fullscreen.png">
+                    <div>Fullscreen Inc</div>
+                    <div class="subtitle">Chanel Partnership Intern</div>
                 </figure>
             </a>
 
-            <a data-bind="click: detail.bind(self,'multi-threading')">
+            <a href="#portfolio-multithread">
                 <figure>
-                    <img src="../images/usc1.jpg">
+                    <img src="../images/usc.jpg">
+                    <div>USC Multi-threading Project</div>
+                    <div class="subtitle">M.S. Computer Science</div>
                 </figure>
             </a>
 
-            <a data-bind="click: detail.bind(self,'weather-search')">
+            <a href="#portfolio-weathersearch">
                 <figure>
-                    <img src="../images/WeatherCover.gif">
-                </figure>
-            </a>
-
-            <a data-bind="click: detail.bind(self,'others')">
-                <figure>
-                    <img src="../images/OthersCover.png">
+                    <img src="../images/weather-search.png">
+                    <div>USC Weather Search Project</div>
+                    <div class="subtitle">M.S. Computer Science</div>
                 </figure>
             </a>
         </div>
@@ -61,7 +64,7 @@
 </div>
 
 <div data-bind="visible: isDetail()">
-    <div class="grid-detail" data-bind="if: type() == 'citrix'">
+    <div class="grid-detail" data-bind="if: type() == 'g2t'">
         <div data-bind="compose: '../content/details/gototraining.html'"></div>
     </div>
 
