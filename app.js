@@ -8,6 +8,6 @@ app.use(express.logger());
 // Looks for static content under the current directory + /public:
 app.use(express.static(__dirname + '/public'));
 
-app.listen(3002, function () {
-    console.log('App running on port 3002');
+app.listen(3001, function () {
+    console.log('App running on port 3001');
 });
