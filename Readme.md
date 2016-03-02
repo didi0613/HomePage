@@ -34,4 +34,4 @@
 ## Running:
 
 - From this code's directory, run `node app.js`
-- Open browser to [http://localhost:3000/](http://localhost:3000/)
+- Open browser to [http://localhost:3001/](http://localhost:3001/)

@@ -1,53 +1,4 @@
-<?php
-if(isset($_POST['submit'])){
-    $to = "email@example.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
-
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    }
-?>
-
 <!--Home page banner-->
-<!--
-                         ____                    __
-                        /\  _`\                 /\ \__
-                        \ \ \/\ \    ___     ___\ \ ,_\        ___    ___   _____   __  __
-                         \ \ \ \ \  / __`\ /' _ `\ \ \/       /'___\ / __`\/\ '__`\/\ \/\ \
-                          \ \ \_\ \/\ \L\ \/\ \/\ \ \ \_     /\ \__//\ \L\ \ \ \L\ \ \ \_\ \
-                           \ \____/\ \____/\ \_\ \_\ \__\    \ \____\ \____/\ \ ,__/\/`____ \
-                            \/___/  \/___/  \/_/\/_/\/__/     \/____/\/___/  \ \ \/  `/___/> \
-                                                                              \ \_\     /\___/
-                                                                               \/_/     \/__/
-                         ____    __
-                        /\  _`\ /\ \
-                        \ \,\L\_\ \ \___     ___   __  __  __        ____    ___     ___ ___      __
-                         \/_\__ \\ \  _ `\  / __`\/\ \/\ \/\ \      /',__\  / __`\ /' __` __`\  /'__`\
-                           /\ \L\ \ \ \ \ \/\ \L\ \ \ \_/ \_/ \    /\__, `\/\ \L\ \/\ \/\ \/\ \/\  __/
-                           \ `\____\ \_\ \_\ \____/\ \___x___/'    \/\____/\ \____/\ \_\ \_\ \_\ \____\
-                            \/_____/\/_/\/_/\/___/  \/__//__/       \/___/  \/___/  \/_/\/_/\/_/\/____/
-
-
-                                                                  __
-                                                                 /\ \__
-                         _ __    __    ____  _____      __    ___\ \ ,_\
-                        /\`'__\/'__`\ /',__\/\ '__`\  /'__`\ /'___\ \ \/
-                        \ \ \//\  __//\__, `\ \ \L\ \/\  __//\ \__/\ \ \_
-                         \ \_\\ \____\/\____/\ \ ,__/\ \____\ \____\\ \__\
-                          \/_/ \/____/\/___/  \ \ \/  \/____/\/____/ \/__/
-                                               \ \_\
-                                                \/_/
-                           -->
 <div class="banner">
     <!--pink banner background-->
     <div class="word">
@@ -86,472 +37,213 @@ if(isset($_POST['submit'])){
     </div>
 
     <!--social media part-->
-    <div class="social">
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/profile/view?id=205641472&trk=nav_responsive_tab_profile_pic"
-                   target="_blank">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </li>
-            <li>
-                <a href="http://instagram.com/miss_didididi/" target="_blank">
-                    <i class="fa fa-instagram"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/didi0613" target="_blank">
-                    <i class="fa fa-github-alt"></i>
-                </a>
-            </li>
-            <!--<li>-->
-                <!--<a href="mailto:gina.ds1991@gmail.com">-->
-                    <!--<i class="fa fa-envelope"></i>-->
-                <!--</a>-->
-            <!--</li>-->
-        </ul>
-    </div>
+    <!--<div class="social">-->
+    <!--<ul>-->
+    <!--<li>-->
+    <!--<a href="https://www.linkedin.com/profile/view?id=205641472&trk=nav_responsive_tab_profile_pic"-->
+    <!--target="_blank">-->
+    <!--<i class="fa fa-linkedin"></i>-->
+    <!--</a>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<a href="http://instagram.com/miss_didididi/" target="_blank">-->
+    <!--<i class="fa fa-instagram"></i>-->
+    <!--</a>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<a href="https://github.com/didi0613" target="_blank">-->
+    <!--<i class="fa fa-github-alt"></i>-->
+    <!--</a>-->
+    <!--</li>-->
+    <!--&lt;!&ndash;<li>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="mailto:gina.ds1991@gmail.com">&ndash;&gt;-->
+    <!--&lt;!&ndash;<i class="fa fa-envelope"></i>&ndash;&gt;-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+    <!--</ul>-->
+    <!--</div>-->
 </div>
 
-<!--arrow navigation-->
-<div class="nav">
-    <a href="#about"><img class="arrow" src="../images/arrow.png"></a>
+<div class="content">
+    <a href="#aboutme"><div class="section left aboutme"></div></a>
+    <a href="#developer"><div class="section right developer"></div></a>
+    <a href="#designer"><div class="section left designer"></div></a>
+    <a href="#life"><div class="section right life"></div></a>
 </div>
 
 <!--about me-->
-<div id="about" class="about">
-    <div class="content">
-        <!--intro of myself-->
-        <!--
-                         ____                    __
-                        /\  _`\                 /\ \__
-                        \ \ \/\ \    ___     ___\ \ ,_\        ___    ___   _____   __  __
-                         \ \ \ \ \  / __`\ /' _ `\ \ \/       /'___\ / __`\/\ '__`\/\ \/\ \
-                          \ \ \_\ \/\ \L\ \/\ \/\ \ \ \_     /\ \__//\ \L\ \ \ \L\ \ \ \_\ \
-                           \ \____/\ \____/\ \_\ \_\ \__\    \ \____\ \____/\ \ ,__/\/`____ \
-                            \/___/  \/___/  \/_/\/_/\/__/     \/____/\/___/  \ \ \/  `/___/> \
-                                                                              \ \_\     /\___/
-                                                                               \/_/     \/__/
-                         ____    __
-                        /\  _`\ /\ \
-                        \ \,\L\_\ \ \___     ___   __  __  __        ____    ___     ___ ___      __
-                         \/_\__ \\ \  _ `\  / __`\/\ \/\ \/\ \      /',__\  / __`\ /' __` __`\  /'__`\
-                           /\ \L\ \ \ \ \ \/\ \L\ \ \ \_/ \_/ \    /\__, `\/\ \L\ \/\ \/\ \/\ \/\  __/
-                           \ `\____\ \_\ \_\ \____/\ \___x___/'    \/\____/\ \____/\ \_\ \_\ \_\ \____\
-                            \/_____/\/_/\/_/\/___/  \/__//__/       \/___/  \/___/  \/_/\/_/\/_/\/____/
+<!--<div id="about" class="about">-->
+    <!--<div class="content">-->
+        <!--&lt;!&ndash;intro of myself&ndash;&gt;-->
+        <!--&lt;!&ndash;-->
+                         <!--____                    __-->
+                        <!--/\  _`\                 /\ \__-->
+                        <!--\ \ \/\ \    ___     ___\ \ ,_\        ___    ___   _____   __  __-->
+                         <!--\ \ \ \ \  / __`\ /' _ `\ \ \/       /'___\ / __`\/\ '__`\/\ \/\ \-->
+                          <!--\ \ \_\ \/\ \L\ \/\ \/\ \ \ \_     /\ \__//\ \L\ \ \ \L\ \ \ \_\ \-->
+                           <!--\ \____/\ \____/\ \_\ \_\ \__\    \ \____\ \____/\ \ ,__/\/`____ \-->
+                            <!--\/___/  \/___/  \/_/\/_/\/__/     \/____/\/___/  \ \ \/  `/___/> \-->
+                                                                              <!--\ \_\     /\___/-->
+                                                                               <!--\/_/     \/__/-->
+                         <!--____    __-->
+                        <!--/\  _`\ /\ \-->
+                        <!--\ \,\L\_\ \ \___     ___   __  __  __        ____    ___     ___ ___      __-->
+                         <!--\/_\__ \\ \  _ `\  / __`\/\ \/\ \/\ \      /',__\  / __`\ /' __` __`\  /'__`\-->
+                           <!--/\ \L\ \ \ \ \ \/\ \L\ \ \ \_/ \_/ \    /\__, `\/\ \L\ \/\ \/\ \/\ \/\  __/-->
+                           <!--\ `\____\ \_\ \_\ \____/\ \___x___/'    \/\____/\ \____/\ \_\ \_\ \_\ \____\-->
+                            <!--\/_____/\/_/\/_/\/___/  \/__//__/       \/___/  \/___/  \/_/\/_/\/_/\/____/-->
 
 
-                                                                  __
-                                                                 /\ \__
-                         _ __    __    ____  _____      __    ___\ \ ,_\
-                        /\`'__\/'__`\ /',__\/\ '__`\  /'__`\ /'___\ \ \/
-                        \ \ \//\  __//\__, `\ \ \L\ \/\  __//\ \__/\ \ \_
-                         \ \_\\ \____\/\____/\ \ ,__/\ \____\ \____\\ \__\
-                          \/_/ \/____/\/___/  \ \ \/  \/____/\/____/ \/__/
-                                               \ \_\
-                                                \/_/
-                           -->
-        <div class="intro revealOnScroll" data-animation="fadeIn" data-timeout="300">
-            <h2 class="subtitle">A brief background</h2>
-
-            <div class="row" style="margin-bottom: 120px">
-                <div class="col-md-3"
-                     style="font-size: 22px; color: #666; margin-left: 150px; border: 3px dashed #666;">
-                    <i class="fa fa-user" style="font-size: 40px; padding: 20px 20px 20px 20px"></i> Sheng Di <br>
-                    <i class="fa fa-graduation-cap" style="font-size: 40px; padding: 20px 20px 20px 10px"></i> USC <br>
-                    <i class="fa fa-bug" style="font-size: 40px; padding: 20px 20px 20px 17px"></i> Web Developer <br>
-                    <i class="fa fa-desktop" style="font-size: 40px; padding: 20px 20px 30px 14px"></i> Citrix <br>
-                </div>
-
-                <div class="col-md-7">
-                    <p>
-                        I am a graduate student from USC majored in computer science.
-                        My interest in web development stemmed from girls' enamoured of beauty.
-                        Between my major and interests, I addicted spend most of my time in front of the screen.
-                        Writing smart code, creating adorable user interface, drawing cutie pictures and filling up a
-                        fresh cup
-                        of coffee.
-                    </p>
-
-                    <p>
-                        Now I am working as a front end engineer responsible for in session GoToTraining.
-                    </p>
-                </div>
-            </div>
-
-            <div class="separator">
-                <div class="inside">✭</div>
-            </div>
-
-            <!--
-                         ____                    __
-                        /\  _`\                 /\ \__
-                        \ \ \/\ \    ___     ___\ \ ,_\        ___    ___   _____   __  __
-                         \ \ \ \ \  / __`\ /' _ `\ \ \/       /'___\ / __`\/\ '__`\/\ \/\ \
-                          \ \ \_\ \/\ \L\ \/\ \/\ \ \ \_     /\ \__//\ \L\ \ \ \L\ \ \ \_\ \
-                           \ \____/\ \____/\ \_\ \_\ \__\    \ \____\ \____/\ \ ,__/\/`____ \
-                            \/___/  \/___/  \/_/\/_/\/__/     \/____/\/___/  \ \ \/  `/___/> \
-                                                                              \ \_\     /\___/
-                                                                               \/_/     \/__/
-                         ____    __
-                        /\  _`\ /\ \
-                        \ \,\L\_\ \ \___     ___   __  __  __        ____    ___     ___ ___      __
-                         \/_\__ \\ \  _ `\  / __`\/\ \/\ \/\ \      /',__\  / __`\ /' __` __`\  /'__`\
-                           /\ \L\ \ \ \ \ \/\ \L\ \ \ \_/ \_/ \    /\__, `\/\ \L\ \/\ \/\ \/\ \/\  __/
-                           \ `\____\ \_\ \_\ \____/\ \___x___/'    \/\____/\ \____/\ \_\ \_\ \_\ \____\
-                            \/_____/\/_/\/_/\/___/  \/__//__/       \/___/  \/___/  \/_/\/_/\/_/\/____/
+                                                                  <!--__-->
+                                                                 <!--/\ \__-->
+                         <!--_ __    __    ____  _____      __    ___\ \ ,_\-->
+                        <!--/\`'__\/'__`\ /',__\/\ '__`\  /'__`\ /'___\ \ \/-->
+                        <!--\ \ \//\  __//\__, `\ \ \L\ \/\  __//\ \__/\ \ \_-->
+                         <!--\ \_\\ \____\/\____/\ \ ,__/\ \____\ \____\\ \__\-->
+                          <!--\/_/ \/____/\/___/  \ \ \/  \/____/\/____/ \/__/-->
+                                               <!--\ \_\-->
+                                                <!--\/_/-->
+                           <!--&ndash;&gt;-->
+        <!--<div class="intro revealOnScroll" data-animation="fadeIn" data-timeout="300">-->
+            <!--&lt;!&ndash;-->
+                             <!--____                    __-->
+                            <!--/\  _`\                 /\ \__-->
+                            <!--\ \ \/\ \    ___     ___\ \ ,_\        ___    ___   _____   __  __-->
+                             <!--\ \ \ \ \  / __`\ /' _ `\ \ \/       /'___\ / __`\/\ '__`\/\ \/\ \-->
+                              <!--\ \ \_\ \/\ \L\ \/\ \/\ \ \ \_     /\ \__//\ \L\ \ \ \L\ \ \ \_\ \-->
+                               <!--\ \____/\ \____/\ \_\ \_\ \__\    \ \____\ \____/\ \ ,__/\/`____ \-->
+                                <!--\/___/  \/___/  \/_/\/_/\/__/     \/____/\/___/  \ \ \/  `/___/> \-->
+                                                                                  <!--\ \_\     /\___/-->
+                                                                                   <!--\/_/     \/__/-->
+                             <!--____    __-->
+                            <!--/\  _`\ /\ \-->
+                            <!--\ \,\L\_\ \ \___     ___   __  __  __        ____    ___     ___ ___      __-->
+                             <!--\/_\__ \\ \  _ `\  / __`\/\ \/\ \/\ \      /',__\  / __`\ /' __` __`\  /'__`\-->
+                               <!--/\ \L\ \ \ \ \ \/\ \L\ \ \ \_/ \_/ \    /\__, `\/\ \L\ \/\ \/\ \/\ \/\  __/-->
+                               <!--\ `\____\ \_\ \_\ \____/\ \___x___/'    \/\____/\ \____/\ \_\ \_\ \_\ \____\-->
+                                <!--\/_____/\/_/\/_/\/___/  \/__//__/       \/___/  \/___/  \/_/\/_/\/_/\/____/-->
 
 
-                                                                  __
-                                                                 /\ \__
-                         _ __    __    ____  _____      __    ___\ \ ,_\
-                        /\`'__\/'__`\ /',__\/\ '__`\  /'__`\ /'___\ \ \/
-                        \ \ \//\  __//\__, `\ \ \L\ \/\  __//\ \__/\ \ \_
-                         \ \_\\ \____\/\____/\ \ ,__/\ \____\ \____\\ \__\
-                          \/_/ \/____/\/___/  \ \ \/  \/____/\/____/ \/__/
-                                               \ \_\
-                                                \/_/
-                           -->
-            <div class="revealOnScroll timeSection" data-animation="fadeIn" data-timeout="300">
-                <h2 class="subtitle" style="margin-top: 0">The way I've walked</h2>
-                <ul class="timeline">
-                    <!-- Item 1 -->
-                    <li>
-                        <div class="direction-r">
-                            <div class="flag-wrapper">
-                                <span class="flag">Citrix</span>
-                                <span class="time-wrapper"><span class="time">2014 - Present</span></span>
-                            </div>
-                            <div class="desc">Web developer responsible for GoToTraining Join product</div>
-                        </div>
-                    </li>
+                                                                      <!--__-->
+                                                                     <!--/\ \__-->
+                             <!--_ __    __    ____  _____      __    ___\ \ ,_\-->
+                            <!--/\`'__\/'__`\ /',__\/\ '__`\  /'__`\ /'___\ \ \/-->
+                            <!--\ \ \//\  __//\__, `\ \ \L\ \/\  __//\ \__/\ \ \_-->
+                             <!--\ \_\\ \____\/\____/\ \ ,__/\ \____\ \____\\ \__\-->
+                              <!--\/_/ \/____/\/___/  \ \ \/  \/____/\/____/ \/__/-->
+                                                   <!--\ \_\-->
+                                                    <!--\/_/-->
+                               <!--&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="skillset revealOnScroll" data-animation="fadeIn" data-timeout="300">&ndash;&gt;-->
+            <!--&lt;!&ndash;<h2 class="subtitle">My Expertise</h2>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="technical">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class=".container">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">&ndash;&gt;-->
 
-                    <!-- Item 2 -->
-                    <li>
-                        <div class="direction-l">
-                            <div class="flag-wrapper">
-                                <span class="flag">USC</span>
-                                <span class="time-wrapper"><span class="time">2013 - 2014</span></span>
-                            </div>
-                            <div class="desc">Master degree majored in computer science</div>
-                        </div>
-                    </li>
+            <!--&lt;!&ndash;<span class="chart skilBg" data-percent="90">&ndash;&gt;-->
+            <!--&lt;!&ndash;<span class="percent">90</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<canvas height="304" width="304" style="height: 152px; width: 152px;"></canvas></span>&ndash;&gt;-->
 
-                    <!-- Item 3 -->
-                    <li>
-                        <div class="direction-r">
-                            <div class="flag-wrapper">
-                                <span class="flag">Hip Traveler</span>
-                                <span class="time-wrapper"><span class="time">2014</span></span>
-                            </div>
-                            <div class="desc">5 months web developer internship</div>
-                        </div>
-                    </li>
+            <!--&lt;!&ndash;<h4>HTML5/CSS3/SASS</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
 
-                    <!-- Item 4 -->
-                    <li>
-                        <div class="direction-l">
-                            <div class="flag-wrapper">
-                                <span class="flag">Fullscreen Inc</span>
-                                <span class="time-wrapper"><span class="time">2013</span></span>
-                            </div>
-                            <div class="desc">2 months channel partnership internship</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <!--&lt;!&ndash;<div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">&ndash;&gt;-->
 
-        <!--portfolio-->
-        <!--
-                         ____                    __
-                        /\  _`\                 /\ \__
-                        \ \ \/\ \    ___     ___\ \ ,_\        ___    ___   _____   __  __
-                         \ \ \ \ \  / __`\ /' _ `\ \ \/       /'___\ / __`\/\ '__`\/\ \/\ \
-                          \ \ \_\ \/\ \L\ \/\ \/\ \ \ \_     /\ \__//\ \L\ \ \ \L\ \ \ \_\ \
-                           \ \____/\ \____/\ \_\ \_\ \__\    \ \____\ \____/\ \ ,__/\/`____ \
-                            \/___/  \/___/  \/_/\/_/\/__/     \/____/\/___/  \ \ \/  `/___/> \
-                                                                              \ \_\     /\___/
-                                                                               \/_/     \/__/
-                         ____    __
-                        /\  _`\ /\ \
-                        \ \,\L\_\ \ \___     ___   __  __  __        ____    ___     ___ ___      __
-                         \/_\__ \\ \  _ `\  / __`\/\ \/\ \/\ \      /',__\  / __`\ /' __` __`\  /'__`\
-                           /\ \L\ \ \ \ \ \/\ \L\ \ \ \_/ \_/ \    /\__, `\/\ \L\ \/\ \/\ \/\ \/\  __/
-                           \ `\____\ \_\ \_\ \____/\ \___x___/'    \/\____/\ \____/\ \_\ \_\ \_\ \____\
-                            \/_____/\/_/\/_/\/___/  \/__//__/       \/___/  \/___/  \/_/\/_/\/_/\/____/
+            <!--&lt;!&ndash;<span class="chart skilBg" data-percent="80">&ndash;&gt;-->
+            <!--&lt;!&ndash;<span class="percent">80</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<canvas height="304" width="304" style="height: 152px; width: 152px;"></canvas></span>&ndash;&gt;-->
 
+            <!--&lt;!&ndash;<h4>Knockout.js</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
 
-                                                                  __
-                                                                 /\ \__
-                         _ __    __    ____  _____      __    ___\ \ ,_\
-                        /\`'__\/'__`\ /',__\/\ '__`\  /'__`\ /'___\ \ \/
-                        \ \ \//\  __//\__, `\ \ \L\ \/\  __//\ \__/\ \ \_
-                         \ \_\\ \____\/\____/\ \ ,__/\ \____\ \____\\ \__\
-                          \/_/ \/____/\/___/  \ \ \/  \/____/\/____/ \/__/
-                                               \ \_\
-                                                \/_/
-                           -->
-        <div class="brief-portfolio revealOnScroll" data-animation="fadeIn" data-timeout="300">
-            <h2 class="subtitle">Portfolio</h2>
-            <div class="row">
-                <div class="col-md-3 card1">
-                    <figure><img src="../images/citrix-detail/banner-inside.jpg"></figure>
-                    <div class="title">GoToTraining Instant Join</div>
-                    <p class="blog-meta">1st July | 2014</p>
-                    <p class="blog-content">
-                        A web app for organizers or attendees join the session without download.
-                        Responsible for UI contribution.
-                    </p>
-                </div>
-                <div class="col-md-3 card2">
-                    <p>
-                        True creativity comes from you. Pure you. Commit to you and you will truly create.
-                        <br><span>-- Unknown</span>
-                    </p>
-                </div>
-                <div class="col-md-3 card1">
-                    <div id="slider">
-                        <figure>
-                            <img src="../images/hiptraveler-detail/banner1.jpg" alt="">
-                            <img src="../images/hiptraveler-detail/banner6.jpg" alt="">
-                            <img src="../images/hiptraveler-detail/banner3.jpg" alt="">
-                            <img src="../images/hiptraveler-detail/banner4.jpg" alt="">
-                            <img src="../images/hiptraveler-detail/banner5.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="title">Hiptraveler</div>
-                    <p class="blog-meta">January - May | 2014</p>
-                    <p class="blog-content">
-                        Blend the travel story-telling with detailed itineraries,
-                        for the users who can follow in the footsteps of their favorite travelers.
-                    </p>
-                </div>
-                <div class="col-md-3 card1" style="margin-top: -70px; height: 335px">
-                    <figure><img src="../images/others/flowergirl.png" style="height: 220px; width: 100%"></figure>
-                    <p class="blog-content">My drawing gift started when I was a child.</p>
-                </div>
-                <div class="col-md-3 card1" style="margin-top: -337px;">
-                    <figure><img src="../images/fullscreen-detail/banner0.jpg"></figure>
-                    <div class="title">Fullscreen Inc.</div>
-                    <p class="blog-meta">August - September | 2013</p>
-                    <p class="blog-content">
-                        The first media company for the connected generation.
-                    </p>
-                </div>
-                <div class="col-md-3 card2" style="margin-top: -70px;">
-                    <p>
-                        If you are searching for one person that will change your life, take a look in the mirror.
-                        <br><span>-- Kamari</span>
-                    </p>
-                </div>
-            </div>
+            <!--&lt;!&ndash;<div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">&ndash;&gt;-->
 
-            <div class="viewmore">
-                <a href="#portfolio" class="button">Explore more</a>
-            </div>
-        </div>
+            <!--&lt;!&ndash;<span class="chart skilBg" data-percent="80">&ndash;&gt;-->
+            <!--&lt;!&ndash;<span class="percent">80</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<canvas height="304" width="304" style="height: 152px; width: 152px;"></canvas></span>&ndash;&gt;-->
 
-        <div class="separator">
-            <div class="inside">✭</div>
-        </div>
+            <!--&lt;!&ndash;<h4>Github</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
 
-        <!--
-                         ____                    __
-                        /\  _`\                 /\ \__
-                        \ \ \/\ \    ___     ___\ \ ,_\        ___    ___   _____   __  __
-                         \ \ \ \ \  / __`\ /' _ `\ \ \/       /'___\ / __`\/\ '__`\/\ \/\ \
-                          \ \ \_\ \/\ \L\ \/\ \/\ \ \ \_     /\ \__//\ \L\ \ \ \L\ \ \ \_\ \
-                           \ \____/\ \____/\ \_\ \_\ \__\    \ \____\ \____/\ \ ,__/\/`____ \
-                            \/___/  \/___/  \/_/\/_/\/__/     \/____/\/___/  \ \ \/  `/___/> \
-                                                                              \ \_\     /\___/
-                                                                               \/_/     \/__/
-                         ____    __
-                        /\  _`\ /\ \
-                        \ \,\L\_\ \ \___     ___   __  __  __        ____    ___     ___ ___      __
-                         \/_\__ \\ \  _ `\  / __`\/\ \/\ \/\ \      /',__\  / __`\ /' __` __`\  /'__`\
-                           /\ \L\ \ \ \ \ \/\ \L\ \ \ \_/ \_/ \    /\__, `\/\ \L\ \/\ \/\ \/\ \/\  __/
-                           \ `\____\ \_\ \_\ \____/\ \___x___/'    \/\____/\ \____/\ \_\ \_\ \_\ \____\
-                            \/_____/\/_/\/_/\/___/  \/__//__/       \/___/  \/___/  \/_/\/_/\/_/\/____/
+            <!--&lt;!&ndash;<div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<span class="chart skilBg" data-percent="75">&ndash;&gt;-->
+            <!--&lt;!&ndash;<span class="percent">75</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<canvas height="304" width="304" style="height: 152px; width: 152px;"></canvas></span>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<h4>Single Page Application</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<span class="chart skilBg" data-percent="70">&ndash;&gt;-->
+            <!--&lt;!&ndash;<span class="percent">70</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<canvas height="304" width="304" style="height: 152px; width: 152px;"></canvas></span>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<h4>Grunt & Bower</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<span class="chart skilBg" data-percent="60">&ndash;&gt;-->
+            <!--&lt;!&ndash;<span class="percent">60</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<canvas height="304" width="304" style="height: 152px; width: 152px;"></canvas></span>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<h4>Unit Test</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;ins&ndash;&gt;-->
+            <!--&lt;!&ndash;-->
+                             <!--____                    __-->
+                            <!--/\  _`\                 /\ \__-->
+                            <!--\ \ \/\ \    ___     ___\ \ ,_\        ___    ___   _____   __  __-->
+                             <!--\ \ \ \ \  / __`\ /' _ `\ \ \/       /'___\ / __`\/\ '__`\/\ \/\ \-->
+                              <!--\ \ \_\ \/\ \L\ \/\ \/\ \ \ \_     /\ \__//\ \L\ \ \ \L\ \ \ \_\ \-->
+                               <!--\ \____/\ \____/\ \_\ \_\ \__\    \ \____\ \____/\ \ ,__/\/`____ \-->
+                                <!--\/___/  \/___/  \/_/\/_/\/__/     \/____/\/___/  \ \ \/  `/___/> \-->
+                                                                                  <!--\ \_\     /\___/-->
+                                                                                   <!--\/_/     \/__/-->
+                             <!--____    __-->
+                            <!--/\  _`\ /\ \-->
+                            <!--\ \,\L\_\ \ \___     ___   __  __  __        ____    ___     ___ ___      __-->
+                             <!--\/_\__ \\ \  _ `\  / __`\/\ \/\ \/\ \      /',__\  / __`\ /' __` __`\  /'__`\-->
+                               <!--/\ \L\ \ \ \ \ \/\ \L\ \ \ \_/ \_/ \    /\__, `\/\ \L\ \/\ \/\ \/\ \/\  __/-->
+                               <!--\ `\____\ \_\ \_\ \____/\ \___x___/'    \/\____/\ \____/\ \_\ \_\ \_\ \____\-->
+                                <!--\/_____/\/_/\/_/\/___/  \/__//__/       \/___/  \/___/  \/_/\/_/\/_/\/____/-->
 
 
-                                                                  __
-                                                                 /\ \__
-                         _ __    __    ____  _____      __    ___\ \ ,_\
-                        /\`'__\/'__`\ /',__\/\ '__`\  /'__`\ /'___\ \ \/
-                        \ \ \//\  __//\__, `\ \ \L\ \/\  __//\ \__/\ \ \_
-                         \ \_\\ \____\/\____/\ \ ,__/\ \____\ \____\\ \__\
-                          \/_/ \/____/\/___/  \ \ \/  \/____/\/____/ \/__/
-                                               \ \_\
-                                                \/_/
-                           -->
-        <div class="skillset revealOnScroll" data-animation="fadeIn" data-timeout="300">
-            <h2 class="subtitle">My Expertise</h2>
-            <div class="technical">
-                <div class=".container">
-                    <div class="row">
-                        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
-                            <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
-
-                    	<span class="chart skilBg" data-percent="90">
-                            <span class="percent">90</span>
-                        <canvas height="304" width="304" style="height: 152px; width: 152px;"></canvas></span>
-
-                                <h4>HTML5/CSS3/SASS</h4>
-                            </div>
-                        </div>
-
-                        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
-                            <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
-
-                        <span class="chart skilBg" data-percent="80">
-                            <span class="percent">80</span>
-                        <canvas height="304" width="304" style="height: 152px; width: 152px;"></canvas></span>
-
-                                <h4>Knockout.js</h4>
-                            </div>
-                        </div>
-
-                        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
-                            <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
-
-                    	<span class="chart skilBg" data-percent="80">
-                            <span class="percent">80</span>
-                        <canvas height="304" width="304" style="height: 152px; width: 152px;"></canvas></span>
-
-                                <h4>Github</h4>
-                            </div>
-                        </div>
-
-                        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
-                            <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
-
-                        <span class="chart skilBg" data-percent="75">
-                            <span class="percent">75</span>
-                        <canvas height="304" width="304" style="height: 152px; width: 152px;"></canvas></span>
-
-                                <h4>Single Page Application</h4>
-                            </div>
-                        </div>
-
-                        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
-                            <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
-
-                        <span class="chart skilBg" data-percent="70">
-                            <span class="percent">70</span>
-                        <canvas height="304" width="304" style="height: 152px; width: 152px;"></canvas></span>
-
-                                <h4>Grunt & Bower</h4>
-                            </div>
-                        </div>
-
-                        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
-                            <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
-
-                        <span class="chart skilBg" data-percent="60">
-                            <span class="percent">60</span>
-                        <canvas height="304" width="304" style="height: 152px; width: 152px;"></canvas></span>
-
-                                <h4>Unit Test</h4>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--ins-->
-        <!--
-                         ____                    __
-                        /\  _`\                 /\ \__
-                        \ \ \/\ \    ___     ___\ \ ,_\        ___    ___   _____   __  __
-                         \ \ \ \ \  / __`\ /' _ `\ \ \/       /'___\ / __`\/\ '__`\/\ \/\ \
-                          \ \ \_\ \/\ \L\ \/\ \/\ \ \ \_     /\ \__//\ \L\ \ \ \L\ \ \ \_\ \
-                           \ \____/\ \____/\ \_\ \_\ \__\    \ \____\ \____/\ \ ,__/\/`____ \
-                            \/___/  \/___/  \/_/\/_/\/__/     \/____/\/___/  \ \ \/  `/___/> \
-                                                                              \ \_\     /\___/
-                                                                               \/_/     \/__/
-                         ____    __
-                        /\  _`\ /\ \
-                        \ \,\L\_\ \ \___     ___   __  __  __        ____    ___     ___ ___      __
-                         \/_\__ \\ \  _ `\  / __`\/\ \/\ \/\ \      /',__\  / __`\ /' __` __`\  /'__`\
-                           /\ \L\ \ \ \ \ \/\ \L\ \ \ \_/ \_/ \    /\__, `\/\ \L\ \/\ \/\ \/\ \/\  __/
-                           \ `\____\ \_\ \_\ \____/\ \___x___/'    \/\____/\ \____/\ \_\ \_\ \_\ \____\
-                            \/_____/\/_/\/_/\/___/  \/__//__/       \/___/  \/___/  \/_/\/_/\/_/\/____/
-
-
-                                                                  __
-                                                                 /\ \__
-                         _ __    __    ____  _____      __    ___\ \ ,_\
-                        /\`'__\/'__`\ /',__\/\ '__`\  /'__`\ /'___\ \ \/
-                        \ \ \//\  __//\__, `\ \ \L\ \/\  __//\ \__/\ \ \_
-                         \ \_\\ \____\/\____/\ \ ,__/\ \____\ \____\\ \__\
-                          \/_/ \/____/\/___/  \ \ \/  \/____/\/____/ \/__/
-                                               \ \_\
-                                                \/_/
-                           -->
-        <div class="instagram revealOnScroll" data-animation="fadeIn" data-timeout="300">
-            <h2 class="subtitle" style="padding-top: 80px">A look into my life</h2>
-
-            <div id="instafeed"></div>
-        </div>
-
-
-        <!--
-                         ____                    __
-                        /\  _`\                 /\ \__
-                        \ \ \/\ \    ___     ___\ \ ,_\        ___    ___   _____   __  __
-                         \ \ \ \ \  / __`\ /' _ `\ \ \/       /'___\ / __`\/\ '__`\/\ \/\ \
-                          \ \ \_\ \/\ \L\ \/\ \/\ \ \ \_     /\ \__//\ \L\ \ \ \L\ \ \ \_\ \
-                           \ \____/\ \____/\ \_\ \_\ \__\    \ \____\ \____/\ \ ,__/\/`____ \
-                            \/___/  \/___/  \/_/\/_/\/__/     \/____/\/___/  \ \ \/  `/___/> \
-                                                                              \ \_\     /\___/
-                                                                               \/_/     \/__/
-                         ____    __
-                        /\  _`\ /\ \
-                        \ \,\L\_\ \ \___     ___   __  __  __        ____    ___     ___ ___      __
-                         \/_\__ \\ \  _ `\  / __`\/\ \/\ \/\ \      /',__\  / __`\ /' __` __`\  /'__`\
-                           /\ \L\ \ \ \ \ \/\ \L\ \ \ \_/ \_/ \    /\__, `\/\ \L\ \/\ \/\ \/\ \/\  __/
-                           \ `\____\ \_\ \_\ \____/\ \___x___/'    \/\____/\ \____/\ \_\ \_\ \_\ \____\
-                            \/_____/\/_/\/_/\/___/  \/__//__/       \/___/  \/___/  \/_/\/_/\/_/\/____/
-
-
-                                                                  __
-                                                                 /\ \__
-                         _ __    __    ____  _____      __    ___\ \ ,_\
-                        /\`'__\/'__`\ /',__\/\ '__`\  /'__`\ /'___\ \ \/
-                        \ \ \//\  __//\__, `\ \ \L\ \/\  __//\ \__/\ \ \_
-                         \ \_\\ \____\/\____/\ \ ,__/\ \____\ \____\\ \__\
-                          \/_/ \/____/\/___/  \ \ \/  \/____/\/____/ \/__/
-                                               \ \_\
-                                                \/_/
-                           -->
-        <div class="gmaps row">
-            <h2 class="subtitle" style="padding-top: 80px">Drop me a line</h2>
-
-            <div class="col-md-6">
-                <form method="post" action="../scripts/app/content/contact.php" name="cform" id="cform">
-                    <input name="name" id="name" type="text"
-                           placeholder="Your name...">
-                    <input name="email" id="email" type="email"
-                           placeholder="Your email...">
-                    <textarea placeholder="Your message..." rows="7"></textarea>
-
-                    <input type="image" src="../images/submit.gif" id="submit" name="send" value="Send">
-                </form>
-                <!--<form action="contact.php" method="post">-->
-                    <!--First Name: <input type="text" name="first_name"><br>-->
-                    <!--Last Name: <input type="text" name="last_name"><br>-->
-                    <!--Email: <input type="text" name="email"><br>-->
-                    <!--Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>-->
-                    <!--<input type="submit" name="submit" value="Submit">-->
-                <!--</form>-->
-            </div>
-            <div class="col-md-6">
-                <iframe src="http://www.dr2ooo.com/tools/maps/maps.php?zoom=13&width=500&height=266&ll=34.4299471,-119.8853029&cp=true&kml=&ctrl=true&"
-                        width="500" height="266"></iframe>
-            </div>
-        </div>
-    </div>
-</div>
+                                                                      <!--__-->
+                                                                     <!--/\ \__-->
+                             <!--_ __    __    ____  _____      __    ___\ \ ,_\-->
+                            <!--/\`'__\/'__`\ /',__\/\ '__`\  /'__`\ /'___\ \ \/-->
+                            <!--\ \ \//\  __//\__, `\ \ \L\ \/\  __//\ \__/\ \ \_-->
+                             <!--\ \_\\ \____\/\____/\ \ ,__/\ \____\ \____\\ \__\-->
+                              <!--\/_/ \/____/\/___/  \ \ \/  \/____/\/____/ \/__/-->
+                                                   <!--\ \_\-->
+                                                    <!--\/_/-->
+                               <!--&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="instagram revealOnScroll" data-animation="fadeIn" data-timeout="300">&ndash;&gt;-->
+            <!--&lt;!&ndash;<h2 class="subtitle" style="padding-top: 80px">A look into my life</h2>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div id="instafeed"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->

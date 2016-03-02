@@ -18,8 +18,9 @@ define(function (require, exports, module) {
             router.map([
                 // A route of '' means it will load by default:
                 { route: '', title: 'Home', moduleId: 'content/home', nav: true},
-                { route: 'aboutme', title: 'Aboutme', moduleId: 'content/aboutme', nav: true },
-                { route: 'portfolio', title: 'Portfolio', moduleId: 'content/portfolio', nav: true }
+                { route: 'aboutme', title: 'About Sheng', moduleId: 'content/aboutme', nav: true }
+                //{ route: 'developer', title: 'Developer', moduleId: 'content/developer', nav: true },
+                //{ route: 'designer', title: 'Designer', moduleId: 'content/designer', nav: true }
             ]);
 
             return router.activate();

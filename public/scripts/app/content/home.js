@@ -101,6 +101,11 @@ define(function (require, exports, module) {
                 }
             });
         };
+
+        self.sectionRedirect = function(content){
+            window.location.href = "#" + content + ".html";
+            return true;
+        };
     }
 
 // This returns the constructor function, will be called automatically by Durandal when composing view:
