@@ -3,42 +3,12 @@ EVERYTIME
 1) In a terminal window at the nodl root, run "sass --watch public/sass:public/styles". This will run a SASS watcher that looks for changes in your SASS files. If it finds them, it'll re-compile them into CSS files.
 2) If you write invalid CSS (or SASS), the compiler will throw an error in terminal window, so if you have a bug you just can't figure out, take a look there and see if you have something written incorrectly.
 */
-@-webkit-keyframes top-fade-in {
-  /* Safari and Chrome */
-  0% {
-    background-position: 0 -160px; }
-  100% {
-    background-position: 0 0; } }
-@-webkit-keyframes bottom-fade-in {
-  /* Safari and Chrome */
-  0% {
-    background-position: 0 0; }
-  100% {
-    background-position: 0 -160px; } }
-@-webkit-keyframes arrow-jump {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(10px);
-    -moz-transform: translateY(10px);
-    transform: translateY(10px); } }
 body {
   width: 100%;
   height: 100%;
   /*
   *
   * Banner on the top of the homepage
-  *
-  */
- /*
-*
-* Skill set
-*
-*/
-  /*
-  *
-  * A look into my life
   *
   */ }
   body p {
@@ -132,127 +102,57 @@ body {
         background-image: url(../images/main/life-bw.jpg); }
       body .content .section.life:hover {
         background-image: url(../images/main/life.jpg); }
+    body .content span {
+      background-color: #000;
+      color: #fff;
+      display: table;
+      height: 5vh;
+      position: absolute;
+      width: calc(20% + 3px);
+      font-size: 21px;
+      font-weight: 800;
+      text-align: center;
+      -webkit-transition: opacity 500ms;
+      -moz-transition: opacity 500ms;
+      -o-transition: opacity 500ms;
+      transition: opacity 500ms;
+      font-family: cursive;
+      padding-top: 3px; }
+      body .content span.left.up {
+        top: 43vh;
+        right: calc(24% - 3px);
+        opacity: 0; }
+      body .content span.left.below {
+        top: calc(85vh + 1px);
+        right: calc(24% - 3px);
+        opacity: 0; }
+      body .content span.right.up {
+        top: 43vh;
+        right: calc(2% - 1px);
+        opacity: 0; }
+      body .content span.right.below {
+        top: calc(85vh + 1px);
+        right: calc(2% - 1px);
+        opacity: 0; }
+    body .content .aboutme:hover span.left.up {
+      opacity: 1; }
+    body .content .developer:hover span.right.up {
+      opacity: 1; }
+    body .content .designer:hover span.left.below {
+      opacity: 1; }
+    body .content .life:hover span.right.below {
+      opacity: 1; }
   body nav {
     text-align: right;
-    margin: 10vh 5% 0;
-    font-size: 21px; }
+    padding: 10vh 5% 5px;
+    font-size: 21px;
+    background-color: #f0f0f0; }
     body nav a {
       color: #000; }
       body nav a:hover {
         text-decoration: none;
         cursor: pointer;
         color: #000; }
-  body .skillset {
-    text-align: center;
-    margin-bottom: 100px; }
-  body .addspace {
-    height: 60px; }
-  body .technical {
-    color: #474d5d; }
-  body .technical .container {
-    padding-top: 85px;
-    padding-bottom: 69px; }
-  body .technical .heading p {
-    padding-bottom: 41px; }
-  body .technical p {
-    color: #474d5d; }
-  body .technical h2 {
-    color: #ff675f; }
-  body .technical .skillsArea {
-    padding: 0px; }
-  body .technical .skills {
-    margin: 0 auto;
-    margin-bottom: 60px;
-    text-align: center;
-    padding: 0px;
-    float: none; }
-  body .technical .skills p {
-    color: #84868d;
-    font-size: 13px;
-    line-height: 18px;
-    text-align: center; }
-  body .technical .skills img {
-    margin: 0 auto;
-    margin-bottom: 33px;
-    width: 100%;
-    max-width: 152px; }
-  body .technical .skills h4 {
-    font-weight: 700;
-    text-transform: uppercase; }
-  body .skilBg {
-    background: url(../images/skills.png) no-repeat 0 0; }
-  body .chart {
-    position: relative;
-    display: inline-block;
-    width: 152px;
-    height: 152px;
-    margin-bottom: 15px;
-    text-align: center; }
-  body .chart canvas {
-    position: absolute;
-    top: 0;
-    left: 0; }
-  body .percent {
-    display: inline-block;
-    font-size: 21px;
-    color: #474d5d;
-    line-height: 152px;
-    z-index: 2; }
-  body .percent:after {
-    content: '%';
-    margin-left: 0.1em;
-    font-size: .8em; }
-  body .angular {
-    margin-top: 100px; }
-  body .angular .chart {
-    margin-top: 0; }
-  body .skills {
-    margin-bottom: 10%; }
-    body .skills .progress-set {
-      padding: 0 12%; }
-      body .skills .progress-set .progress {
-        height: 25px;
-        margin: 20px 0; }
-        body .skills .progress-set .progress .progress-bar {
-          background-color: #e9a1b9;
-          font-size: 13px; }
-  body .instagram {
-    margin: 0 -20px;
-    background: #000;
-    padding-bottom: 120px;
-    color: #fff;
-    border-top: 17px dotted #fff;
-    border-bottom: 17px dotted #fff; }
-    body .instagram #instafeed {
-      text-align: center; }
-      body .instagram #instafeed a {
-        padding: 5px 5px 1px 5px;
-        margin: 10px;
-        border: 1px solid #e1e1e1;
-        display: inline-block;
-        border-radius: 4px;
-        position: relative; }
-      body .instagram #instafeed .likes {
-        background: #e9a1b9;
-        font-family: sans-serif;
-        font-size: 1em;
-        position: absolute;
-        color: #ffffff;
-        right: 5px;
-        top: 5px;
-        left: 5px;
-        opacity: 0;
-        text-align: center;
-        line-height: 150px;
-        text-shadow: 0 1px rgba(0, 0, 0, 0.5);
-        -webkit-font-smoothing: antialiased;
-        -webkit-transition: opacity 100ms ease;
-        -moz-transition: opacity 100ms ease;
-        -o-transition: opacity 100ms ease;
-        -ms-transition: opacity 100ms ease;
-        transition: opacity 100ms ease; }
-      body .instagram #instafeed a:hover .likes {
-        opacity: 1; }
 
 @-webkit-keyframes slidy {
   0% {
@@ -1228,40 +1128,161 @@ body {
   font-size: 0;
   -webkit-animation: 15s slidy infinite; }
 
-.aboutme .basic-info {
-  width: 100%; }
-  .aboutme .basic-info img {
-    width: 70%;
-    margin-top: 10vh; }
-  .aboutme .basic-info .col-md-8 {
-    height: 58vh; }
-  .aboutme .basic-info .title {
-    font-size: 36px;
-    margin: 15vh 0 10px 20%; }
-  .aboutme .basic-info .subtitle {
-    font-size: 24px;
-    margin: 0 0 10px 20%;
-    width: 74%; }
-  .aboutme .basic-info .content {
-    margin: 0 0 0 20%;
-    width: 73%;
-    font-size: 18px;
-    color: #333; }
-.aboutme hr {
-  margin-top: 0;
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid #eee;
-  width: 90%; }
-.aboutme #instafeed {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-  .aboutme #instafeed a {
-    float: left;
-    margin: 1vh 1%; }
-    .aboutme #instafeed a img {
-      width: 120px;
-      height: 120px; }
+@-webkit-keyframes top-fade-in {
+  /* Safari and Chrome */
+  0% {
+    background-position: 0 -160px; }
+  100% {
+    background-position: 0 0; } }
+@-webkit-keyframes bottom-fade-in {
+  /* Safari and Chrome */
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -160px; } }
+@-webkit-keyframes arrow-jump {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px); } }
+.aboutme {
+  background-color: #eee;
+ /*
+*
+* Skill set
+*
+*/ }
+  .aboutme .basic-info {
+    width: 100%;
+    background: url(../images/aboutme/background.png); }
+    .aboutme .basic-info img {
+      width: 70%;
+      margin-top: 10vh; }
+    .aboutme .basic-info .col-md-8 {
+      height: 58vh; }
+    .aboutme .basic-info .title {
+      font-size: 36px;
+      margin: 15vh 0 10px 20%; }
+    .aboutme .basic-info .subtitle {
+      font-size: 24px;
+      margin: 0 0 10px 20%;
+      width: 74%; }
+    .aboutme .basic-info .content {
+      margin: 0 0 0 20%;
+      width: 73%;
+      font-size: 18px;
+      color: #333; }
+  .aboutme hr {
+    margin-top: 0;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #000;
+    width: 90%; }
+  .aboutme #instafeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding-bottom: 10vh; }
+    .aboutme #instafeed a {
+      float: left;
+      margin: 1vh 2%; }
+      .aboutme #instafeed a img {
+        width: 120px;
+        height: 120px; }
+  .aboutme .piechart {
+    text-align: center;
+    padding: 10vh 0;
+    background-color: #fff; }
+    .aboutme .piechart img {
+      width: 35%; }
+    .aboutme .piechart span {
+      font-family: arial, sans-serif;
+      font-size: 21px; }
+    .aboutme .piechart span.designer {
+      float: left;
+      margin: 10vh 0 0 10%;
+      text-align: left; }
+    .aboutme .piechart span.developer {
+      float: right;
+      margin: 10vh 10% 0 0;
+      text-align: left; }
+  .aboutme .skillset {
+    text-align: center;
+    margin-bottom: 100px; }
+  .aboutme .addspace {
+    height: 60px; }
+  .aboutme .technical {
+    color: #474d5d; }
+  .aboutme .technical .container {
+    padding-top: 85px;
+    padding-bottom: 69px; }
+  .aboutme .technical .heading p {
+    padding-bottom: 41px; }
+  .aboutme .technical p {
+    color: #474d5d; }
+  .aboutme .technical h2 {
+    color: #ff675f; }
+  .aboutme .technical .skillsArea {
+    padding: 0px; }
+  .aboutme .technical .skills {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 0px;
+    float: none; }
+  .aboutme .technical .skills p {
+    color: #84868d;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center; }
+  .aboutme .technical .skills img {
+    margin: 0 auto;
+    margin-bottom: 33px;
+    width: 100%;
+    max-width: 152px; }
+  .aboutme .technical .skills h4 {
+    font-weight: 700;
+    text-transform: uppercase; }
+  .aboutme .skilBg {
+    background: url(../images/skills.png) no-repeat 0 0; }
+  .aboutme .chart {
+    position: relative;
+    display: inline-block;
+    width: 152px;
+    height: 152px;
+    margin-bottom: 15px;
+    text-align: center; }
+  .aboutme .chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .aboutme .percent {
+    display: inline-block;
+    font-size: 21px;
+    color: #474d5d;
+    line-height: 152px;
+    z-index: 2; }
+  .aboutme .percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em; }
+  .aboutme .angular {
+    margin-top: 100px; }
+  .aboutme .angular .chart {
+    margin-top: 0; }
+  .aboutme .skills {
+    margin-bottom: 10%; }
+    .aboutme .skills .progress-set {
+      padding: 0 12%; }
+      .aboutme .skills .progress-set .progress {
+        height: 25px;
+        margin: 20px 0; }
+        .aboutme .skills .progress-set .progress .progress-bar {
+          background-color: #e9a1b9;
+          font-size: 13px; }
 
 /*# sourceMappingURL=main.css.map */
