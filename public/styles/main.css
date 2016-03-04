@@ -70,39 +70,39 @@ body {
       font-size: 24px;
       color: #ffffff;
       margin: 2vh 15%; }
-  body .content {
+  body .home-content {
     width: 42%;
     float: left;
     display: inline-block;
     margin: 10vh 0;
     height: 80vh; }
-    body .content .section {
+    body .home-content .section {
       width: 48%;
       height: 38vh;
       float: left;
       margin-bottom: 4vh;
       background-size: cover; }
-      body .content .section.right {
+      body .home-content .section.right {
         margin-left: 4%; }
-      body .content .section:hover {
+      body .home-content .section:hover {
         cursor: pointer; }
-      body .content .section.aboutme {
+      body .home-content .section.aboutme {
         background-image: url(../images/main/aboutme-bw.jpg); }
-      body .content .section.aboutme:hover {
+      body .home-content .section.aboutme:hover {
         background-image: url(../images/main/aboutme.jpg); }
-      body .content .section.developer {
+      body .home-content .section.developer {
         background-image: url(../images/main/developer-bw.jpg); }
-      body .content .section.developer:hover {
+      body .home-content .section.developer:hover {
         background-image: url(../images/main/developer.png); }
-      body .content .section.designer {
+      body .home-content .section.designer {
         background-image: url(../images/main/designer-bw.jpg); }
-      body .content .section.designer:hover {
+      body .home-content .section.designer:hover {
         background-image: url(../images/main/designer.png); }
-      body .content .section.life {
+      body .home-content .section.life {
         background-image: url(../images/main/life-bw.jpg); }
-      body .content .section.life:hover {
+      body .home-content .section.life:hover {
         background-image: url(../images/main/life.jpg); }
-    body .content span {
+    body .home-content span {
       background-color: #000;
       color: #fff;
       display: table;
@@ -118,29 +118,29 @@ body {
       transition: opacity 500ms;
       font-family: cursive;
       padding-top: 3px; }
-      body .content span.left.up {
+      body .home-content span.left.up {
         top: 43vh;
         right: calc(24% - 3px);
         opacity: 0; }
-      body .content span.left.below {
+      body .home-content span.left.below {
         top: calc(85vh + 1px);
         right: calc(24% - 3px);
         opacity: 0; }
-      body .content span.right.up {
+      body .home-content span.right.up {
         top: 43vh;
         right: calc(2% - 1px);
         opacity: 0; }
-      body .content span.right.below {
+      body .home-content span.right.below {
         top: calc(85vh + 1px);
         right: calc(2% - 1px);
         opacity: 0; }
-    body .content .aboutme:hover span.left.up {
+    body .home-content .aboutme:hover span.left.up {
       opacity: 1; }
-    body .content .developer:hover span.right.up {
+    body .home-content .developer:hover span.right.up {
       opacity: 1; }
-    body .content .designer:hover span.left.below {
+    body .home-content .designer:hover span.left.below {
       opacity: 1; }
-    body .content .life:hover span.right.below {
+    body .home-content .life:hover span.right.below {
       opacity: 1; }
   body nav {
     text-align: right;
@@ -1148,141 +1148,144 @@ body {
     -webkit-transform: translateY(10px);
     -moz-transform: translateY(10px);
     transform: translateY(10px); } }
-.aboutme {
-  background-color: #eee;
+.aboutme .basic-info {
+  width: 100%;
+  background: url(../images/aboutme/background.png);
+  margin: 0; }
+  .aboutme .basic-info img {
+    width: 65%;
+    margin-top: 10vh; }
+  .aboutme .basic-info .col-md-8 {
+    height: 58vh; }
+  .aboutme .basic-info .title {
+    font-size: 36px;
+    margin: 15vh 0 10px 20%; }
+  .aboutme .basic-info .subtitle {
+    font-size: 24px;
+    margin: 0 0 10px 20%;
+    width: 74%; }
+  .aboutme .basic-info .content {
+    margin: 0 0 0 20%;
+    width: 73%;
+    font-size: 18px;
+    color: #333; }
+.aboutme hr {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  border: 0;
+  height: 1px; }
+.aboutme #instafeed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 4vh 10vh; }
+  .aboutme #instafeed a {
+    float: left;
+    margin: 1vh 2%; }
+    .aboutme #instafeed a img {
+      width: 120px;
+      height: 120px; }
+.aboutme .skillSection {
+  background-color: #fff;
  /*
 *
 * Skill set
 *
 */ }
-  .aboutme .basic-info {
-    width: 100%;
-    background: url(../images/aboutme/background.png); }
-    .aboutme .basic-info img {
-      width: 70%;
-      margin-top: 10vh; }
-    .aboutme .basic-info .col-md-8 {
-      height: 58vh; }
-    .aboutme .basic-info .title {
-      font-size: 36px;
-      margin: 15vh 0 10px 20%; }
-    .aboutme .basic-info .subtitle {
-      font-size: 24px;
-      margin: 0 0 10px 20%;
-      width: 74%; }
-    .aboutme .basic-info .content {
-      margin: 0 0 0 20%;
-      width: 73%;
-      font-size: 18px;
-      color: #333; }
-  .aboutme hr {
-    margin-top: 0;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #000;
-    width: 90%; }
-  .aboutme #instafeed {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #f0f0f0;
-    padding-bottom: 10vh; }
-    .aboutme #instafeed a {
-      float: left;
-      margin: 1vh 2%; }
-      .aboutme #instafeed a img {
-        width: 120px;
-        height: 120px; }
-  .aboutme .piechart {
+  .aboutme .skillSection .piechart {
     text-align: center;
     padding: 10vh 0;
     background-color: #fff; }
-    .aboutme .piechart img {
+    .aboutme .skillSection .piechart img {
       width: 35%; }
-    .aboutme .piechart span {
+    .aboutme .skillSection .piechart span {
       font-family: arial, sans-serif;
       font-size: 21px; }
-    .aboutme .piechart span.designer {
+    .aboutme .skillSection .piechart span.designer {
       float: left;
-      margin: 10vh 0 0 10%;
+      margin: 27vh 0 0 12%;
       text-align: left; }
-    .aboutme .piechart span.developer {
+    .aboutme .skillSection .piechart span.developer {
       float: right;
-      margin: 10vh 10% 0 0;
+      margin: 7vh 12% 0 0;
       text-align: left; }
-  .aboutme .skillset {
+  .aboutme .skillSection .skillset {
     text-align: center;
-    margin-bottom: 100px; }
-  .aboutme .addspace {
+    margin-bottom: 10vh;
+    padding: 10vh 0;
+    background-color: #eee; }
+  .aboutme .skillSection .addspace {
     height: 60px; }
-  .aboutme .technical {
+  .aboutme .skillSection .technical {
     color: #474d5d; }
-  .aboutme .technical .container {
+  .aboutme .skillSection .technical .container {
     padding-top: 85px;
     padding-bottom: 69px; }
-  .aboutme .technical .heading p {
+  .aboutme .skillSection .technical .heading p {
     padding-bottom: 41px; }
-  .aboutme .technical p {
+  .aboutme .skillSection .technical p {
     color: #474d5d; }
-  .aboutme .technical h2 {
+  .aboutme .skillSection .technical h2 {
     color: #ff675f; }
-  .aboutme .technical .skillsArea {
+  .aboutme .skillSection .technical .skillsArea {
     padding: 0px; }
-  .aboutme .technical .skills {
+  .aboutme .skillSection .technical .skills {
     margin: 0 auto;
     margin-bottom: 60px;
     text-align: center;
     padding: 0px;
     float: none; }
-  .aboutme .technical .skills p {
+  .aboutme .skillSection .technical .skills p {
     color: #84868d;
     font-size: 13px;
     line-height: 18px;
     text-align: center; }
-  .aboutme .technical .skills img {
+  .aboutme .skillSection .technical .skills img {
     margin: 0 auto;
     margin-bottom: 33px;
     width: 100%;
     max-width: 152px; }
-  .aboutme .technical .skills h4 {
+  .aboutme .skillSection .technical .skills h4 {
     font-weight: 700;
     text-transform: uppercase; }
-  .aboutme .skilBg {
+  .aboutme .skillSection .skilBg {
     background: url(../images/skills.png) no-repeat 0 0; }
-  .aboutme .chart {
+  .aboutme .skillSection .chart {
     position: relative;
     display: inline-block;
     width: 152px;
     height: 152px;
     margin-bottom: 15px;
     text-align: center; }
-  .aboutme .chart canvas {
+  .aboutme .skillSection .chart canvas {
     position: absolute;
     top: 0;
     left: 0; }
-  .aboutme .percent {
+  .aboutme .skillSection .percent {
     display: inline-block;
     font-size: 21px;
     color: #474d5d;
     line-height: 152px;
     z-index: 2; }
-  .aboutme .percent:after {
+  .aboutme .skillSection .percent:after {
     content: '%';
     margin-left: 0.1em;
     font-size: .8em; }
-  .aboutme .angular {
+  .aboutme .skillSection .angular {
     margin-top: 100px; }
-  .aboutme .angular .chart {
+  .aboutme .skillSection .angular .chart {
     margin-top: 0; }
-  .aboutme .skills {
-    margin-bottom: 10%; }
-    .aboutme .skills .progress-set {
-      padding: 0 12%; }
-      .aboutme .skills .progress-set .progress {
-        height: 25px;
-        margin: 20px 0; }
-        .aboutme .skills .progress-set .progress .progress-bar {
-          background-color: #e9a1b9;
-          font-size: 13px; }
+  .aboutme .skillSection .skills .progress-set {
+    padding: 0 12%; }
+    .aboutme .skillSection .skills .progress-set .progress {
+      height: 25px;
+      margin: 20px 0; }
+      .aboutme .skillSection .skills .progress-set .progress .progress-bar {
+        background-color: #e9a1b9;
+        font-size: 13px; }
+.aboutme .timeline .tl-slide-titleslide {
+  background-color: #eee; }
 
 /*# sourceMappingURL=main.css.map */

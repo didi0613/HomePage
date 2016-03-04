@@ -1,20 +1,18 @@
-// This define call is requirejs boilerplate used to define the module and isolate the scope:
 define(function (require, exports, module) {
+    require('animation.on.scroll');
+    require('jquery-easypiechart');
+    
     var Instafeed = require('instafeed');
     var $ = require('jquery');
-    var onScroll = require('animation.on.scroll');
-    var easyPieChart = require('jquery-easypiechart');
 
-    // Constructor function for this module
     function Aboutme() {
-        // This is (one) convention used to manage the scope of 'this', common in Knockout examples:
         var self = this;
 
         var $window = $(window),
             win_height_padded = $window.height() * 1.1,
             isTouch = Modernizr.touch;
 
-        var index=0;
+        var index = 0;
 
         var feed = new Instafeed({
             get: "user",
@@ -44,8 +42,8 @@ define(function (require, exports, module) {
         $window.on('scroll', revealOnScroll);
 
         function revealOnScroll() {
-            var scrolled = $window.scrollTop(),
-                win_height_padded = $window.height() * 1.1;
+            var scrolled = $window.scrollTop();
+            win_height_padded = $window.height() * 1.1;
 
             // Showed...
             $(".revealOnScroll:not(.animated)").each(function () {
@@ -62,6 +60,7 @@ define(function (require, exports, module) {
                     }
                 }
             });
+
             // Hidden...
             $(".revealOnScroll.animated").each(function (index) {
                 var $this = $(this),
@@ -72,18 +71,19 @@ define(function (require, exports, module) {
             });
         }
 
-        self.activate = function(){
+        self.activate = function () {
             feed.run();
             revealOnScroll();
-            $(document).scroll(function(){
-                var top = $('.technical').height()-$(window).scrollTop();
-                if(top<-3600){
-                    if(index==0){
+            $(document).scroll(function () {
+                var top = $('.technical').height() - $(window).scrollTop();
+
+                if (top < -55) {
+                    if (index == 0) {
                         $('.chart').easyPieChart({
                             barColor: '#e9a1b9',
                             size: 152,
                             lineWidth: 10,
-                            onStep: function(from, to, percent) {
+                            onStep: function (from, to, percent) {
                                 $(this.el).find('.percent').text(Math.round(percent));
                             }
                         });
@@ -95,6 +95,5 @@ define(function (require, exports, module) {
         }
     }
 
-// This returns the constructor function, will be called automatically by Durandal when composing view:
     module.exports = Aboutme;
 });

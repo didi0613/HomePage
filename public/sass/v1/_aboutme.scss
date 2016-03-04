@@ -34,14 +34,13 @@ $home-base: #e9a1b9;
 }
 
 .aboutme {
-  background-color: #eee;
-
   .basic-info {
     width: 100%;
     background: url(../images/aboutme/background.png);
+    margin: 0;
 
     img {
-      width: 70%;
+      width: 65%;
       margin-top: 10vh;
     }
 
@@ -69,11 +68,11 @@ $home-base: #e9a1b9;
   }
 
   hr {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
     border: 0;
-    border-top: 1px solid #000;
-    width: 90%;
+    height: 1px;
   }
 
   #instafeed {
@@ -81,7 +80,7 @@ $home-base: #e9a1b9;
     flex-direction: row;
     justify-content: center;
     background-color: #f0f0f0;
-    padding-bottom: 10vh;
+    padding: 4vh 10vh;
 
     a {
       float: left;
@@ -94,138 +93,148 @@ $home-base: #e9a1b9;
     }
   }
 
-  .piechart {
-    text-align: center;
-    padding: 10vh 0;
+  .skillSection {
     background-color: #fff;
 
-    img {
-      width: 35%;
+    .piechart {
+      text-align: center;
+      padding: 10vh 0;
+      background-color: #fff;
+
+      img {
+        width: 35%;
+      }
+
+      span {
+        font-family: arial, sans-serif;
+        font-size: 21px;
+      }
+
+      span.designer {
+        float: left;
+        margin: 27vh 0 0 12%;
+        text-align: left;
+      }
+
+      span.developer {
+        float: right;
+        margin: 7vh 12% 0 0;
+        text-align: left;
+      }
     }
 
-    span {
-      font-family: arial, sans-serif;
+    /*
+   *
+   * Skill set
+   *
+   */
+    .skillset {
+      text-align: center;
+      margin-bottom: 10vh;
+      padding: 10vh 0;
+      background-color: #eee;
+    }
+
+    .addspace {
+      height: 60px;
+    }
+    .technical {
+      color: #474d5d;
+    }
+    .technical .container {
+      padding-top: 85px;
+      padding-bottom: 69px;
+    }
+    .technical .heading p {
+      padding-bottom: 41px;
+    }
+    .technical p {
+      color: #474d5d;
+    }
+    .technical h2 {
+      color: #ff675f;
+    }
+    .technical .skillsArea {
+      padding: 0px;
+    }
+    .technical .skills {
+      margin: 0 auto;
+      margin-bottom: 60px;
+      text-align: center;
+      padding: 0px;
+      float: none;
+    }
+    .technical .skills p {
+      color: #84868d;
+      font-size: 13px;
+      line-height: 18px;
+      text-align: center;
+    }
+    .technical .skills img {
+      margin: 0 auto;
+      margin-bottom: 33px;
+      width: 100%;
+      max-width: 152px;
+    }
+    .technical .skills h4 {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .skilBg {
+      background: url(../images/skills.png) no-repeat 0 0;
+    }
+    .chart {
+      position: relative;
+      display: inline-block;
+      width: 152px;
+      height: 152px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .chart canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .percent {
+      display: inline-block;
       font-size: 21px;
+      color: #474d5d;
+      line-height: 152px;
+      z-index: 2;
+    }
+    .percent:after {
+      content: '%';
+      margin-left: 0.1em;
+      font-size: .8em;
+    }
+    .angular {
+      margin-top: 100px;
+    }
+    .angular .chart {
+      margin-top: 0;
     }
 
-    span.designer {
-      float: left;
-      margin: 10vh 0 0 10%;
-      text-align: left;
-    }
+    .skills {
+      .progress-set {
+        padding: 0 12%;
 
-    span.developer {
-      float: right;
-      margin: 10vh 10% 0 0;
-      text-align: left;
-    }
-  }
+        .progress {
+          height: 25px;
+          margin: 20px 0;
 
-  /*
- *
- * Skill set
- *
- */
-  .skillset {
-    text-align: center;
-    margin-bottom: 100px;
-  }
-
-  .addspace {
-    height: 60px;
-  }
-  .technical {
-    color: #474d5d;
-  }
-  .technical .container {
-    padding-top: 85px;
-    padding-bottom: 69px;
-  }
-  .technical .heading p {
-    padding-bottom: 41px;
-  }
-  .technical p {
-    color: #474d5d;
-  }
-  .technical h2 {
-    color: #ff675f;
-  }
-  .technical .skillsArea {
-    padding: 0px;
-  }
-  .technical .skills {
-    margin: 0 auto;
-    margin-bottom: 60px;
-    text-align: center;
-    padding: 0px;
-    float: none;
-  }
-  .technical .skills p {
-    color: #84868d;
-    font-size: 13px;
-    line-height: 18px;
-    text-align: center;
-  }
-  .technical .skills img {
-    margin: 0 auto;
-    margin-bottom: 33px;
-    width: 100%;
-    max-width: 152px;
-  }
-  .technical .skills h4 {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  .skilBg {
-    background: url(../images/skills.png) no-repeat 0 0;
-  }
-  .chart {
-    position: relative;
-    display: inline-block;
-    width: 152px;
-    height: 152px;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  .chart canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .percent {
-    display: inline-block;
-    font-size: 21px;
-    color: #474d5d;
-    line-height: 152px;
-    z-index: 2;
-  }
-  .percent:after {
-    content: '%';
-    margin-left: 0.1em;
-    font-size: .8em;
-  }
-  .angular {
-    margin-top: 100px;
-  }
-  .angular .chart {
-    margin-top: 0;
-  }
-
-  .skills {
-    margin-bottom: 10%;
-
-    .progress-set {
-      padding: 0 12%;
-
-      .progress {
-        height: 25px;
-        margin: 20px 0;
-
-        .progress-bar {
-          background-color: $home-base;
-          font-size: 13px;
+          .progress-bar {
+            background-color: $home-base;
+            font-size: 13px;
+          }
         }
       }
+    }
+  }
+
+  .timeline {
+    .tl-slide-titleslide {
+      background-color: #eee;
     }
   }
 }
