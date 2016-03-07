@@ -122,7 +122,7 @@ body {
       }
 
       &.developer:hover {
-        background-image: url(../images/main/developer.png);
+        background-image: url(../images/main/developer.jpg);
       }
 
       &.designer {
@@ -130,7 +130,7 @@ body {
       }
 
       &.designer:hover {
-        background-image: url(../images/main/designer.png);
+        background-image: url(../images/main/designer.jpg);
       }
 
       &.life {
@@ -140,64 +140,6 @@ body {
       &.life:hover {
         background-image: url(../images/main/life.jpg);
       }
-    }
-
-    span {
-      background-color: #000;
-      color: #fff;
-      display: table;
-      height: 5vh;
-      position: absolute;
-      width: calc(20% + 3px);
-      font-size: 21px;
-      font-weight: 800;
-      text-align: center;
-      -webkit-transition: opacity 500ms;
-      -moz-transition: opacity 500ms;
-      -o-transition: opacity 500ms;
-      transition: opacity 500ms;
-      font-family: cursive;
-      padding-top: 3px;
-
-      &.left.up {
-        top: 43vh;
-        right: calc(24% - 3px);
-        opacity: 0;
-      }
-
-      &.left.below {
-        top: calc(85vh + 1px);
-        right: calc(24% - 3px);
-        opacity: 0;
-      }
-
-      &.right.up {
-        top: 43vh;
-        right: calc(2% - 1px);
-        opacity: 0;
-      }
-
-      &.right.below {
-        top: calc(85vh + 1px);
-        right: calc(2% - 1px);
-        opacity: 0;
-      }
-    }
-
-    .aboutme:hover span.left.up {
-      opacity: 1;
-    }
-
-    .developer:hover span.right.up {
-      opacity: 1;
-    }
-
-    .designer:hover span.left.below {
-      opacity: 1;
-    }
-
-    .life:hover span.right.below {
-      opacity: 1;
     }
   }
 
