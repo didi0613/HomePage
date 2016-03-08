@@ -40,8 +40,8 @@ $home-base: #e9a1b9;
     margin: 0;
 
     img {
-      width: 65%;
-      margin-top: 10vh;
+      width: 70%;
+      margin-top: 12vh;
     }
 
     .col-md-8 {
@@ -50,27 +50,41 @@ $home-base: #e9a1b9;
 
     .title {
       font-size: 36px;
-      margin: 15vh 0 10px 20%;
+      margin: 15vh 0 10px 15%;
+      font-family: 'neosans regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 800;
     }
 
     .subtitle {
       font-size: 24px;
-      margin: 0 0 10px 20%;
+      margin: 0 0 10px 15%;
       width: 74%;
+      color: #666666;
+      font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      line-height: 1.3em;
     }
 
     .content {
-      margin: 0 0 0 20%;
+      margin: 0 0 0 15%;
       width: 73%;
       font-size: 18px;
+      font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       color: #333;
+      font-weight: 200;
+      line-height: 1.6em;
+    }
+
+    nav {
+      padding: 3vh 8%;
+      background-color: transparent;
     }
   }
 
   hr {
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #e0e0e0;
     border: 0;
     height: 1px;
   }
@@ -80,7 +94,7 @@ $home-base: #e9a1b9;
     flex-direction: row;
     justify-content: center;
     background-color: #f0f0f0;
-    padding: 4vh 10vh;
+    padding: 5vh 0px 10vh;
 
     a {
       float: left;
@@ -106,19 +120,22 @@ $home-base: #e9a1b9;
       }
 
       span {
-        font-family: arial, sans-serif;
         font-size: 21px;
+        color: #333;
+        font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 1.3em;
       }
 
       span.designer {
         float: left;
-        margin: 27vh 0 0 12%;
+        margin: 20vh 0 0 12%;
         text-align: left;
       }
 
       span.developer {
         float: right;
-        margin: 7vh 12% 0 0;
+        margin: 13vh 12% 0 0;
         text-align: left;
       }
     }
@@ -132,7 +149,7 @@ $home-base: #e9a1b9;
       text-align: center;
       margin-bottom: 10vh;
       padding: 10vh 0;
-      background-color: #eee;
+      background-color: #f0f0f0;
     }
 
     .addspace {
@@ -177,8 +194,12 @@ $home-base: #e9a1b9;
       max-width: 152px;
     }
     .technical .skills h4 {
-      font-weight: 700;
       text-transform: uppercase;
+      color: #333;
+      font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      line-height: 1.3em;
+      font-size: 21px;
     }
     .skilBg {
       background: url(../images/skills.png) no-repeat 0 0;

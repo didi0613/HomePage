@@ -3,117 +3,6 @@ EVERYTIME
 1) In a terminal window at the nodl root, run "sass --watch public/sass:public/styles". This will run a SASS watcher that looks for changes in your SASS files. If it finds them, it'll re-compile them into CSS files.
 2) If you write invalid CSS (or SASS), the compiler will throw an error in terminal window, so if you have a bug you just can't figure out, take a look there and see if you have something written incorrectly.
 */
-body {
-  width: 100%;
-  height: 100%;
-  /*
-  *
-  * Banner on the top of the homepage
-  *
-  */ }
-  body p {
-    font-size: 22px;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 38px;
-    font-weight: 300; }
-  body .revealOnScroll {
-    opacity: 0; }
-  @media screen and (max-width: 1000px) {
-    body .banner {
-      height: 1170px !important;
-      padding-top: 20%; }
-      body .banner .intro {
-        padding: 20% 15% !important; } }
-  body .banner {
-    background: url(../images/main/banner.jpg);
-    width: 52%;
-    text-align: center;
-    height: 80vh;
-    margin: 10vh 2%;
-    padding: 20vh 0;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    float: left; }
-    body .banner .icon {
-      display: inline-block; }
-      body .banner .icon i {
-        font-size: 50px;
-        color: #fff;
-        margin: 10px; }
-    body .banner .word {
-      position: relative;
-      display: inline-block; }
-      body .banner .word .c {
-        height: 160px;
-        display: inline-block;
-        background-repeat: no-repeat; }
-        body .banner .word .c.top-cover {
-          animation: top-fade-in 2s;
-          -moz-animation: top-fade-in 2s;
-          /* Firefox */
-          -webkit-animation: top-fade-in 2s;
-          /* Safari and Chrome */
-          -o-animation: top-fade-in 2s;
-          -webkit-animation-fill-mode: forwards; }
-        body .banner .word .c.bottom-cover {
-          animation: bottom-fade-in 2s;
-          -moz-animation: bottom-fade-in 2s;
-          /* Firefox */
-          -webkit-animation: bottom-fade-in 2s;
-          /* Safari and Chrome */
-          -o-animation: bottom-fade-in 2s;
-          -webkit-animation-fill-mode: forwards; }
-    body .banner .intro {
-      font-family: cursive;
-      font-size: 24px;
-      color: #ffffff;
-      margin: 2vh 15%; }
-  body .home-content {
-    width: 42%;
-    float: left;
-    display: inline-block;
-    margin: 10vh 0;
-    height: 80vh; }
-    body .home-content .section {
-      width: 48%;
-      height: 38vh;
-      float: left;
-      margin-bottom: 4vh;
-      background-size: cover; }
-      body .home-content .section.right {
-        margin-left: 4%; }
-      body .home-content .section:hover {
-        cursor: pointer; }
-      body .home-content .section.aboutme {
-        background-image: url(../images/main/aboutme-bw.jpg); }
-      body .home-content .section.aboutme:hover {
-        background-image: url(../images/main/aboutme.jpg); }
-      body .home-content .section.developer {
-        background-image: url(../images/main/developer-bw.jpg); }
-      body .home-content .section.developer:hover {
-        background-image: url(../images/main/developer.jpg); }
-      body .home-content .section.designer {
-        background-image: url(../images/main/designer-bw.jpg); }
-      body .home-content .section.designer:hover {
-        background-image: url(../images/main/designer.jpg); }
-      body .home-content .section.life {
-        background-image: url(../images/main/life-bw.jpg); }
-      body .home-content .section.life:hover {
-        background-image: url(../images/main/life.jpg); }
-  body nav {
-    text-align: right;
-    padding: 10vh 5% 5px;
-    font-size: 21px;
-    background-color: #f0f0f0; }
-    body nav a {
-      color: #000; }
-      body nav a:hover {
-        text-decoration: none;
-        cursor: pointer;
-        color: #000; }
-
 @-webkit-keyframes slidy {
   0% {
     left: 0%; }
@@ -1088,6 +977,118 @@ body {
   font-size: 0;
   -webkit-animation: 15s slidy infinite; }
 
+body {
+  width: 100%;
+  height: 100%;
+  /*
+  *
+  * Banner on the top of the homepage
+  *
+  */ }
+  body p {
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 38px;
+    font-weight: 300; }
+  body .revealOnScroll {
+    opacity: 0; }
+  @media screen and (max-width: 1000px) {
+    body .banner {
+      height: 1170px !important;
+      padding-top: 20%; }
+      body .banner .intro {
+        padding: 20% 15% !important; } }
+  body .banner {
+    background: url(../images/main/banner.jpg);
+    width: 52%;
+    text-align: center;
+    height: 80vh;
+    margin: 10vh 2%;
+    padding: 20vh 0;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    float: left; }
+    body .banner .icon {
+      display: inline-block; }
+      body .banner .icon i {
+        font-size: 50px;
+        color: #fff;
+        margin: 10px; }
+    body .banner .word {
+      position: relative;
+      display: inline-block; }
+      body .banner .word .c {
+        height: 160px;
+        display: inline-block;
+        background-repeat: no-repeat; }
+        body .banner .word .c.top-cover {
+          animation: top-fade-in 2s;
+          -moz-animation: top-fade-in 2s;
+          /* Firefox */
+          -webkit-animation: top-fade-in 2s;
+          /* Safari and Chrome */
+          -o-animation: top-fade-in 2s;
+          -webkit-animation-fill-mode: forwards; }
+        body .banner .word .c.bottom-cover {
+          animation: bottom-fade-in 2s;
+          -moz-animation: bottom-fade-in 2s;
+          /* Firefox */
+          -webkit-animation: bottom-fade-in 2s;
+          /* Safari and Chrome */
+          -o-animation: bottom-fade-in 2s;
+          -webkit-animation-fill-mode: forwards; }
+    body .banner .intro {
+      font-family: cursive;
+      font-size: 24px;
+      color: #ffffff;
+      margin: 2vh 10%; }
+  body .home-content {
+    width: 42%;
+    float: left;
+    display: inline-block;
+    margin: 10vh 0;
+    height: 80vh; }
+    body .home-content .section {
+      width: 48%;
+      height: 38vh;
+      float: left;
+      margin-bottom: 4vh;
+      background-size: cover;
+      transition: background-image 0.5s ease-in-out; }
+      body .home-content .section.right {
+        margin-left: 4%; }
+      body .home-content .section:hover {
+        cursor: pointer; }
+      body .home-content .section.aboutme {
+        background-image: url(../images/main/aboutme-bw.jpg); }
+      body .home-content .section.aboutme:hover {
+        background-image: url(../images/main/aboutme.jpg); }
+      body .home-content .section.developer {
+        background-image: url(../images/main/developer-bw.jpg); }
+      body .home-content .section.developer:hover {
+        background-image: url(../images/main/developer.jpg); }
+      body .home-content .section.designer {
+        background-image: url(../images/main/designer-bw.jpg); }
+      body .home-content .section.designer:hover {
+        background-image: url(../images/main/designer.jpg); }
+      body .home-content .section.life {
+        background-image: url(../images/main/life-bw.jpg); }
+      body .home-content .section.life:hover {
+        background-image: url(../images/main/life.jpg); }
+  body nav {
+    text-align: right;
+    padding: 10vh 5% 5px;
+    font-size: 21px;
+    background-color: #f0f0f0; }
+    body nav a {
+      color: #000; }
+      body nav a:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: #000; }
+
 @-webkit-keyframes top-fade-in {
   /* Safari and Chrome */
   0% {
@@ -1113,26 +1114,38 @@ body {
   background: url(../images/aboutme/background.png);
   margin: 0; }
   .aboutme .basic-info img {
-    width: 65%;
-    margin-top: 10vh; }
+    width: 70%;
+    margin-top: 12vh; }
   .aboutme .basic-info .col-md-8 {
     height: 58vh; }
   .aboutme .basic-info .title {
     font-size: 36px;
-    margin: 15vh 0 10px 20%; }
+    margin: 15vh 0 10px 15%;
+    font-family: 'neosans regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 800; }
   .aboutme .basic-info .subtitle {
     font-size: 24px;
-    margin: 0 0 10px 20%;
-    width: 74%; }
+    margin: 0 0 10px 15%;
+    width: 74%;
+    color: #666666;
+    font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.3em; }
   .aboutme .basic-info .content {
-    margin: 0 0 0 20%;
+    margin: 0 0 0 15%;
     width: 73%;
     font-size: 18px;
-    color: #333; }
+    font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    font-weight: 200;
+    line-height: 1.6em; }
+  .aboutme .basic-info nav {
+    padding: 3vh 8%;
+    background-color: transparent; }
 .aboutme hr {
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background-color: #e0e0e0;
   border: 0;
   height: 1px; }
 .aboutme #instafeed {
@@ -1140,7 +1153,7 @@ body {
   flex-direction: row;
   justify-content: center;
   background-color: #f0f0f0;
-  padding: 4vh 10vh; }
+  padding: 5vh 0px 10vh; }
   .aboutme #instafeed a {
     float: left;
     margin: 1vh 2%; }
@@ -1161,21 +1174,24 @@ body {
     .aboutme .skillSection .piechart img {
       width: 35%; }
     .aboutme .skillSection .piechart span {
-      font-family: arial, sans-serif;
-      font-size: 21px; }
+      font-size: 21px;
+      color: #333;
+      font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      line-height: 1.3em; }
     .aboutme .skillSection .piechart span.designer {
       float: left;
-      margin: 27vh 0 0 12%;
+      margin: 20vh 0 0 12%;
       text-align: left; }
     .aboutme .skillSection .piechart span.developer {
       float: right;
-      margin: 7vh 12% 0 0;
+      margin: 13vh 12% 0 0;
       text-align: left; }
   .aboutme .skillSection .skillset {
     text-align: center;
     margin-bottom: 10vh;
     padding: 10vh 0;
-    background-color: #eee; }
+    background-color: #f0f0f0; }
   .aboutme .skillSection .addspace {
     height: 60px; }
   .aboutme .skillSection .technical {
@@ -1208,8 +1224,12 @@ body {
     width: 100%;
     max-width: 152px; }
   .aboutme .skillSection .technical .skills h4 {
-    font-weight: 700;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #333;
+    font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.3em;
+    font-size: 21px; }
   .aboutme .skillSection .skilBg {
     background: url(../images/skills.png) no-repeat 0 0; }
   .aboutme .skillSection .chart {

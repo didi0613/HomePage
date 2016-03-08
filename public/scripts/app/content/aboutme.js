@@ -23,7 +23,7 @@ define(function (require, exports, module) {
             after: function () {
                 var images = $("#instafeed").find('a');
                 $.each(images, function (index, image) {
-                    var delay = (index * 75) + 'ms';
+                    var delay = (index * 100) + 'ms';
                     $(image).css('-webkit-animation-delay', delay);
                     $(image).css('-moz-animation-delay', delay);
                     $(image).css('-ms-animation-delay', delay);
