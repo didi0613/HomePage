@@ -118,7 +118,7 @@ $home-base: #e9a1b9;
       background-color: #fff;
 
       img {
-        width: 35%;
+        width: 34%;
       }
 
       span {
@@ -131,14 +131,20 @@ $home-base: #e9a1b9;
 
       span.designer {
         float: left;
-        margin: 20vh 0 0 12%;
+        margin: 19vh 0 0 0;
+        width: 33%;
         text-align: left;
+        padding-left: 21%;
+        line-height: 1.6em;
       }
 
       span.developer {
         float: right;
-        margin: 13vh 12% 0 0;
+        margin: 12vh 0 0 0;
         text-align: left;
+        width: 33%;
+        padding-left: 1%;
+        line-height: 1.6em;
       }
     }
 
@@ -151,7 +157,6 @@ $home-base: #e9a1b9;
       text-align: center;
       margin-bottom: 10vh;
       padding: 10vh 0;
-      background-color: #f3f3f3;
     }
 
     .addspace {
