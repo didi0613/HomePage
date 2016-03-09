@@ -132,62 +132,20 @@ EVERYTIME
     opacity: 0; }
   to {
     opacity: 1; } }
-@media screen and (max-width: 1000px) {
-  .portfolio .close {
-    font-size: 17px !important; } }
 .portfolio {
   padding: 0em 3% 4em;
   text-align: center;
   font-size: 1.5em;
-  background-color: #0875BD;
-  margin-top: 0; }
-  .portfolio .close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 45px;
-    color: #0875BD;
-    border: #eee;
-    border-radius: 50%;
-    background-color: #eee;
-    opacity: 1;
-    width: 50px;
-    height: 50px;
-    text-align: center; }
-    .portfolio .close:hover {
-      opacity: 1;
-      -moz-box-shadow: 0 0 10px #ccc;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc; }
-  .portfolio .grid-title {
-    color: #fff;
-    padding: 3%; }
-    .portfolio .grid-title h2 {
-      font-family: "brandon-grotesque", Brandon Grotesque, Helvetica Neue, Helvetica, Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      font-size: 3.04em;
-      letter-spacing: -0.025em;
-      text-align: center;
-      font-weight: 500;
-      color: #fff;
-      line-height: 1.4em;
-      padding: 45px;
-      margin: 0; }
-    .portfolio .grid-title p {
-      color: #fff;
-      font-weight: 500;
-      margin-bottom: 2.70em;
-      margin-left: auto;
-      margin-right: auto;
-      text-indent: 1em;
-      width: 710px; }
+  background: url(../images/aboutme/background.png);
+  margin-top: 0;
+  width: 100%; }
   .portfolio .grid-wrap {
-    margin: 1% auto;
+    margin: 0 auto;
     max-width: 1090px;
     width: 100%;
-    padding: 0;
     -webkit-perspective: 1500px;
-    perspective: 1500px; }
+    perspective: 1500px;
+    padding: 10vh 0 0; }
     .portfolio .grid-wrap .grid {
       position: relative;
       -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.25, 1);
@@ -195,25 +153,36 @@ EVERYTIME
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d; }
       .portfolio .grid-wrap .grid a figure {
-        margin: 50px 10px;
+        margin: 10px;
         display: inline-block;
         cursor: pointer;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
-        user-select: none; }
+        user-select: none;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0;
+        border: 10px solid #fff;
+        background-color: #fff;
+        text-align: left;
+        border-radius: 10px; }
         .portfolio .grid-wrap .grid a figure img {
           display: block;
-          width: 339px;
-          height: 339px;
-          border: 10px solid #fff;
-          border-radius: 50%;
-          -webkit-filter: grayscale(100%);
-          filter: grayscale(100%); }
-          .portfolio .grid-wrap .grid a figure img:hover {
-            -webkit-filter: none;
-            filter: none; }
+          width: 300px;
+          height: 190px;
+          margin: 0 auto;
+          border-radius: 10px; }
+        .portfolio .grid-wrap .grid a figure div {
+          color: #333;
+          font-size: 18px;
+          padding: 5px 5px 0; }
+          .portfolio .grid-wrap .grid a figure div.subtitle {
+            color: #666;
+            font-size: 16px;
+            padding-bottom: 5px; }
+      .portfolio .grid-wrap .grid a:hover {
+        color: #333;
+        text-decoration: none; }
   .portfolio .grid-detail {
     animation: fade-in 2s;
     -moz-animation: fade-in 2s;
@@ -1186,14 +1155,14 @@ body {
       margin: 19vh 0 0 0;
       width: 33%;
       text-align: left;
-      padding-left: 21%;
+      padding-left: 15%;
       line-height: 1.6em; }
     .aboutme .skillSection .piechart span.developer {
       float: right;
       margin: 12vh 0 0 0;
       text-align: left;
       width: 33%;
-      padding-left: 1%;
+      padding-left: 6%;
       line-height: 1.6em; }
   .aboutme .skillSection .skillset {
     text-align: center;

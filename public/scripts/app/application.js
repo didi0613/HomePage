@@ -18,8 +18,8 @@ define(function (require, exports, module) {
             router.map([
                 // A route of '' means it will load by default:
                 { route: '', title: 'Home', moduleId: 'content/home', nav: true},
-                { route: 'aboutme', title: 'About Sheng', moduleId: 'content/aboutme', nav: true }
-                //{ route: 'developer', title: 'Developer', moduleId: 'content/developer', nav: true },
+                { route: 'aboutme', title: 'About Sheng', moduleId: 'content/aboutme', nav: true },
+                { route: 'portfolio', title: 'Developer', moduleId: 'content/portfolio', nav: true }
                 //{ route: 'designer', title: 'Designer', moduleId: 'content/designer', nav: true }
             ]);
 
