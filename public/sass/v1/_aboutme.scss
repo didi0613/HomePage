@@ -34,6 +34,8 @@ $home-base: #e9a1b9;
 }
 
 .aboutme {
+  width: 100%;
+
   .basic-info {
     width: 100%;
     background: url(../images/aboutme/background.png);
@@ -78,6 +80,11 @@ $home-base: #e9a1b9;
     nav {
       padding: 3vh 8%;
       background-color: transparent;
+      color: #333;
+
+      a {
+        color: #333;
+      }
     }
   }
 

@@ -133,7 +133,7 @@ EVERYTIME
   to {
     opacity: 1; } }
 .portfolio {
-  padding: 0em 3% 4em;
+  padding: 0;
   text-align: center;
   font-size: 1.5em;
   background: url(../images/aboutme/background.png);
@@ -175,11 +175,13 @@ EVERYTIME
         .portfolio .grid-wrap .grid a figure div {
           color: #333;
           font-size: 18px;
-          padding: 5px 5px 0; }
+          padding: 5px 5px 0;
+          font-weight: 400; }
           .portfolio .grid-wrap .grid a figure div.subtitle {
             color: #666;
             font-size: 16px;
-            padding-bottom: 5px; }
+            padding-bottom: 5px;
+            font-weight: 200; }
       .portfolio .grid-wrap .grid a:hover {
         color: #333;
         text-decoration: none; }
@@ -1048,15 +1050,16 @@ body {
         background-image: url(../images/main/life.jpg); }
   body nav {
     text-align: right;
-    padding: 10vh 5% 5px;
+    padding: 4vh 5%;
     font-size: 21px;
-    background-color: #f0f0f0; }
+    background-color: #333;
+    color: #fff; }
     body nav a {
-      color: #000; }
+      color: #fff; }
       body nav a:hover {
         text-decoration: none;
         cursor: pointer;
-        color: #000; }
+        color: #fff; }
 
 @-webkit-keyframes top-fade-in {
   /* Safari and Chrome */
@@ -1078,170 +1081,175 @@ body {
     -webkit-transform: translateY(10px);
     -moz-transform: translateY(10px);
     transform: translateY(10px); } }
-.aboutme .basic-info {
-  width: 100%;
-  background: url(../images/aboutme/background.png);
-  margin: 0; }
-  .aboutme .basic-info img {
-    width: 70%;
-    margin-top: 12vh; }
-  .aboutme .basic-info .col-md-8 {
-    height: 58vh; }
-  .aboutme .basic-info .title {
-    font-size: 36px;
-    margin: 15vh 0 10px 15%;
-    font-family: 'neosans regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 800; }
-  .aboutme .basic-info .subtitle {
-    font-size: 24px;
-    margin: 0 0 10px 15%;
-    width: 74%;
-    color: #666666;
-    font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    line-height: 1.3em; }
-  .aboutme .basic-info .content {
-    margin: 0 0 0 15%;
-    width: 73%;
-    font-size: 18px;
-    font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #333;
-    font-weight: 200;
-    line-height: 1.6em; }
-  .aboutme .basic-info nav {
-    padding: 3vh 8%;
-    background-color: transparent; }
-.aboutme hr {
-  margin: 0;
-  padding: 0;
-  background-color: #e0e0e0;
-  border: 0;
-  height: 1px; }
-.aboutme #instafeed {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #f0f0f0;
-  padding: 5vh 0px 10vh; }
-  .aboutme #instafeed a {
-    float: left;
-    margin: 1vh 2%; }
-    .aboutme #instafeed a img {
-      width: 120px;
-      height: 120px;
-      border: 8px solid white;
-      box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0; }
-.aboutme .skillSection {
-  background-color: #fff;
- /*
-*
-* Skill set
-*
-*/ }
-  .aboutme .skillSection .piechart {
-    text-align: center;
-    padding: 10vh 0;
-    background-color: #fff; }
-    .aboutme .skillSection .piechart img {
-      width: 34%; }
-    .aboutme .skillSection .piechart span {
-      font-size: 21px;
-      color: #333;
+.aboutme {
+  width: 100%; }
+  .aboutme .basic-info {
+    width: 100%;
+    background: url(../images/aboutme/background.png);
+    margin: 0; }
+    .aboutme .basic-info img {
+      width: 70%;
+      margin-top: 12vh; }
+    .aboutme .basic-info .col-md-8 {
+      height: 58vh; }
+    .aboutme .basic-info .title {
+      font-size: 36px;
+      margin: 15vh 0 10px 15%;
+      font-family: 'neosans regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 800; }
+    .aboutme .basic-info .subtitle {
+      font-size: 24px;
+      margin: 0 0 10px 15%;
+      width: 74%;
+      color: #666666;
       font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-weight: 300;
       line-height: 1.3em; }
-    .aboutme .skillSection .piechart span.designer {
+    .aboutme .basic-info .content {
+      margin: 0 0 0 15%;
+      width: 73%;
+      font-size: 18px;
+      font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #333;
+      font-weight: 200;
+      line-height: 1.6em; }
+    .aboutme .basic-info nav {
+      padding: 3vh 8%;
+      background-color: transparent;
+      color: #333; }
+      .aboutme .basic-info nav a {
+        color: #333; }
+  .aboutme hr {
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    border: 0;
+    height: 1px; }
+  .aboutme #instafeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 5vh 0px 10vh; }
+    .aboutme #instafeed a {
       float: left;
-      margin: 19vh 0 0 0;
-      width: 33%;
-      text-align: left;
-      padding-left: 15%;
-      line-height: 1.6em; }
-    .aboutme .skillSection .piechart span.developer {
-      float: right;
-      margin: 12vh 0 0 0;
-      text-align: left;
-      width: 33%;
-      padding-left: 6%;
-      line-height: 1.6em; }
-  .aboutme .skillSection .skillset {
-    text-align: center;
-    margin-bottom: 10vh;
-    padding: 10vh 0; }
-  .aboutme .skillSection .addspace {
-    height: 60px; }
-  .aboutme .skillSection .technical {
-    color: #474d5d; }
-  .aboutme .skillSection .technical .container {
-    padding-top: 85px;
-    padding-bottom: 69px; }
-  .aboutme .skillSection .technical .heading p {
-    padding-bottom: 41px; }
-  .aboutme .skillSection .technical p {
-    color: #474d5d; }
-  .aboutme .skillSection .technical h2 {
-    color: #ff675f; }
-  .aboutme .skillSection .technical .skillsArea {
-    padding: 0px; }
-  .aboutme .skillSection .technical .skills {
-    margin: 0 auto;
-    margin-bottom: 60px;
-    text-align: center;
-    padding: 0px;
-    float: none; }
-  .aboutme .skillSection .technical .skills p {
-    color: #84868d;
-    font-size: 13px;
-    line-height: 18px;
-    text-align: center; }
-  .aboutme .skillSection .technical .skills img {
-    margin: 0 auto;
-    margin-bottom: 33px;
-    width: 100%;
-    max-width: 152px; }
-  .aboutme .skillSection .technical .skills h4 {
-    text-transform: uppercase;
-    color: #333;
-    font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    line-height: 1.3em;
-    font-size: 21px; }
-  .aboutme .skillSection .skilBg {
-    background: url(../images/skills.png) no-repeat 0 0; }
-  .aboutme .skillSection .chart {
-    position: relative;
-    display: inline-block;
-    width: 152px;
-    height: 152px;
-    margin-bottom: 15px;
-    text-align: center; }
-  .aboutme .skillSection .chart canvas {
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .aboutme .skillSection .percent {
-    display: inline-block;
-    font-size: 21px;
-    color: #474d5d;
-    line-height: 152px;
-    z-index: 2; }
-  .aboutme .skillSection .percent:after {
-    content: '%';
-    margin-left: 0.1em;
-    font-size: .8em; }
-  .aboutme .skillSection .angular {
-    margin-top: 100px; }
-  .aboutme .skillSection .angular .chart {
-    margin-top: 0; }
-  .aboutme .skillSection .skills .progress-set {
-    padding: 0 12%; }
-    .aboutme .skillSection .skills .progress-set .progress {
-      height: 25px;
-      margin: 20px 0; }
-      .aboutme .skillSection .skills .progress-set .progress .progress-bar {
-        background-color: #e9a1b9;
-        font-size: 13px; }
-.aboutme .timeline .tl-slide-titleslide {
-  background-color: #eee; }
+      margin: 1vh 2%; }
+      .aboutme #instafeed a img {
+        width: 120px;
+        height: 120px;
+        border: 8px solid white;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0; }
+  .aboutme .skillSection {
+    background-color: #fff;
+   /*
+  *
+  * Skill set
+  *
+  */ }
+    .aboutme .skillSection .piechart {
+      text-align: center;
+      padding: 10vh 0;
+      background-color: #fff; }
+      .aboutme .skillSection .piechart img {
+        width: 34%; }
+      .aboutme .skillSection .piechart span {
+        font-size: 21px;
+        color: #333;
+        font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 1.3em; }
+      .aboutme .skillSection .piechart span.designer {
+        float: left;
+        margin: 19vh 0 0 0;
+        width: 33%;
+        text-align: left;
+        padding-left: 15%;
+        line-height: 1.6em; }
+      .aboutme .skillSection .piechart span.developer {
+        float: right;
+        margin: 12vh 0 0 0;
+        text-align: left;
+        width: 33%;
+        padding-left: 6%;
+        line-height: 1.6em; }
+    .aboutme .skillSection .skillset {
+      text-align: center;
+      margin-bottom: 10vh;
+      padding: 10vh 0; }
+    .aboutme .skillSection .addspace {
+      height: 60px; }
+    .aboutme .skillSection .technical {
+      color: #474d5d; }
+    .aboutme .skillSection .technical .container {
+      padding-top: 85px;
+      padding-bottom: 69px; }
+    .aboutme .skillSection .technical .heading p {
+      padding-bottom: 41px; }
+    .aboutme .skillSection .technical p {
+      color: #474d5d; }
+    .aboutme .skillSection .technical h2 {
+      color: #ff675f; }
+    .aboutme .skillSection .technical .skillsArea {
+      padding: 0px; }
+    .aboutme .skillSection .technical .skills {
+      margin: 0 auto;
+      margin-bottom: 60px;
+      text-align: center;
+      padding: 0px;
+      float: none; }
+    .aboutme .skillSection .technical .skills p {
+      color: #84868d;
+      font-size: 13px;
+      line-height: 18px;
+      text-align: center; }
+    .aboutme .skillSection .technical .skills img {
+      margin: 0 auto;
+      margin-bottom: 33px;
+      width: 100%;
+      max-width: 152px; }
+    .aboutme .skillSection .technical .skills h4 {
+      text-transform: uppercase;
+      color: #333;
+      font-family: 'proxima nova light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      line-height: 1.3em;
+      font-size: 21px; }
+    .aboutme .skillSection .skilBg {
+      background: url(../images/skills.png) no-repeat 0 0; }
+    .aboutme .skillSection .chart {
+      position: relative;
+      display: inline-block;
+      width: 152px;
+      height: 152px;
+      margin-bottom: 15px;
+      text-align: center; }
+    .aboutme .skillSection .chart canvas {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .aboutme .skillSection .percent {
+      display: inline-block;
+      font-size: 21px;
+      color: #474d5d;
+      line-height: 152px;
+      z-index: 2; }
+    .aboutme .skillSection .percent:after {
+      content: '%';
+      margin-left: 0.1em;
+      font-size: .8em; }
+    .aboutme .skillSection .angular {
+      margin-top: 100px; }
+    .aboutme .skillSection .angular .chart {
+      margin-top: 0; }
+    .aboutme .skillSection .skills .progress-set {
+      padding: 0 12%; }
+      .aboutme .skillSection .skills .progress-set .progress {
+        height: 25px;
+        margin: 20px 0; }
+        .aboutme .skillSection .skills .progress-set .progress .progress-bar {
+          background-color: #e9a1b9;
+          font-size: 13px; }
+  .aboutme .timeline .tl-slide-titleslide {
+    background-color: #eee; }
 
 /*# sourceMappingURL=main.css.map */

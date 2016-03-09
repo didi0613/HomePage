@@ -80,7 +80,7 @@ define(function (require, exports, module) {
                 if (top < -55) {
                     if (index == 0) {
                         $('.chart').easyPieChart({
-                            barColor: '#e9a1b9',
+                            barColor: '#666',
                             size: 152,
                             lineWidth: 10,
                             onStep: function (from, to, percent) {

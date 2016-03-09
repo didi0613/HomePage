@@ -11,7 +11,7 @@ $portfolio-base: #0875BD;
 }
 
 .portfolio {
-  padding: 0em 3% 4em;
+  padding: 0;
   text-align: center;
   font-size: 1.5em;
   background: url(../images/aboutme/background.png);
@@ -61,11 +61,13 @@ $portfolio-base: #0875BD;
             color: #333;
             font-size: 18px;
             padding: 5px 5px 0;
+            font-weight: 400;
 
             &.subtitle {
               color: #666;
               font-size: 16px;
               padding-bottom: 5px;
+              font-weight: 200;
             }
           }
         }
