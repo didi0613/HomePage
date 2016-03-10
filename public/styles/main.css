@@ -164,14 +164,15 @@ EVERYTIME
         box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0;
         border: 10px solid #fff;
         background-color: #fff;
-        text-align: left;
+        text-align: center;
         border-radius: 10px; }
         .portfolio .grid-wrap .grid a figure img {
           display: block;
           width: 300px;
           height: 190px;
           margin: 0 auto;
-          border-radius: 10px; }
+          border-radius: 10px;
+          padding-bottom: 5px; }
         .portfolio .grid-wrap .grid a figure div {
           color: #333;
           font-size: 18px;
