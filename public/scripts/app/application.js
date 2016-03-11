@@ -20,7 +20,8 @@ define(function (require, exports, module) {
                 { route: '', title: 'Home', moduleId: 'content/home', nav: true},
                 { route: 'aboutme', title: 'About Sheng', moduleId: 'content/aboutme', nav: true },
                 { route: 'portfolio', title: 'Developer', moduleId: 'content/portfolio', nav: true },
-                { route: 'portfolio-g2m', title: 'GoToMeeting', moduleId: 'content/portfolio/g2m', nav: true }
+                { route: 'portfolio-g2m', title: 'GoToMeeting', moduleId: 'content/portfolio/g2m', nav: true },
+                { route: 'portfolio-g2t', title: 'GoToTraining', moduleId: 'content/portfolio/g2t', nav: true }
                 //{ route: 'designer', title: 'Designer', moduleId: 'content/designer', nav: true }
             ]);
 

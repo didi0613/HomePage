@@ -159,6 +159,14 @@ body {
         cursor: pointer;
         color: #fff;
       }
+
+      &.selected {
+        color: grey;
+        
+        &:hover {
+          cursor: default;
+        }
+      }
     }
   }
 }

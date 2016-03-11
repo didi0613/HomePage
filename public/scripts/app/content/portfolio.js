@@ -14,6 +14,7 @@ define(function (require, exports, module) {
         self.isGeneral = ko.observable(true);
         self.isDetail = ko.observable(false);
         self.type = ko.observable();
+        self.currentPage = ko.observable();
 
         //click to see thed detailed info of each project
         self.detail = function (val) {
@@ -47,6 +48,8 @@ define(function (require, exports, module) {
             $('.flexslider').flexslider({
                 animation: "slide"
             });
+
+            self.currentPage('developer');
         };
     }
 

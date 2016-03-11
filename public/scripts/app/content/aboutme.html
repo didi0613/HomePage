@@ -1,10 +1,10 @@
 <div class="aboutme">
     <nav>
         <a href="#">Home</a> |
-        <a href="#aboutme">About</a> |
-        <a href="#portfolio">Developer</a> |
-        <a href="#designer">Designer</a> |
-        <a href="#life">Life</a>
+        <a href="#aboutme" data-bind="css: {selected: currentPage() === 'aboutme'}">About</a> |
+        <a href="#portfolio" data-bind="css: {selected: currentPage() === 'developer'}">Developer</a> |
+        <a href="#designer" data-bind="css: {selected: currentPage() === 'designer'}">Designer</a> |
+        <a href="#life" data-bind="css: {selected: currentPage() === 'life'}">Life</a>
     </nav>
 
     <div class="basic-info row">

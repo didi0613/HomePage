@@ -1,10 +1,10 @@
 <section class="portfolio" data-bind="visible: isGeneral()">
     <nav>
         <a href="#">Home</a> |
-        <a href="#aboutme">About</a> |
-        <a href="#portfolio">Developer</a> |
-        <a href="#designer">Designer</a> |
-        <a href="#life">Life</a>
+        <a href="#aboutme" data-bind="css: {selected: currentPage() === 'aboutme'}">About</a> |
+        <a href="#portfolio" data-bind="css: {selected: currentPage() === 'developer'}">Developer</a> |
+        <a href="#designer" data-bind="css: {selected: currentPage() === 'designer'}">Designer</a> |
+        <a href="#life" data-bind="css: {selected: currentPage() === 'life'}">Life</a>
     </nav>
 
     <!--project lists-->
@@ -17,7 +17,7 @@
                     <div class="subtitle">Front-end Developer</div>
                 </figure>
             </a>
-            <a data-bind="click: detail.bind(self,'g2t')">
+            <a href="#portfolio-g2t">
                 <figure>
                     <img src="../images/g2t.jpg">
                     <div>GoToTraining Instant Join & Breakout</div>

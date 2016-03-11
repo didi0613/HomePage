@@ -1,12 +1,13 @@
 define(function (require, exports, module) {
     require('animation.on.scroll');
     require('jquery-easypiechart');
-    
+    var ko = require('knockout');
     var Instafeed = require('instafeed');
     var $ = require('jquery');
 
     function Aboutme() {
         var self = this;
+        self.currentPage = ko.observable();
 
         var $window = $(window),
             win_height_padded = $window.height() * 1.1,
@@ -92,6 +93,8 @@ define(function (require, exports, module) {
                     index++;
                 }
             });
+
+            self.currentPage('aboutme');
         }
     }
 
