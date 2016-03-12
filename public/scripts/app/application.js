@@ -21,7 +21,11 @@ define(function (require, exports, module) {
                 { route: 'aboutme', title: 'About Sheng', moduleId: 'content/aboutme', nav: true },
                 { route: 'portfolio', title: 'Developer', moduleId: 'content/portfolio', nav: true },
                 { route: 'portfolio-g2m', title: 'GoToMeeting', moduleId: 'content/portfolio/g2m', nav: true },
-                { route: 'portfolio-g2t', title: 'GoToTraining', moduleId: 'content/portfolio/g2t', nav: true }
+                { route: 'portfolio-g2t', title: 'GoToTraining', moduleId: 'content/portfolio/g2t', nav: true },
+                { route: 'portfolio-hiptraveler', title: 'Hiptraveler', moduleId: 'content/portfolio/hiptraveler', nav: true },
+                { route: 'portfolio-fullscreen', title: 'Fullscreen', moduleId: 'content/portfolio/fullscreen', nav: true },
+                { route: 'portfolio-multithread', title: 'Multi-thread', moduleId: 'content/portfolio/multithread', nav: true },
+                { route: 'portfolio-weathersearch', title: 'Weather Search', moduleId: 'content/portfolio/weathersearch', nav: true }
                 //{ route: 'designer', title: 'Designer', moduleId: 'content/designer', nav: true }
             ]);
 

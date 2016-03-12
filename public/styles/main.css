@@ -427,22 +427,17 @@ EVERYTIME
   color: #fff; }
   .hiptraveler .close {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 20px;
-    font-size: 45px;
+    font-size: 30px;
     color: #333;
-    border: #eee;
     border-radius: 50%;
-    background-color: #eee;
+    background-color: #fff;
     opacity: 1;
-    width: 50px;
-    height: 50px;
-    text-align: center; }
+    text-align: center;
+    padding: 5px 8px; }
     .hiptraveler .close:hover {
-      opacity: 1;
-      -moz-box-shadow: 0 0 10px #ccc;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc; }
+      opacity: 1; }
   .hiptraveler .ht-banner {
     background-color: #333;
     padding-left: 12%;
@@ -461,28 +456,26 @@ EVERYTIME
     padding: 50px 80px; }
     .hiptraveler .ht-content .ht-content-title img {
       width: 300px;
-      height: 100px; }
+      height: 116px; }
     .hiptraveler .ht-content .ht-content-title p {
-      padding: 100px 160px 20px;
-      text-indent: 1em;
       color: #333;
       font-style: italic;
-      letter-spacing: 2px;
-      line-height: 45px;
-      font-size: 27px; }
+      line-height: 1.6em;
+      font-size: 24px;
+      text-align: left;
+      margin-top: -5vh; }
     .hiptraveler .ht-content .ht-content-intro {
       text-align: center;
-      padding: 150px 20px 100px; }
+      padding: 10vh 5%; }
       .hiptraveler .ht-content .ht-content-intro i {
         color: #6FCDF5;
         font-size: 80px; }
       .hiptraveler .ht-content .ht-content-intro h2 {
-        text-indent: 1em;
-        font-size: 22px;
-        padding: 40px 20px;
+        font-size: 21px;
         color: #333;
-        letter-spacing: 2px;
-        line-height: 35px; }
+        line-height: 1.3em;
+        text-align: center;
+        padding: 0 20%; }
     .hiptraveler .ht-content .ht-content-work h2 {
       font-size: 42px;
       letter-spacing: 6px;
@@ -901,32 +894,69 @@ body {
     margin: 10vh 0;
     height: 80vh; }
     body .home-content .section {
-      width: 48%;
-      height: 38vh;
-      float: left;
-      margin-bottom: 4vh;
+      height: 22vh;
+      margin-bottom: 7vh;
       background-size: cover;
       transition: background-image 0.5s ease-in-out; }
-      body .home-content .section.right {
-        margin-left: 4%; }
       body .home-content .section:hover {
         cursor: pointer; }
       body .home-content .section.aboutme {
-        background-image: url(../images/main/aboutme-bw.jpg); }
+        background-image: url(../images/main/developer-bw.jpg);
+        background-position: 55vh 53%;
+        background-repeat: no-repeat;
+        background-attachment: fixed; }
+        body .home-content .section.aboutme .txt {
+          opacity: 0; }
       body .home-content .section.aboutme:hover {
-        background-image: url(../images/main/aboutme.jpg); }
+        background-image: url(../images/main/developer.jpg);
+        transition: background-image 0.5s ease-in-out; }
+        body .home-content .section.aboutme:hover .txt {
+          opacity: 0.8;
+          height: 22vh;
+          background-color: #000;
+          color: #fff;
+          text-align: center;
+          font-size: 36px;
+          padding-top: 7vh;
+          transition: background-image 0.5s ease-in-out; }
       body .home-content .section.developer {
-        background-image: url(../images/main/developer-bw.jpg); }
+        background-image: url(../images/main/developer-bw.jpg);
+        background-position: 55vh 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed; }
+        body .home-content .section.developer .txt {
+          opacity: 0; }
       body .home-content .section.developer:hover {
-        background-image: url(../images/main/developer.jpg); }
+        background-image: url(../images/main/developer.jpg);
+        transition: background-image 0.5s ease-in-out; }
+        body .home-content .section.developer:hover .txt {
+          opacity: 0.8;
+          height: 22vh;
+          background-color: #000;
+          color: #fff;
+          text-align: center;
+          font-size: 36px;
+          padding-top: 7vh;
+          transition: background-image 0.5s ease-in-out; }
       body .home-content .section.designer {
-        background-image: url(../images/main/designer-bw.jpg); }
+        background-image: url(../images/main/developer-bw.jpg);
+        background-position: 55vh 45%;
+        background-repeat: no-repeat;
+        background-attachment: fixed; }
+        body .home-content .section.designer .txt {
+          opacity: 0; }
       body .home-content .section.designer:hover {
-        background-image: url(../images/main/designer.jpg); }
-      body .home-content .section.life {
-        background-image: url(../images/main/life-bw.jpg); }
-      body .home-content .section.life:hover {
-        background-image: url(../images/main/life.jpg); }
+        background-image: url(../images/main/developer.jpg);
+        transition: background-image 0.5s ease-in-out; }
+        body .home-content .section.designer:hover .txt {
+          opacity: 0.8;
+          height: 22vh;
+          background-color: #000;
+          color: #fff;
+          text-align: center;
+          font-size: 36px;
+          padding-top: 7vh;
+          transition: background-image 0.5s ease-in-out; }
   body nav {
     text-align: right;
     padding: 4vh 5%;
@@ -1047,11 +1077,11 @@ body {
         margin: 19vh 0 0 0;
         width: 33%;
         text-align: left;
-        padding-left: 15%;
+        padding-left: 13%;
         line-height: 1.6em; }
       .aboutme .skillSection .piechart span.developer {
         float: right;
-        margin: 12vh 0 0 0;
+        margin: 14vh 0 0 0;
         text-align: left;
         width: 33%;
         padding-left: 6%;
@@ -1409,5 +1439,15 @@ body {
   width: 44%;
   height: 64vh;
   margin-right: 5%; }
+.g2m .g2t-contributions .row .col-md-4 {
+  text-align: center; }
+  .g2m .g2t-contributions .row .col-md-4 img {
+    width: 85%;
+    height: 30vh;
+    margin: 10vh 0 0 0;
+    border: 5px solid #eee; }
+.g2m .g2t-contributions .row .col-md-6 {
+  text-align: left;
+  padding-top: 3vh; }
 
 /*# sourceMappingURL=main.css.map */

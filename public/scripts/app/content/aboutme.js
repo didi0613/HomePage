@@ -81,7 +81,16 @@ define(function (require, exports, module) {
                 if (top < -55) {
                     if (index == 0) {
                         $('.chart').easyPieChart({
-                            barColor: '#666',
+                            barColor: function (percent) {
+                                var ctx = this.renderer.getCtx();
+                                var canvas = this.renderer.getCanvas();
+                                var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+                                gradient.addColorStop(0, "#666");
+                                gradient.addColorStop(1, "#fff");
+                                return gradient;
+                            },
+                            trackColor: '#fff',
+                            scaleColor: '#666',
                             size: 152,
                             lineWidth: 10,
                             onStep: function (from, to, percent) {

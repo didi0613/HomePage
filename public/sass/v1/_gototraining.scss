@@ -130,4 +130,22 @@
       }
     }
   }
+
+  .g2t-contributions {
+    .row .col-md-4 {
+      text-align: center;
+
+      img {
+        width: 85%;
+        height: 30vh;
+        margin: 10vh 0 0 0;
+        border: 5px solid #eee;
+      }
+    }
+
+    .row .col-md-6 {
+      text-align: left;
+      padding-top: 3vh;
+    }
+  }
 }
