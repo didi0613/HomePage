@@ -24,8 +24,8 @@ define(function (require, exports, module) {
                 { route: 'portfolio-g2t', title: 'GoToTraining', moduleId: 'content/portfolio/g2t', nav: true },
                 { route: 'portfolio-hiptraveler', title: 'Hiptraveler', moduleId: 'content/portfolio/hiptraveler', nav: true },
                 { route: 'portfolio-fullscreen', title: 'Fullscreen', moduleId: 'content/portfolio/fullscreen', nav: true },
-                { route: 'portfolio-multithread', title: 'Multi-thread', moduleId: 'content/portfolio/multithread', nav: true },
-                { route: 'portfolio-weathersearch', title: 'Weather Search', moduleId: 'content/portfolio/weathersearch', nav: true }
+                { route: 'portfolio-multithread', title: 'Multi-thread', moduleId: 'content/portfolio/multi-thread', nav: true },
+                { route: 'portfolio-weathersearch', title: 'Weather Search', moduleId: 'content/portfolio/weather-search', nav: true }
                 //{ route: 'designer', title: 'Designer', moduleId: 'content/designer', nav: true }
             ]);
 

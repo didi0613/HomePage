@@ -88,15 +88,15 @@ body {
   }
 
   .home-content {
-    width: 42%;
+    width: 39%;
     float: left;
     display: inline-block;
-    margin: 10vh 0;
+    margin: 16vh 20px;
     height: 80vh;
 
     .section {
-      height: 22vh;
-      margin-bottom: 7vh;
+      height: 21vh;
+      margin-bottom: 3vh;
       background-size: cover;
       transition: background-image 0.5s ease-in-out;
 
@@ -116,18 +116,18 @@ body {
       }
 
       &.aboutme:hover {
-        background-image: url(../images/main/developer.jpg);
         transition: background-image 0.5s ease-in-out;
+        background-image: url(../images/main/developer.jpg);
 
         .txt {
           opacity: 0.8;
-          height: 22vh;
+          height: 21vh;
           background-color: #000;
           color: #fff;
           text-align: center;
           font-size: 36px;
           padding-top: 7vh;
-          transition: background-image 0.5s ease-in-out;
+          transition: background-color 0.5s ease-in-out;
         }
       }
 
@@ -148,13 +148,13 @@ body {
 
         .txt {
           opacity: 0.8;
-          height: 22vh;
+          height: 21vh;
           background-color: #000;
           color: #fff;
           text-align: center;
           font-size: 36px;
           padding-top: 7vh;
-          transition: background-image 0.5s ease-in-out;
+          transition: background-color 0.5s ease-in-out;
         }
       }
 
@@ -175,13 +175,13 @@ body {
 
         .txt {
           opacity: 0.8;
-          height: 22vh;
+          height: 21vh;
           background-color: #000;
           color: #fff;
           text-align: center;
           font-size: 36px;
           padding-top: 7vh;
-          transition: background-image 0.5s ease-in-out;
+          transition: background-color 0.5s ease-in-out;
         }
       }
     }

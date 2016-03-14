@@ -3,129 +3,6 @@ EVERYTIME
 1) In a terminal window at the nodl root, run "sass --watch public/sass:public/styles". This will run a SASS watcher that looks for changes in your SASS files. If it finds them, it'll re-compile them into CSS files.
 2) If you write invalid CSS (or SASS), the compiler will throw an error in terminal window, so if you have a bug you just can't figure out, take a look there and see if you have something written incorrectly.
 */
-@-webkit-keyframes slidy {
-  0% {
-    left: 0%; }
-  5% {
-    left: 0%; }
-  50% {
-    left: -100%; }
-  55% {
-    left: -100%; }
-  95% {
-    left: -200%; }
-  100% {
-    left: 0%; } }
-.about .subtitle {
-  text-align: center;
-  margin: 5%;
-  font-size: 48px;
-  line-height: 38px;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: 'Roboto Condensed', sans-serif; }
-.about .content {
-  padding: 0 20px;
-  width: 100%; }
-  .about .content .intro {
-    margin-bottom: 5%; }
-    .about .content .intro p {
-      text-indent: 1em;
-      color: #666666;
-      font-family: 'Open Sans', sans-serif;
-      line-height: 38px;
-      font-weight: 300;
-      padding: 0 10%;
-      font-size: 24px; }
-  .about .content .viewmore {
-    width: 200px;
-    margin: 0 auto; }
-    .about .content .viewmore a {
-      text-decoration: none;
-      display: block; }
-      .about .content .viewmore a.button {
-        display: inline-block;
-        padding: 6px 12px;
-        margin-bottom: 0;
-        font-size: 27px;
-        font-weight: normal;
-        line-height: 1.428571429;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        cursor: pointer;
-        background-color: #222;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fff;
-        border-radius: 5px; }
-  .about .content .brief-portfolio {
-    margin-bottom: 5%;
-    text-align: center;
-    background-color: #fff;
-    border-bottom: 17px dotted #fff;
-    border-top: 17px dotted #fff; }
-    .about .content .brief-portfolio .card1 {
-      border: 2px solid #EBEBEB;
-      height: 600px;
-      margin: 0 0 100px 6.5%;
-      background-color: #F7F7F7;
-      text-align: left;
-      border-radius: 5px;
-      font-family: Montserrat, sans-serif, Arial; }
-      .about .content .brief-portfolio .card1 figure img {
-        width: 100%;
-        height: 170px;
-        margin: 30px 0; }
-      .about .content .brief-portfolio .card1 .title {
-        color: #222222;
-        font-size: 29px;
-        font-weight: 500;
-        letter-spacing: 1px; }
-      .about .content .brief-portfolio .card1 .blog-meta {
-        font-size: 15px;
-        line-height: 13px;
-        margin: 20px -13px;
-        color: #6d6d6d; }
-      .about .content .brief-portfolio .card1 .blog-content {
-        padding-bottom: 10px;
-        line-height: 25px;
-        text-indent: 0;
-        font-size: 18px;
-        color: #6d6d6d; }
-      .about .content .brief-portfolio .card1 div#slider {
-        overflow: hidden; }
-      .about .content .brief-portfolio .card1 div#slider figure img {
-        width: 20%;
-        float: left; }
-      .about .content .brief-portfolio .card1 div#slider figure {
-        position: relative;
-        width: 500%;
-        margin: 0;
-        left: 0;
-        text-align: left;
-        font-size: 0;
-        -webkit-animation: 15s slidy infinite; }
-    .about .content .brief-portfolio .card2 {
-      background-color: #000;
-      height: 330px;
-      margin: 0 0 100px 6.5%;
-      border-radius: 5px;
-      font-family: Montserrat, sans-serif, Arial; }
-      .about .content .brief-portfolio .card2 p {
-        font-weight: 500;
-        color: #FFFFFF;
-        font-size: 28px;
-        line-height: 36px;
-        letter-spacing: 0px;
-        margin: 40px 20px;
-        text-align: left;
-        text-indent: 0; }
-        .about .content .brief-portfolio .card2 p span {
-          font-size: 20px;
-          font-weight: 300;
-          text-align: right; }
-
 @-webkit-keyframes sway {
   from {
     top: 0px; }
@@ -298,116 +175,6 @@ EVERYTIME
       -moz-animation-delay: 1.75s;
       animation-delay: 1.75s; }
 
-@media screen and (max-width: 1100px) {
-  .gototraining .title .demo1 {
-    float: none !important;
-    margin-left: 20% !important;
-    margin-top: 60px !important; }
-  .gototraining .close {
-    font-size: 17px !important; }
-  .gototraining .instantjoin i {
-    margin-right: 20px; }
-  .gototraining .instantjoin img {
-    width: 100% !important;
-    height: 400px;
-    padding-left: 20%; } }
-.gototraining {
-  margin: 0;
-  padding: 0;
-  color: #fff; }
-  .gototraining .close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 45px;
-    color: #333;
-    border: #eee;
-    border-radius: 50%;
-    background-color: #eee;
-    opacity: 1;
-    width: 50px;
-    height: 50px;
-    text-align: center; }
-    .gototraining .close:hover {
-      opacity: 1;
-      -moz-box-shadow: 0 0 10px #ccc;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc; }
-  .gototraining .title {
-    margin: 80px; }
-    .gototraining .title img {
-      height: 90px;
-      width: 300px; }
-    .gototraining .title h3 {
-      margin: 40px 0 10px 60px; }
-    .gototraining .title p {
-      font-size: 20px;
-      line-height: 1.5em;
-      margin-left: 80px; }
-    .gototraining .title i {
-      margin-right: 10px; }
-    .gototraining .title .demo1 {
-      height: 400px;
-      width: 500px;
-      float: right;
-      margin: -200px 3%; }
-  .gototraining .instantjoin {
-    background-color: #eee;
-    color: #000;
-    margin-top: 100px; }
-    .gototraining .instantjoin h2 {
-      font-size: 42px;
-      height: auto;
-      letter-spacing: 6px;
-      line-height: 48px;
-      text-align: left;
-      width: auto;
-      font-weight: 800;
-      padding: 200px 0 10px 80px; }
-    .gototraining .instantjoin h3 {
-      padding: 25px 0 80px 80px;
-      color: #62676b;
-      font-size: 20px;
-      font-style: italic;
-      letter-spacing: 2px;
-      line-height: 40px; }
-    .gototraining .instantjoin img {
-      width: 350px;
-      height: 220px;
-      margin: 40px 0; }
-    .gototraining .instantjoin p {
-      -webkit-font-smoothing: antialiased;
-      color: #333;
-      letter-spacing: normal;
-      font-size: 24px;
-      line-height: 1.8em;
-      text-align: left;
-      margin: 10px 80px;
-      font-weight: 500; }
-      .gototraining .instantjoin p.des {
-        font-size: 20px;
-        line-height: 35px;
-        letter-spacing: 0;
-        color: #62676b;
-        -webkit-font-smoothing: antialiased;
-        text-align: left;
-        margin-bottom: 80px; }
-  .gototraining .breakout {
-    background-color: #fff;
-    color: #000;
-    padding: 40px 300px 100px;
-    text-align: center; }
-    .gototraining .breakout h3 {
-      margin: 20px -300px;
-      line-height: 35px;
-      font-weight: 400; }
-  .gototraining hr {
-    margin-top: 70px;
-    margin-bottom: 70px;
-    border: 0;
-    border-top: 1px solid #fff;
-    width: 90%; }
-
 @-webkit-keyframes fade-in {
   from {
     opacity: 0; }
@@ -456,14 +223,14 @@ EVERYTIME
     padding: 50px 80px; }
     .hiptraveler .ht-content .ht-content-title img {
       width: 300px;
-      height: 116px; }
+      height: 123px; }
     .hiptraveler .ht-content .ht-content-title p {
       color: #333;
       font-style: italic;
       line-height: 1.6em;
-      font-size: 24px;
+      font-size: 21px;
       text-align: left;
-      margin-top: -5vh; }
+      margin-top: -10vh; }
     .hiptraveler .ht-content .ht-content-intro {
       text-align: center;
       padding: 10vh 5%; }
@@ -471,9 +238,9 @@ EVERYTIME
         color: #6FCDF5;
         font-size: 80px; }
       .hiptraveler .ht-content .ht-content-intro h2 {
-        font-size: 21px;
+        font-size: 18px;
         color: #333;
-        line-height: 1.3em;
+        line-height: 1.6em;
         text-align: center;
         padding: 0 20%; }
     .hiptraveler .ht-content .ht-content-work h2 {
@@ -674,6 +441,8 @@ EVERYTIME
       margin: 3% 20% 5%;
       width: 60%; }
 
+.weather-search img {
+  width: 100%; }
 .weather-search .close {
   position: absolute;
   top: 20px;
@@ -757,7 +526,8 @@ EVERYTIME
       text-transform: uppercase;
       color: #FFFFFF; }
       .weather-search #wprocess .parallax-overlay-2 .title h1 {
-        margin-top: 50px; }
+        margin-top: 50px;
+        color: #fff; }
     .weather-search #wprocess .parallax-overlay-2 .container .row {
       margin-top: 107px;
       padding-bottom: 70px; }
@@ -783,42 +553,11 @@ EVERYTIME
     -webkit-font-smoothing: antialiased; }
   .weather-search .w-content img {
     margin: 20px; }
-
-@-webkit-keyframes slidy {
-  0% {
-    left: 0%; }
-  5% {
-    left: 0%; }
-  25% {
-    left: -100%; }
-  25% {
-    left: -100%; }
-  50% {
-    left: -200%; }
-  55% {
-    left: -200%; }
-  70% {
-    left: -300%; }
-  75% {
-    left: -300%; }
-  95% {
-    left: -400%; }
-  100% {
-    left: 0%; } }
-.others div#slider1 {
-  overflow: hidden; }
-.others div#slider1 figure img {
-  width: 20%;
-  float: left;
-  height: 100vh; }
-.others div#slider1 figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  -webkit-animation: 15s slidy infinite; }
+.weather-search.g2m .g2m-ij {
+  clear: both;
+  padding: 20vh 5%;
+  color: #000;
+  margin: 0 auto; }
 
 body {
   width: 100%;
@@ -888,14 +627,14 @@ body {
       color: #ffffff;
       margin: 2vh 10%; }
   body .home-content {
-    width: 42%;
+    width: 39%;
     float: left;
     display: inline-block;
-    margin: 10vh 0;
+    margin: 16vh 20px;
     height: 80vh; }
     body .home-content .section {
-      height: 22vh;
-      margin-bottom: 7vh;
+      height: 21vh;
+      margin-bottom: 3vh;
       background-size: cover;
       transition: background-image 0.5s ease-in-out; }
       body .home-content .section:hover {
@@ -908,17 +647,17 @@ body {
         body .home-content .section.aboutme .txt {
           opacity: 0; }
       body .home-content .section.aboutme:hover {
-        background-image: url(../images/main/developer.jpg);
-        transition: background-image 0.5s ease-in-out; }
+        transition: background-image 0.5s ease-in-out;
+        background-image: url(../images/main/developer.jpg); }
         body .home-content .section.aboutme:hover .txt {
           opacity: 0.8;
-          height: 22vh;
+          height: 21vh;
           background-color: #000;
           color: #fff;
           text-align: center;
           font-size: 36px;
           padding-top: 7vh;
-          transition: background-image 0.5s ease-in-out; }
+          transition: background-color 0.5s ease-in-out; }
       body .home-content .section.developer {
         background-image: url(../images/main/developer-bw.jpg);
         background-position: 55vh 50%;
@@ -931,13 +670,13 @@ body {
         transition: background-image 0.5s ease-in-out; }
         body .home-content .section.developer:hover .txt {
           opacity: 0.8;
-          height: 22vh;
+          height: 21vh;
           background-color: #000;
           color: #fff;
           text-align: center;
           font-size: 36px;
           padding-top: 7vh;
-          transition: background-image 0.5s ease-in-out; }
+          transition: background-color 0.5s ease-in-out; }
       body .home-content .section.designer {
         background-image: url(../images/main/developer-bw.jpg);
         background-position: 55vh 45%;
@@ -950,13 +689,13 @@ body {
         transition: background-image 0.5s ease-in-out; }
         body .home-content .section.designer:hover .txt {
           opacity: 0.8;
-          height: 22vh;
+          height: 21vh;
           background-color: #000;
           color: #fff;
           text-align: center;
           font-size: 36px;
           padding-top: 7vh;
-          transition: background-image 0.5s ease-in-out; }
+          transition: background-color 0.5s ease-in-out; }
   body nav {
     text-align: right;
     padding: 4vh 5%;
@@ -1185,7 +924,7 @@ body {
     width: 100%;
     -webkit-perspective: 1500px;
     perspective: 1500px;
-    padding: 10vh 0 0; }
+    padding: 10vh 0; }
     .portfolio .grid-wrap .grid {
       position: relative;
       -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.25, 1);
@@ -1241,7 +980,7 @@ body {
   float: right;
   background-color: #333;
   opacity: 1;
-  border-radius: 20px;
+  border-radius: 50%;
   margin: 2vh;
   font-size: 30px;
   padding: 5px 8px;
@@ -1263,7 +1002,7 @@ body {
     margin: 0 10px 0 0; }
 .g2m .g2m-banner .banner-text hr {
   border: 0;
-  border-top: 1px solid #666;
+  border-top: 1px solid #eee;
   margin: 20px 55% 10px 5%; }
 .g2m .g2m-banner .banner-text .subtitle {
   color: #fff;
