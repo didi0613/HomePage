@@ -37,15 +37,15 @@
 
   .close {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 2vh;
+    right: 3%;
     font-size: 30px;
     color: #333;
     border-radius: 50%;
     background-color: #fff;
     opacity: 1;
     text-align: center;
-    padding: 5px 8px;
+    padding: 4px 8px 6px;
 
     &:hover {
       opacity: 1;
@@ -149,5 +149,12 @@
     margin-bottom: 120px;
     border: 0;
     border-top: 1px solid #eee;
+  }
+
+  &.g2m .contributions .row .col-md-6 img {
+    width: 70%;
+    height: 55vh;
+    margin: 5vh 0;
+    border: 5px solid #eee;
   }
 }

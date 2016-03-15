@@ -194,15 +194,15 @@ EVERYTIME
   color: #fff; }
   .hiptraveler .close {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 2vh;
+    right: 3%;
     font-size: 30px;
     color: #333;
     border-radius: 50%;
     background-color: #fff;
     opacity: 1;
     text-align: center;
-    padding: 5px 8px; }
+    padding: 4px 8px 6px; }
     .hiptraveler .close:hover {
       opacity: 1; }
   .hiptraveler .ht-banner {
@@ -270,6 +270,11 @@ EVERYTIME
     margin-bottom: 120px;
     border: 0;
     border-top: 1px solid #eee; }
+  .hiptraveler.g2m .contributions .row .col-md-6 img {
+    width: 70%;
+    height: 55vh;
+    margin: 5vh 0;
+    border: 5px solid #eee; }
 
 @-webkit-keyframes slidy {
   0% {
@@ -385,82 +390,24 @@ EVERYTIME
       text-indent: 1em;
       font-size: 20px; }
 
-.thread {
-  text-align: center; }
-  .thread .close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 45px;
-    color: #333;
-    border: #eee;
-    border-radius: 50%;
-    background-color: #eee;
-    opacity: 1;
-    width: 50px;
-    height: 50px;
-    text-align: center; }
-    .thread .close:hover {
-      opacity: 1;
-      -moz-box-shadow: 0 0 10px #ccc;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc; }
-  .thread .t-title h2 {
-    margin: 80px;
-    font-size: 42px;
-    letter-spacing: 2px;
-    line-height: 48px;
-    font-weight: 800; }
-  .thread .t-content {
-    margin: 100px;
-    text-align: left; }
-    .thread .t-content h3 {
-      -webkit-font-smoothing: antialiased;
-      color: #333;
-      letter-spacing: normal;
-      font-size: 30px;
-      line-height: 1.8em;
-      text-align: left;
-      font-weight: 500; }
-    .thread .t-content p {
-      font-size: 20px;
-      line-height: 35px;
-      letter-spacing: 0;
-      color: #62676b;
-      -webkit-font-smoothing: antialiased;
-      text-align: left;
-      text-indent: 1em;
-      margin: 40px 20px 80px; }
-    .thread .t-content .row {
-      text-align: center;
-      margin: 80px 150px; }
-      .thread .t-content .row img {
-        width: 200px;
-        height: 120px; }
-    .thread .t-content .trace-img {
-      margin: 3% 20% 5%;
-      width: 60%; }
+.thread.g2m .contributions .row .col-md-6 img {
+  height: 43vh; }
 
 .weather-search img {
   width: 100%; }
 .weather-search .close {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 45px;
+  top: 2vh;
+  right: 3%;
+  font-size: 30px;
   color: #333;
-  border: #eee;
   border-radius: 50%;
-  background-color: #eee;
+  background-color: #fff;
   opacity: 1;
-  width: 50px;
-  height: 50px;
-  text-align: center; }
+  text-align: center;
+  padding: 4px 8px 6px; }
   .weather-search .close:hover {
-    opacity: 1;
-    -moz-box-shadow: 0 0 10px #ccc;
-    -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #ccc; }
+    opacity: 1; }
 .weather-search .w-title .section-title {
   margin-top: 20px;
   text-align: center;
@@ -983,7 +930,7 @@ body {
   border-radius: 50%;
   margin: 2vh;
   font-size: 30px;
-  padding: 5px 8px;
+  padding: 4px 8px 6px;
   color: #fff; }
 .g2m .g2m-banner img {
   float: right;
