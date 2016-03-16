@@ -118,17 +118,10 @@
         </div>
         <div class="title revealOnScroll" data-animation="fadeIn" data-timeout="800">Project Desription</div>
         <div class="subtitle revealOnScroll" data-animation="fadeIn" data-timeout="800">
-            This project involved creating a web based application that could display the current weather or a forecast
-            for any entered zip code or city name and state/country code. I created a PHP application deployed on AWS
-            that fetches the weather data from the yahoo service in form of an xml and then parses it it to extract the
-            required information. It then creates another xml that is returned to a java servlet deployed on a Tomcat
-            server which then transforms it to JSON form. These components together formed a REST web service that could
-            now be invoked and consumed by any form of front end interface. I created the frontend as a web page in HTML
-            and an Android application in java. For the webpage, i used AJAX to issue calls to the REST web service
-            using javascript and formatted and displayed the result using YUI javascript library. For the android part,
-            i used the Android SDK to call the REST web service and used native GUI components provided by Android to
-            display the results. Lastly, i integrated a functionality to post the weather information on Facebook using
-            the Facebook SDK on both web and Android interfaces.
+            The weather search application takes an zip code or city name as the input, verifies and retrieve information
+            from Yahoo weather API and parsed into xml format data. It also returns to java servlet on AWS which
+            transforms into JSON and finally displays as a user interface. Also, I integrated a
+            functionality to post the weather information on Facebook using the Facebook SDK on web application.
         </div>
     </div>
 
@@ -143,37 +136,25 @@
             Project Details
         </div>
         <div class="subtitle revealOnScroll" data-animation="fadeIn" data-timeout="1200">
-            <i class="fa fa-check"></i> Leading on the GoToMeeing dial-out service feature, marked as the top 5
-            priority issue in 2016 Quarter 1.<br>
+            <i class="fa fa-check"></i> Input validation and retrieve information<br>
             Allow a user to enter a “query” to get weather information from Yahoo!; the query will contain a location
             which can be a city name with state or country, or a ZIP code.
-            Your JavaScript code will have to determine the location type from the location input. If the user intends
-            to input a city name, then state or country should be provided as well. For example: Los Angeles, CA, USA or
-            Seattle, WA or Pasadena, USA are three valid inputs. The default temperature unit is Fahrenheit;
-            <br>
-            <br>
-
-            <i class="fa fa-check"></i> GoToMeeting repository refactoring which stretched across 2015 Q4 and 2016 Q1.
-            <br>
+            The app will have to determine the location type from the location input. If the user intends
+            to input a city name, then state or country should be provided as well.
             Use the query string to retrieve appropriate information from Yahoo! The PHP script must run on AWS.
             <br>
             <br>
 
-            <i class="fa fa-check"></i> GoToMeeting instant join maintenance.<br>
+            <i class="fa fa-check"></i> Display current and forecast weather details<br>
             Display the current weather details, along with a table showing five-day weather forecast. The big city name
             should be clickable and link to rss feed page. The underlined temperature unit should be clickable and
-            perform the unit changing function. For this homework, display the weather information of only the first
-            location (woeid) returned by Yahoo! Geolocation service;
+            perform the unit changing function.
             <br>
             <br>
 
-            <i class="fa fa-check"></i> GoToMeeting instant join maintenance.<br>
+            <i class="fa fa-check"></i> Facebook Mashup<br>
             On the right side of the weather information, there should be a Facebook button, which allows the user to
             select to post either the current weather condition or the weather forecast to his/her Facebook wall;
-            <br>
-            <br>
-
-            <i class="fa fa-check"></i> GoToMeeting instant join maintenance.<br>
             Authorize the user to login to Facebook. Post a feed of the weather information to the user’s Facebook wall
             using the Facebook Connect API.
             <br>

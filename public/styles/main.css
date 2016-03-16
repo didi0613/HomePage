@@ -444,16 +444,10 @@ EVERYTIME
   .weather-search #wprocess .work_process {
     position: relative;
     text-align: center; }
-  .weather-search #wprocess .work_process:before {
-    content: '\f178';
-    margin-top: -10px;
-    position: absolute;
-    right: -30px;
-    top: 50%; }
   .weather-search #wprocess .work_process .work_process-box {
     outline: 4px solid #FFFFFF;
     border-radius: 50%;
-    height: 120px;
+    height: 160px;
     margin: 1em auto 3em;
     padding: 16px 10px;
     width: 120px; }
@@ -476,8 +470,8 @@ EVERYTIME
         margin-top: 50px;
         color: #fff; }
     .weather-search #wprocess .parallax-overlay-2 .container .row {
-      margin-top: 107px;
-      padding-bottom: 70px; }
+      margin-top: 10vh;
+      padding-bottom: 10vh; }
 .weather-search .w-content {
   text-align: center;
   margin: 100px; }
@@ -505,6 +499,10 @@ EVERYTIME
   padding: 20vh 5%;
   color: #000;
   margin: 0 auto; }
+  .weather-search.g2m .g2m-ij .row .col-md-4 img {
+    height: 40vh; }
+.weather-search.g2m .contributions .row .col-md-6 img {
+  height: 40vh; }
 
 body {
   width: 100%;
