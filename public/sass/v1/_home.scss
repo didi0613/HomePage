@@ -18,13 +18,73 @@ body {
   * Banner on the top of the homepage
   *
   */
-  @media screen and (max-width: 1000px) {
-    .banner {
-      height: 1170px !important;
-      padding-top: 20%;
+  @media screen and (max-width: 716px) {
+    div.banner {
+      width: 96%;
+      margin: 10vh 2%;
+      padding: 10vh 2%;
+    }
 
-      .intro {
-        padding: 20% 15% !important;
+    div.home-content {
+      width: 96%;
+      display: inline-block;
+      margin: 0 2%;
+      height: 80vh;
+
+      .section.aboutme {
+        background-image: url(../images/main/developer-bw.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 60%;
+        background-attachment: initial;
+      }
+
+      .section.developer {
+        background-image: url(../images/main/developer-bw.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 60%;
+        background-attachment: initial;
+      }
+
+      .section.designer {
+        background-image: url(../images/main/developer-bw.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 60%;
+        background-attachment: initial;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) and (min-width: 716px) {
+    div.banner {
+      width: 96%;
+      margin: 10vh 2%;
+    }
+
+    div.home-content {
+      width: 96%;
+      display: inline-block;
+      margin: 0 2%;
+      height: 80vh;
+
+      .section.aboutme {
+        background-image: url(../images/main/developer-bw.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 36%;
+        background-attachment: initial;
+      }
+
+      .section.developer {
+        background-image: url(../images/main/developer-bw.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 60%;
+        background-attachment: initial;
+      }
+
+      .section.designer {
+        background-image: url(../images/main/developer-bw.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 85%;
+        background-attachment: initial;
       }
     }
   }

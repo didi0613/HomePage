@@ -190,12 +190,55 @@ body {
     font-weight: 300; }
   body .revealOnScroll {
     opacity: 0; }
-  @media screen and (max-width: 1000px) {
-    body .banner {
-      height: 1170px !important;
-      padding-top: 20%; }
-      body .banner .intro {
-        padding: 20% 15% !important; } }
+  @media screen and (max-width: 716px) {
+    body div.banner {
+      width: 96%;
+      margin: 10vh 2%;
+      padding: 10vh 2%; }
+    body div.home-content {
+      width: 96%;
+      display: inline-block;
+      margin: 0 2%;
+      height: 80vh; }
+      body div.home-content .section.aboutme {
+        background-image: url(../images/main/developer-bw.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 60%;
+        background-attachment: initial; }
+      body div.home-content .section.developer {
+        background-image: url(../images/main/developer-bw.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 60%;
+        background-attachment: initial; }
+      body div.home-content .section.designer {
+        background-image: url(../images/main/developer-bw.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 60%;
+        background-attachment: initial; } }
+  @media screen and (max-width: 1000px) and (min-width: 716px) {
+    body div.banner {
+      width: 96%;
+      margin: 10vh 2%; }
+    body div.home-content {
+      width: 96%;
+      display: inline-block;
+      margin: 0 2%;
+      height: 80vh; }
+      body div.home-content .section.aboutme {
+        background-image: url(../images/main/developer-bw.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 36%;
+        background-attachment: initial; }
+      body div.home-content .section.developer {
+        background-image: url(../images/main/developer-bw.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 60%;
+        background-attachment: initial; }
+      body div.home-content .section.designer {
+        background-image: url(../images/main/developer-bw.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 85%;
+        background-attachment: initial; } }
   body .banner {
     background: url(../images/main/banner.jpg);
     width: 52%;
