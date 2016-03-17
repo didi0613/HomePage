@@ -392,6 +392,96 @@ body {
     -webkit-transform: translateY(10px);
     -moz-transform: translateY(10px);
     transform: translateY(10px); } }
+@media screen and (max-width: 518px) {
+  div.aboutme nav {
+    text-align: center;
+    padding: 4vh 0;
+    font-size: 20px; }
+
+  div.aboutme .basic-info .content {
+    display: none; }
+
+  div.aboutme {
+    overflow-x: hidden; }
+
+  div.aboutme .skillSection .piechart img {
+    width: 57%; }
+
+  div.aboutme .basic-info img {
+    display: none !important; }
+
+  div.aboutme .skillSection .piechart span.designer {
+    display: none; }
+
+  div.aboutme .skillSection .piechart span.developer {
+    display: none; }
+
+  div.aboutme #instafeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 5vh 0;
+    width: 100%; }
+    div.aboutme #instafeed a {
+      float: left;
+      margin: 0; } }
+@media screen and (max-width: 815px) and (min-width: 518px) {
+  div.aboutme {
+    overflow-x: hidden; }
+
+  div.aboutme .basic-info img {
+    display: none !important; }
+
+  div.aboutme .skillSection .piechart span.designer {
+    display: none; }
+
+  div.aboutme .skillSection .piechart span.developer {
+    display: none; }
+
+  div.aboutme #instafeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 5vh 0;
+    width: 100%; }
+    div.aboutme #instafeed a {
+      float: left;
+      margin: 0; } }
+@media screen and (max-width: 1090px) and (min-width: 815px) {
+  div.aboutme {
+    overflow-x: hidden; }
+
+  div.aboutme .basic-info img {
+    display: none !important; }
+
+  div.aboutme .skillSection .piechart span.designer {
+    float: left;
+    margin: 12vh 0 0 0;
+    width: 33%;
+    text-align: left;
+    padding-left: 10%;
+    line-height: 1.6em; }
+
+  div.aboutme .skillSection .piechart span.developer {
+    float: right;
+    margin: 8vh 0 0 0;
+    text-align: left;
+    width: 33%;
+    padding-left: 6%;
+    line-height: 1.6em; }
+
+  div.aboutme #instafeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 5vh 0;
+    width: 100%; }
+    div.aboutme #instafeed a {
+      float: left;
+      margin: 0; } }
 .aboutme {
   width: 100%; }
   .aboutme .basic-info {
@@ -570,6 +660,11 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+@media screen and (max-width: 518px) {
+  section.portfolio nav {
+    text-align: center;
+    padding: 4vh 0;
+    font-size: 20px; } }
 .portfolio {
   padding: 0;
   text-align: center;
@@ -633,6 +728,52 @@ body {
     -o-animation: fade-in 2s;
     height: 100%; }
 
+@media screen and (max-width: 807px) {
+  div.g2m .g2m-banner #g2m-bg.nebula {
+    height: 72vh; }
+
+  div.g2m .g2m-banner img {
+    display: none; }
+
+  div.g2m .g2m-banner .banner-text .content {
+    width: 93%;
+    margin: 8% 0 0 5%;
+    font-size: 18px;
+    color: #f3f3f3; }
+
+  div.g2m .g2m-ij .row .col-md-4 img {
+    width: 100%;
+    height: 44vh;
+    border: 5px solid #eee;
+    margin: 10vh 0; }
+
+  div.g2m .g2m-banner .banner-text .subtitle .right {
+    display: none; }
+
+  div.g2m .g2m-banner .banner-text .subtitle .left {
+    float: none; }
+
+  div.g2m .g2m-feature .flow-img img {
+    width: 100%;
+    margin-top: 0; } }
+@media screen and (max-width: 835px) and (min-width: 807px) {
+  div.g2m .g2m-banner #g2m-bg.nebula {
+    height: 58vh; }
+
+  div.g2m .g2m-banner img {
+    display: none; }
+
+  div.g2m .g2m-banner .banner-text .content {
+    width: 93%;
+    margin: 8% 0 0 5%;
+    font-size: 18px;
+    color: #f3f3f3; }
+
+  div.g2m .g2m-ij .row .col-md-4 img {
+    width: 100%;
+    height: 44vh;
+    border: 5px solid #eee;
+    margin: 10vh 0; } }
 .g2m .g2m-banner #g2m-bg.nebula {
   height: 80vh; }
 .g2m .g2m-banner .close {

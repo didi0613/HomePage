@@ -10,6 +10,14 @@ $portfolio-base: #0875BD;
   }
 }
 
+@media screen and (max-width: 518px) {
+  section.portfolio nav {
+    text-align: center;
+    padding: 4vh 0;
+    font-size: 20px;
+  }
+}
+
 .portfolio {
   padding: 0;
   text-align: center;

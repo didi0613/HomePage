@@ -33,6 +33,126 @@ $home-base: #0875BD;
   }
 }
 
+@media screen and (max-width: 518px) {
+  div.aboutme nav {
+    text-align: center;
+    padding: 4vh 0;
+    font-size: 20px;
+  }
+
+  div.aboutme .basic-info .content {
+    display: none;
+  }
+
+  div.aboutme {
+    overflow-x: hidden;
+  }
+
+  div.aboutme .skillSection .piechart img {
+    width: 57%;
+  }
+
+  div.aboutme .basic-info img {
+    display: none !important;
+  }
+
+  div.aboutme .skillSection .piechart span.designer {
+    display: none;
+  }
+
+  div.aboutme .skillSection .piechart span.developer {
+    display: none;
+  }
+
+  div.aboutme #instafeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 5vh 0;
+    width: 100%;
+
+    a {
+      float: left;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 815px) and (min-width: 518px) {
+  div.aboutme {
+    overflow-x: hidden;
+  }
+
+  div.aboutme .basic-info img {
+    display: none !important;
+  }
+
+  div.aboutme .skillSection .piechart span.designer {
+    display: none;
+  }
+
+  div.aboutme .skillSection .piechart span.developer {
+    display: none;
+  }
+
+  div.aboutme #instafeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 5vh 0;
+    width: 100%;
+
+    a {
+      float: left;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1090px) and (min-width: 815px) {
+  div.aboutme {
+    overflow-x: hidden;
+  }
+
+  div.aboutme .basic-info img {
+    display: none !important;
+  }
+
+  div.aboutme .skillSection .piechart span.designer {
+    float: left;
+    margin: 12vh 0 0 0;
+    width: 33%;
+    text-align: left;
+    padding-left: 10%;
+    line-height: 1.6em;
+  }
+
+  div.aboutme .skillSection .piechart span.developer {
+    float: right;
+    margin: 8vh 0 0 0;
+    text-align: left;
+    width: 33%;
+    padding-left: 6%;
+    line-height: 1.6em;
+  }
+
+  div.aboutme #instafeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 5vh 0;
+    width: 100%;
+
+    a {
+      float: left;
+      margin: 0;
+    }
+  }
+}
+
 .aboutme {
   width: 100%;
 
