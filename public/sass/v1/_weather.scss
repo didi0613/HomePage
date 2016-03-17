@@ -1,3 +1,20 @@
+@media screen and (max-width: 847px) {
+  div.weather-search.g2m .g2m-ij .row .col-md-4 img {
+    display: none;
+  }
+
+  div.g2m .g2m-ij .title {
+    padding-top: 27vh;
+    padding-bottom: 2vh;
+  }
+}
+
+@media screen and (max-width: 1090px) and (min-width: 847px) {
+  div.weather-search.g2m .g2m-ij .row .col-md-4 img {
+    display: none;
+  }
+}
+
 .weather-search {
   img {
     width: 100%;
@@ -56,9 +73,10 @@
       }
 
       img {
-        width: 500px;
+        width: 100%;
         height: 350px;
         margin-top: 50px;
+        max-width: 500px;
       }
     }
   }

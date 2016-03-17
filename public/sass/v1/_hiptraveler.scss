@@ -7,7 +7,51 @@
   }
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 605px) {
+  div.hiptraveler .ht-content {
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    padding: 0 10%;
+  }
+
+  div.hiptraveler .ht-banner {
+    background-color: #333;
+    padding-left: 0;
+    max-height: 510px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  div.hiptraveler .ht-content .ht-content-title p {
+    color: #333;
+    font-style: italic;
+    line-height: 1.6em;
+    font-size: 21px;
+    text-align: left;
+    margin-top: 10vh;
+  }
+
+  div.revealOnScroll {
+    opacity: 0;
+    margin: 6vh 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  div.hiptraveler .ht-content .ht-content-title img {
+    width: 100%;
+    height: 123px;
+  }
+
+  div.hiptraveler.g2m .contributions .row .col-md-6 img {
+    width: 85%;
+    height: 35vh;
+    border: 5px solid #eee;
+  }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 605px) {
   .hiptraveler {
     .ht-content {
       .ht-content-title {
@@ -51,7 +95,6 @@
       opacity: 1;
     }
   }
-
 
   .ht-banner {
     background-color: #333;
@@ -116,7 +159,7 @@
         font-size: 42px;
         letter-spacing: 6px;
         line-height: 48px;
-        color:#333;
+        color: #333;
       }
 
       img {

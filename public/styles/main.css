@@ -995,7 +995,43 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 605px) {
+  div.hiptraveler .ht-content {
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    padding: 0 10%; }
+
+  div.hiptraveler .ht-banner {
+    background-color: #333;
+    padding-left: 0;
+    max-height: 510px;
+    overflow: hidden;
+    text-align: center; }
+
+  div.hiptraveler .ht-content .ht-content-title p {
+    color: #333;
+    font-style: italic;
+    line-height: 1.6em;
+    font-size: 21px;
+    text-align: left;
+    margin-top: 10vh; }
+
+  div.revealOnScroll {
+    opacity: 0;
+    margin: 6vh 0;
+    width: 100%;
+    padding: 0; }
+
+  div.hiptraveler .ht-content .ht-content-title img {
+    width: 100%;
+    height: 123px; }
+
+  div.hiptraveler.g2m .contributions .row .col-md-6 img {
+    width: 85%;
+    height: 35vh;
+    border: 5px solid #eee; } }
+@media screen and (max-width: 1300px) and (min-width: 605px) {
   .hiptraveler .ht-content .ht-content-title p {
     padding: 100px 60px 20px !important; }
   .hiptraveler .ht-content .ht-content-work img {
@@ -1091,6 +1127,16 @@ body {
     margin: 5vh 0;
     border: 5px solid #eee; }
 
+@media screen and (max-width: 847px) {
+  div.weather-search.g2m .g2m-ij .row .col-md-4 img {
+    display: none; }
+
+  div.g2m .g2m-ij .title {
+    padding-top: 27vh;
+    padding-bottom: 2vh; } }
+@media screen and (max-width: 1090px) and (min-width: 847px) {
+  div.weather-search.g2m .g2m-ij .row .col-md-4 img {
+    display: none; } }
 .weather-search img {
   width: 100%; }
 .weather-search .close {
@@ -1134,9 +1180,10 @@ body {
     font-size: 20px;
     margin: 0 80px 100px; }
   .weather-search .w-title .section-title img {
-    width: 500px;
+    width: 100%;
     height: 350px;
-    margin-top: 50px; }
+    margin-top: 50px;
+    max-width: 500px; }
 .weather-search #wprocess {
   height: 50vh; }
   .weather-search #wprocess .work_process {
